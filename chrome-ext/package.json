@@ -1,0 +1,16 @@
+{
+  "name": "lingua-bot-chrome-extension",
+  "version": "1.0",
+  "scripts": {
+    "build": "parcel build --no-minify --no-cache -o dist/content_script.js src/index.js"
+  },
+  "dependencies": {
+    "lingua-scraper": "^0.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "core-js": "^3.6.5",
+    "parcel-bundler": "^1.12.4"
+  }
+}

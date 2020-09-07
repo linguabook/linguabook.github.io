@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "LinguaBot",
+  "version": "1.0",
+  "description": "Performs search for a given selected word/phrase on multiple sites to find useful information associated with the word",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import { fetchData } from "lingua-scraper";
 
-console.log("Hey! I am Lingvo Bot!");
+console.log("Hey! I am LinguaBot!");
 
 document.addEventListener("click", (e) => {
   const selection = window.getSelection();
@@ -11,8 +11,16 @@ document.addEventListener("click", (e) => {
     return;
   }
   const text = selection.toString();
-  console.log("longuabot searching", text);
-  fetchData(text).then((results) => {
-    console.log(results);
-  });
+  if (!text) {
+    return;
+  }
+  console.log("lingua-bot searching", text);
+  fetchData(text)
+    .then((results) => {
+      console.log("lingua-bot results");
+      console.log(results);
+    })
+    .catch((err) => {
+      console.log("lingua-bot error:", err);
+    });
 });

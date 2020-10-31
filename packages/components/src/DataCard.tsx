@@ -93,9 +93,17 @@ const DataCard: React.FC<Props> = ({ text, exclude }) => {
 
   const q = qs.stringify({ exclude });
 
-  const { data: sources, error } = useSWR(`/words/data/${text}?${q}`, () => {
-    return fetchData({ text }, { exclude });
-  });
+  const { data: sources, error } = useSWR(
+    `/words/data/${text}?${q}`,
+    () => {
+      return fetchData({ text }, { exclude });
+    },
+    {
+      onSuccess() {
+        setActiveTab(0);
+      },
+    }
+  );
 
   if (error) {
     return <Error error={error} />;

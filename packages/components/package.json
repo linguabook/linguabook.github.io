@@ -6,6 +6,9 @@
   "license": "Apache",
   "main": "dist/bundle.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "microbundle --jsx=React.createElement --globals react=React",
     "start": "react-scripts start",

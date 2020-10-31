@@ -16,6 +16,9 @@ import styles from "./DataCard.module.scss";
 const nonPlural = ["audio"];
 
 function getLabel(key: string) {
+  if (key === "in") {
+    return "Examples";
+  }
   if (nonPlural.indexOf(key) >= 0) {
     return _.capitalize(key);
   }

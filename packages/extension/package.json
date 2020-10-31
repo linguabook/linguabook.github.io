@@ -1,6 +1,6 @@
 {
-  "name": "lingua-bot-chrome-extension",
-  "version": "1.0",
+  "name": "linguabot-extension",
+  "version": "0.0.0",
   "scripts": {
     "build": "parcel build --no-minify --no-cache -o dist/content_script.js src/index.js"
   },

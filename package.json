@@ -1,0 +1,11 @@
+{
+  "name": "linguabot",
+  "version": "0.0.0",
+  "repository": "https://github.com/lingvograph/linguabot.git",
+  "author": "Sergey Todyshev <stodyshev@gmail.com>",
+  "license": "Apache",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}

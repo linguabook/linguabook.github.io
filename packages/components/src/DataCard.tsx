@@ -6,6 +6,7 @@ import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.cjs.css";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import cx from "classnames";
+import qs from "query-string";
 
 import Error from "./ErrorCard";
 import Loader from "./Loader";
@@ -34,6 +35,7 @@ function trimPrefix(s: string, prefix: string) {
 
 type Props = {
   text: string;
+  exclude: string[];
 };
 
 type Tab = {
@@ -86,12 +88,14 @@ const Terms: React.FC<any> = ({ source, items }) => {
   return <ul className={styles.terms}>{nodes}</ul>;
 };
 
-const DataCard: React.FC<Props> = ({ text }) => {
+const DataCard: React.FC<Props> = ({ text, exclude }) => {
   const [activeTab, setActiveTab] = useState(0);
 
-  const { data: sources, error } = useSWR(`/lingua-data/${text}`, () =>
-    fetchData({ text })
-  );
+  const q = qs.stringify({ exclude });
+
+  const { data: sources, error } = useSWR(`/words/data/${text}?${q}`, () => {
+    return fetchData({ text }, { exclude });
+  });
 
   if (error) {
     return <Error error={error} />;

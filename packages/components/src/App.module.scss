@@ -1,12 +1,26 @@
 .app {
-    margin: 0 30vw;
+  margin: 0 30vw;
 
-    header {
-        text-align: center;
-        margin: 1rem 0;
-    }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+  }
 
-    main {
-        max-width: 800px;
-    }
+  main {
+    max-width: 800px;
+  }
+}
+
+.source_select_container {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 300px;
+  min-width: 100px;
+  margin-right: 10px;
+}
+
+.source_select {
+  width: 100%;
 }

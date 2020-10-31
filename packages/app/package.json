@@ -13,7 +13,8 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
-    "lingua-scraper": "^0.4.1",
+    "classnames": "^2.2.6",
+    "lingua-scraper": "^0.4.2",
     "lodash": "^4.17.20",
     "pure-react-carousel": "^1.27.6",
     "react": "^17.0.1",
@@ -52,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.11",
     "@types/lodash": "^4.14.164",
     "sass": "^1.28.0"
   }

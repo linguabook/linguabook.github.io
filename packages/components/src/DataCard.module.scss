@@ -8,13 +8,14 @@
 }
 
 .playlist {
+  columns: 2;
   list-style: none;
   padding-left: 20px;
 
   li {
     display: flex;
     align-items: center;
-    margin: 0.5rem 0;
+    margin-bottom: 0.5rem;
     padding: 0;
 
     button {

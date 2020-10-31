@@ -1,7 +1,12 @@
 .app {
-    text-align: center;
-    
+    margin: 0 30vw;
+
     header {
+        text-align: center;
         margin: 1rem 0;
+    }
+
+    main {
+        max-width: 800px;
     }
 }

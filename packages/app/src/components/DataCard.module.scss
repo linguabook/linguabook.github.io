@@ -1,0 +1,23 @@
+.text_center {
+  text-align: center;
+}
+
+.visual {
+  text-align: center;
+  overflow: hidden;
+}
+
+.playlist {
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+
+    button {
+      cursor: pointer;
+      margin-right: 4px;
+    }
+  }
+}

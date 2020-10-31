@@ -2,6 +2,7 @@ import React from "react";
 import { SearchInput, useSearchState } from "./SearchInput";
 import "./icons";
 import Card from "./DataCard";
+import Empty from "./Empty";
 
 import styles from "./App.module.scss";
 
@@ -20,7 +21,7 @@ function App() {
         {search.debouncedText ? (
           <Card text={search.debouncedText} />
         ) : (
-          <div>Nothing to show</div>
+          <Empty />
         )}
       </main>
     </div>

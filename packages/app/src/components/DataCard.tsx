@@ -1,13 +1,12 @@
 import _ from "lodash";
-import React, { useState } from "react";
+import React from "react";
 import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
 import {
   CarouselProvider,
   Slider,
   Slide,
-  ButtonBack,
-  ButtonNext,
+  DotGroup,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.cjs.css";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
@@ -23,8 +22,6 @@ type Props = {
 };
 
 const DataCard: React.FC<Props> = ({ text }) => {
-  const [slide, setSlide] = useState(0);
-
   const { data: sources, error } = useSWR(`/lingua-data/${text}`, () =>
     fetchData({ text })
   );
@@ -97,14 +94,13 @@ const DataCard: React.FC<Props> = ({ text }) => {
             naturalSlideWidth={width}
             naturalSlideHeight={height}
             totalSlides={slides.length}
-            currentSlide={slide}
-            dragEnabled
           >
             <div style={{ height }}>
               <Slider>{slides}</Slider>
             </div>
-            <ButtonBack>Back</ButtonBack>
-            <ButtonNext>Next</ButtonNext>
+            <div>
+              <DotGroup />
+            </div>
           </CarouselProvider>
         </div>
       )}

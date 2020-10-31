@@ -1,6 +1,9 @@
 {
   "name": "words-app-components",
   "version": "0.1.0",
+  "repository": "https://github.com/lingvograph/linguabot.git",
+  "author": "Sergey Todyshev <stodyshev@gmail.com>",
+  "license": "Apache",
   "main": "dist/bundle.js",
   "types": "dist/index.d.ts",
   "scripts": {

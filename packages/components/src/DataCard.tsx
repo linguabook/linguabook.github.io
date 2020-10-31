@@ -1,6 +1,6 @@
 import _ from "lodash";
 import React, { useState } from "react";
-import { fetchData, sources } from "lingua-scraper";
+import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
 import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.cjs.css";
@@ -200,7 +200,7 @@ const DataCard: React.FC<Props> = ({ text }) => {
           ))}
         </div>
       )}
-      {tabs[activeTab]?.content}
+      {(tabs[activeTab] || {}).content}
     </div>
   );
 };

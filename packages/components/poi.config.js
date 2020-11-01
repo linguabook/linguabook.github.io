@@ -1,7 +1,7 @@
 module.exports = {
   entry: "src/index.ts",
   output: {
-    format: "umd",
+    format: "cjs",
     moduleName: "WordsApp"
   },
   plugins: [

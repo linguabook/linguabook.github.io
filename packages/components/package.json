@@ -1,6 +1,6 @@
 {
   "name": "words-app-components",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "repository": "https://github.com/lingvograph/linguabot.git",
   "author": "Sergey Todyshev <stodyshev@gmail.com>",
   "license": "Apache",
@@ -10,7 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "poi --prod --no-html && tsc",
+    "build": "poi --prod --no-html --extract-css && tsc",
     "dev": "poi --no-html --extract-css --watch",
     "start": "react-scripts start",
     "test": "react-scripts test"

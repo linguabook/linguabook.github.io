@@ -1,4 +1,4 @@
-$border: #aaa;
+$border: hsl(0,0%,80%);
 
 .container {
   display: inline-flex;
@@ -19,6 +19,7 @@ $border: #aaa;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    color: $border;
 
     &:focus {
       outline: none;

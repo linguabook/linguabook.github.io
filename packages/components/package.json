@@ -56,10 +56,10 @@
     "@types/node": "^14.14.6",
     "@types/react": "^16.9.55",
     "@types/react-dom": "^16.9.9",
-    "@types/react-select": "^3.0.22",
+    "@types/react-select": "^3.0.23",
     "poi": "^12.10.3"
   },
   "peerDependencies": {
-    "react": "^16.13.1"
+    "react": "^17.0.1"
   }
 }

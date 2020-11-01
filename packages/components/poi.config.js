@@ -40,12 +40,5 @@ module.exports = {
       tls: "empty",
       child_process: "empty",
     },
-    resolve: {
-      alias: {
-        "react-select": require.resolve(
-          "react-select/dist/react-select.cjs.prod.js"
-        ),
-      },
-    },
   },
 };

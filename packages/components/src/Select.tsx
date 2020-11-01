@@ -1,11 +1,12 @@
 import React from "react";
 import isString from "lodash/isString";
 import isPlainObject from "lodash/isPlainObject";
-import SelectImpl from "react-select";
+import env from "exenv";
 
-// const SelectStub: React.FC<any> = () => <div />;
-// const SelectImpl =
-//   typeof window === "undefined" ? SelectStub : require("react-select").default;
+const SelectStub: React.FC<any> = () => <div />;
+const SelectImpl = env.canUseDOM
+  ? require("react-select").default || SelectStub
+  : SelectStub;
 
 function isOption(value: any) {
   return isPlainObject(value) && value.label;

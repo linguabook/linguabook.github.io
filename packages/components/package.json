@@ -1,6 +1,6 @@
 {
   "name": "words-app-components",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "repository": "https://github.com/lingvograph/linguabot.git",
   "author": "Sergey Todyshev <stodyshev@gmail.com>",
   "license": "Apache",
@@ -10,7 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "poi --prod --no-html --extract-css && tsc",
+    "build": "poi --no-html --extract-css && tsc",
     "dev": "poi --no-html --extract-css --watch",
     "start": "react-scripts start",
     "test": "react-scripts test"
@@ -38,7 +38,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.12",
     "classnames": "^2.2.6",
-    "lingua-scraper": "0.7.0",
+    "lingua-scraper": "0.8.1",
     "lodash": "^4.17.20",
     "pure-react-carousel": "^1.27.6",
     "query-string": "^6.13.6",
@@ -57,6 +57,7 @@
     "@types/react": "^16.9.55",
     "@types/react-dom": "^16.9.9",
     "@types/react-select": "^3.0.23",
+    "playwright": "^1.5.2",
     "poi": "^12.10.3"
   },
   "peerDependencies": {

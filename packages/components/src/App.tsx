@@ -31,6 +31,7 @@ const App: React.FC<Props> = ({ className, style }) => {
           value={search.text}
           onChange={search.onChange}
           reset={search.reset}
+          placeholder="Type a word..."
         />
       </header>
       <main>

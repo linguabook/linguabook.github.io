@@ -7895,21 +7895,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lingua-scraper@0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/lingua-scraper/-/lingua-scraper-0.5.1.tgz#af8ad3f297fed1a9784fe022cc8f105fabaec427"
-  integrity sha512-ik2iY77L0JKcunSxlGV1nTJO6vmJ3ggU0GrPcyofZPjfzpKy/YtfZLiRwo3nBgHMeW/v9EfbevipZUCViNyOwQ==
-  dependencies:
-    cheerio "^1.0.0-rc.3"
-    isomorphic-unfetch "^3.1.0"
-    js-base64 "^3.5.2"
-    lodash "^4.17.20"
-    playwright "^1.5.2"
-
-lingua-scraper@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/lingua-scraper/-/lingua-scraper-0.6.0.tgz#ac08a0b004977c5309f98b18156d1f5ea869e204"
-  integrity sha512-hLrdN1OIglsMuM85Eb8627rIwJj3vOaVVcWOT64+Ani+7XVP0yoGCRvUQahc0e+rMzBqES6KVRvrxRisf3ueQg==
+lingua-scraper@0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/lingua-scraper/-/lingua-scraper-0.7.0.tgz#d9109a42067d2f92b0562237a8342cf0694a2360"
+  integrity sha512-iJ2gK2/NLpikqq0I745sm3m+Zw5FDjYfvd3GZFLAqQEAPZ1wCVgFvY2b+3hG1y0WSPSofhUzRGZtDXLiDGyq6g==
   dependencies:
     cheerio "^1.0.0-rc.3"
     isomorphic-unfetch "^3.1.0"

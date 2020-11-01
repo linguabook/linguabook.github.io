@@ -4,13 +4,14 @@
   "repository": "https://github.com/lingvograph/linguabot.git",
   "author": "Sergey Todyshev <stodyshev@gmail.com>",
   "license": "Apache",
-  "main": "dist/bundle.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "microbundle --jsx=React.createElement --globals react=React",
+    "build": "poi --prod --no-html && tsc",
+    "dev": "poi --no-html --watch",
     "start": "react-scripts start",
     "test": "react-scripts test"
   },
@@ -37,7 +38,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.12",
     "classnames": "^2.2.6",
-    "lingua-scraper": "^0.5.0",
+    "lingua-scraper": "0.6.0",
     "lodash": "^4.17.20",
     "pure-react-carousel": "^1.27.6",
     "query-string": "^6.13.6",
@@ -48,6 +49,7 @@
     "use-debounce": "^5.0.1"
   },
   "devDependencies": {
+    "@poi/plugin-typescript": "^12.3.1",
     "@types/classnames": "^2.2.11",
     "@types/jest": "^26.0.15",
     "@types/lodash": "^4.14.164",
@@ -55,9 +57,7 @@
     "@types/react": "^16.9.55",
     "@types/react-dom": "^16.9.9",
     "@types/react-select": "^3.0.22",
-    "microbundle": "^0.12.4",
-    "react-scripts": "4.0.0",
-    "sass": "^1.28.0"
+    "poi": "^12.10.3"
   },
   "peerDependencies": {
     "react": "^16.13.1"

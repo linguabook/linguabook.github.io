@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "build": "poi --prod --no-html && tsc",
-    "dev": "poi --no-html --watch",
+    "dev": "poi --no-html --extract-css --watch",
     "start": "react-scripts start",
     "test": "react-scripts test"
   },

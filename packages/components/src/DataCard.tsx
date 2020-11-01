@@ -1,6 +1,6 @@
 import _ from "lodash";
 import React, { useState } from "react";
-import { fetchData } from "lingua-scraper";
+import { fetchData, sources } from "lingua-scraper";
 import useSWR from "swr";
 import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.cjs.css";
@@ -26,13 +26,6 @@ function getLabel(key: string) {
   return _.capitalize(key) + "s";
 }
 
-function trimPrefix(s: string, prefix: string) {
-  if (s.startsWith(prefix)) {
-    return s.substr(prefix.length);
-  }
-  return s;
-}
-
 type Props = {
   text: string;
   exclude: string[];
@@ -43,6 +36,14 @@ type Tab = {
   label: string;
   content: any[];
 };
+
+const SourceHeader: React.FC<any> = ({ source }) => (
+  <div className={styles.source_header}>
+    <a href={source.url}>
+      {source.name}
+    </a>
+  </div>
+);
 
 const Playlist: React.FC<any> = ({ source, audio }) => {
   if (_.isEmpty(audio)) {
@@ -55,20 +56,16 @@ const Playlist: React.FC<any> = ({ source, audio }) => {
     };
     return (
       <li key={i}>
-        <button onClick={play}>
-          <Icon icon="play-circle" />
-        </button>
-        <span>{rec.author || rec.source.name}</span>
+        <span className={styles.interactive_icon} onClick={play}>
+          <Icon icon="volume-up" />
+        </span>
+        <span>{rec.author || "human"}</span>
       </li>
     );
   });
   return (
     <div>
-      <div>
-        <a href={source.url}>
-          {trimPrefix(trimPrefix(source.url, "https://"), "www.")}
-        </a>
-      </div>
+      <SourceHeader source={source} />
       <ul className={styles.playlist}>{items}</ul>
     </div>
   );
@@ -85,7 +82,12 @@ const Terms: React.FC<any> = ({ source, items }) => {
       </li>
     );
   });
-  return <ul className={styles.terms}>{nodes}</ul>;
+  return (
+    <div>
+      <SourceHeader source={source} />
+      <ul className={styles.terms}>{nodes}</ul>
+    </div>
+  );
 };
 
 const DataCard: React.FC<Props> = ({ text, exclude }) => {
@@ -185,7 +187,7 @@ const DataCard: React.FC<Props> = ({ text, exclude }) => {
   }
 
   return (
-    <div>
+    <div className={styles.card}>
       {_.isEmpty(visual) ? null : (
         <div className={styles.visual}>
           <CarouselProvider

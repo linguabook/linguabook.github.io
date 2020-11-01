@@ -1,3 +1,7 @@
+.card {
+  color: #333;
+}
+
 .text_center {
   text-align: center;
 }
@@ -5,6 +9,22 @@
 .visual {
   text-align: center;
   overflow: hidden;
+}
+
+.source_header {
+  a {
+    color: #999;
+    text-decoration: none;
+
+    &:hover {
+      color: #aaa;
+      text-decoration: none;
+    }
+  }
+}
+
+.interactive_icon {
+  cursor: pointer;
 }
 
 .playlist {
@@ -18,8 +38,7 @@
     margin-bottom: 0.5rem;
     padding: 0;
 
-    button {
-      cursor: pointer;
+    .interactive_icon {
       margin-right: 4px;
     }
   }

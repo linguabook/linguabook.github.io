@@ -1,6 +1,6 @@
 {
   "name": "words-app-components",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "repository": "https://github.com/lingvograph/linguabot.git",
   "author": "Sergey Todyshev <stodyshev@gmail.com>",
   "license": "Apache",
@@ -38,7 +38,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.12",
     "classnames": "^2.2.6",
-    "lingua-scraper": "0.8.1",
+    "lingua-scraper": "0.9.0",
     "lodash": "^4.17.20",
     "pure-react-carousel": "^1.27.6",
     "query-string": "^6.13.6",

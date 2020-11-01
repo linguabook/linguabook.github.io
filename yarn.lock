@@ -7074,13 +7074,13 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
-isomorphic-unfetch@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/isomorphic-unfetch/-/isomorphic-unfetch-3.1.0.tgz#87341d5f4f7b63843d468438128cb087b7c3e98f"
-  integrity sha512-geDJjpoZ8N0kWexiwkX8F9NkTsXhetLPVbZFQ+JTW239QNOwvB0gniuR1Wc6f0AMTn7/mFGyXvHTifrCp/GH8Q==
+isomorphic-fetch@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-3.0.0.tgz#0267b005049046d2421207215d45d6a262b8b8b4"
+  integrity sha512-qvUtwJ3j6qwsF3jLxkZ72qCgjMysPzDfeV240JHiGZsANBYd+EEuu35v7dfrJ9Up0Ak07D7GGSkGhCHTqg/5wA==
   dependencies:
     node-fetch "^2.6.1"
-    unfetch "^4.2.0"
+    whatwg-fetch "^3.4.1"
 
 isstream@~0.1.2:
   version "0.1.2"
@@ -7895,13 +7895,13 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lingua-scraper@0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/lingua-scraper/-/lingua-scraper-0.8.1.tgz#963dd7c1c5a20c3321c408a454870628f02bda1d"
-  integrity sha512-UOl9WBGHGU5VHtXYg1ZNVuK87VoIxDXPk05PnVAtmm0Q9c/5+zaowi2qm8SIYbbK2j1dNw5jHTAkZGctFtyH3Q==
+lingua-scraper@0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/lingua-scraper/-/lingua-scraper-0.9.0.tgz#debc849c920beed99c7eb8460fe3aaf0db29e3c1"
+  integrity sha512-XH2tXoVg2FsqsPD1HhWs1gFlDqlpUcmJrJsxgjOeaUgr8luNgOUXxnupDqhyFpyTv3oWiepwCQYZkNzNw+E8gw==
   dependencies:
     cheerio "^1.0.0-rc.3"
-    isomorphic-unfetch "^3.1.0"
+    isomorphic-fetch "^3.0.0"
     js-base64 "^3.5.2"
     lodash "^4.17.20"
 
@@ -12576,11 +12576,6 @@ uncss@^0.17.3:
     postcss "^7.0.17"
     postcss-selector-parser "6.0.2"
     request "^2.88.0"
-
-unfetch@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/unfetch/-/unfetch-4.2.0.tgz#7e21b0ef7d363d8d9af0fb929a5555f6ef97a3be"
-  integrity sha512-F9p7yYCn6cIW9El1zi0HI6vqpeIvBsr3dSuRO6Xuppb1u5rXpCPmMvLSyECLhybr9isec8Ohl0hPekMVrEinDA==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

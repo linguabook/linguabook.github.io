@@ -3,9 +3,7 @@ $border: hsl(0,0%,80%);
 .container {
   display: inline-flex;
   align-items: center;
-  flex-grow: 1;
-  flex-shrink: 1;
-  width: 300px;
+  width: 100%;
 
   button {
     background: transparent;

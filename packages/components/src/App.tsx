@@ -7,6 +7,7 @@ import Empty from "./Empty";
 
 import styles from "./App.module.scss";
 import SourceSelect from "./SourceSelect";
+import { useDesktop } from "./hooks";
 
 type Props = {
   className?: string;
@@ -16,23 +17,31 @@ type Props = {
 const App: React.FC<Props> = ({ className, style }) => {
   const [exclude, setExclude] = useState([]);
   const search = useSearchState();
+  const desktop = useDesktop();
   return (
-    <div className={cx(styles.app, className)} style={style}>
+    <div
+      className={cx(styles.app, className, { [styles.desktop]: desktop })}
+      style={style}
+    >
       <header>
-        <div className={styles.source_select_container}>
-          <SourceSelect
-            className={styles.source_select}
-            value={exclude}
-            onChange={(e) => setExclude(e.value)}
-            placeholder="Exclude sources..."
+        <div className={styles.item}>
+          <div className={styles.source_select_container}>
+            <SourceSelect
+              className={styles.source_select}
+              value={exclude}
+              onChange={(e) => setExclude(e.value)}
+              placeholder="Exclude sources..."
+            />
+          </div>
+        </div>
+        <div className={styles.item}>
+          <SearchInput
+            value={search.text}
+            onChange={search.onChange}
+            reset={search.reset}
+            placeholder="Type a word..."
           />
         </div>
-        <SearchInput
-          value={search.text}
-          onChange={search.onChange}
-          reset={search.reset}
-          placeholder="Type a word..."
-        />
       </header>
       <main>
         {search.debouncedText ? (

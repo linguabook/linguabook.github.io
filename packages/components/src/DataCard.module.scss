@@ -15,6 +15,7 @@
   a {
     color: #999;
     text-decoration: none;
+    margin-left: 1rem;
 
     &:hover {
       color: #aaa;
@@ -28,9 +29,9 @@
 }
 
 .playlist {
-  columns: 2;
+  display: inline-block;
   list-style: none;
-  padding-left: 20px;
+  padding: 0 2rem;
 
   li {
     display: flex;
@@ -45,9 +46,11 @@
 }
 
 .tabs {
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 1rem;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 2rem;
 
   .tab {
     font-size: 0.9rem;
@@ -56,7 +59,14 @@
     cursor: pointer;
 
     &.active {
+      font-weight: bold;
       border-bottom: 3px solid blueviolet;
     }
+  }
+}
+
+.desktop {
+  .playlist {
+    columns: 2;
   }
 }

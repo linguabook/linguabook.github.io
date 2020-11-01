@@ -5,7 +5,7 @@ import { useDebounce } from "use-debounce";
 import styles from "./SearchInput.module.scss";
 
 export function useSearchState() {
-  const [text, setText] = useState("");
+  const [text, setText] = useState("apple");
   const [debouncedText] = useDebounce(text, 500);
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {

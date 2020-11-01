@@ -2,8 +2,8 @@ import _ from "lodash";
 import React, { useState } from "react";
 import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
-import { CarouselProvider, Slider, Slide, DotGroup } from "pure-react-carousel";
-import "pure-react-carousel/dist/react-carousel.cjs.css";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import cx from "classnames";
 import qs from "query-string";
@@ -13,6 +13,7 @@ import Loader from "./Loader";
 import Empty from "./Empty";
 
 import styles from "./DataCard.module.scss";
+import { useDesktop } from "./hooks";
 
 const nonPlural = ["audio"];
 
@@ -39,9 +40,7 @@ type Tab = {
 
 const SourceHeader: React.FC<any> = ({ source }) => (
   <div className={styles.source_header}>
-    <a href={source.url}>
-      {source.name}
-    </a>
+    <a href={source.url}>{source.name}</a>
   </div>
 );
 
@@ -91,6 +90,7 @@ const Terms: React.FC<any> = ({ source, items }) => {
 };
 
 const DataCard: React.FC<Props> = ({ text, exclude }) => {
+  const desktop = useDesktop();
   const [activeTab, setActiveTab] = useState(0);
 
   const q = qs.stringify({ exclude });
@@ -119,7 +119,7 @@ const DataCard: React.FC<Props> = ({ text, exclude }) => {
     );
   }
 
-  const width = 400;
+  const width = desktop ? 800 : "100vw";
   const height = 400;
 
   const visual: any[] = [];
@@ -143,6 +143,9 @@ const DataCard: React.FC<Props> = ({ text, exclude }) => {
   for (const sourceData of sources) {
     const source = sourceData.source;
     _.each(sourceData.data, (data, key) => {
+      if (_.isEmpty(data)) {
+        return;
+      }
       if (key === "visual") {
         const target = visual;
         for (const item of data) {
@@ -177,9 +180,9 @@ const DataCard: React.FC<Props> = ({ text, exclude }) => {
   }
 
   const slides = visual.map((d, i) => (
-    <Slide key={i} index={i}>
-      <img src={d.url} alt={text} height={height} />
-    </Slide>
+    <div key={i} className={styles.slide}>
+      <img src={d.url} alt={text} width={width} />
+    </div>
   ));
 
   if (_.isEmpty(visual) && _.isEmpty(tabs)) {
@@ -187,21 +190,12 @@ const DataCard: React.FC<Props> = ({ text, exclude }) => {
   }
 
   return (
-    <div className={styles.card}>
+    <div className={cx(styles.card, { [styles.desktop]: desktop })}>
       {_.isEmpty(visual) ? null : (
         <div className={styles.visual}>
-          <CarouselProvider
-            naturalSlideWidth={width}
-            naturalSlideHeight={height}
-            totalSlides={slides.length}
-          >
-            <div style={{ height }}>
-              <Slider>{slides}</Slider>
-            </div>
-            <div>
-              <DotGroup />
-            </div>
-          </CarouselProvider>
+          <Carousel showThumbs={false} swipeable emulateTouch>
+            {slides}
+          </Carousel>
         </div>
       )}
       {_.isEmpty(tabs) ? null : (

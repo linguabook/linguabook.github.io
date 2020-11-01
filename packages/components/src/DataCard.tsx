@@ -63,10 +63,12 @@ const Playlist: React.FC<any> = ({ source, audio }) => {
     );
   });
   return (
-    <div>
-      <SourceHeader source={source} />
-      <ul className={styles.playlist}>{items}</ul>
-    </div>
+    <tr className={styles.list_container}>
+      <td>
+        <SourceHeader source={source} />
+        <ul className={styles.playlist}>{items}</ul>
+      </td>
+    </tr>
   );
 };
 
@@ -82,10 +84,12 @@ const Terms: React.FC<any> = ({ source, items }) => {
     );
   });
   return (
-    <div>
-      <SourceHeader source={source} />
-      <ul className={styles.terms}>{nodes}</ul>
-    </div>
+    <tr className={styles.list_container}>
+      <td>
+        <SourceHeader source={source} />
+        <ul className={styles.terms}>{nodes}</ul>
+      </td>
+    </tr>
   );
 };
 
@@ -120,7 +124,6 @@ const DataCard: React.FC<Props> = ({ text, exclude }) => {
   }
 
   const width = desktop ? 800 : "100vw";
-  const height = 400;
 
   const visual: any[] = [];
   let tabs: Tab[] = [];
@@ -199,19 +202,23 @@ const DataCard: React.FC<Props> = ({ text, exclude }) => {
         </div>
       )}
       {_.isEmpty(tabs) ? null : (
-        <div className={styles.tabs}>
-          {tabs.map((t, i) => (
-            <span
-              key={i}
-              className={cx(styles.tab, { [styles.active]: i === activeTab })}
-              onClick={() => setActiveTab(i)}
-            >
-              {t.label}
-            </span>
-          ))}
+        <div className={styles.tabs_container}>
+          <div className={styles.tabs}>
+            {tabs.map((t, i) => (
+              <span
+                key={i}
+                className={cx(styles.tab, { [styles.active]: i === activeTab })}
+                onClick={() => setActiveTab(i)}
+              >
+                {t.label}
+              </span>
+            ))}
+          </div>
         </div>
       )}
-      {(tabs[activeTab] || {}).content}
+      <div className={styles.table_container}>
+        <table>{(tabs[activeTab] || {}).content}</table>
+      </div>
     </div>
   );
 };

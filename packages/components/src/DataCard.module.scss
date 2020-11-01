@@ -11,6 +11,12 @@
   overflow: hidden;
 }
 
+.desktop {
+  .visual {
+    margin: 0 24rem;
+  }
+}
+
 .source_header {
   a {
     color: #999;
@@ -28,24 +34,37 @@
   cursor: pointer;
 }
 
-.playlist {
-  display: inline-block;
-  list-style: none;
-  padding: 0 2rem;
+.table_container {
+  display: flex;
+  justify-content: center;
+}
 
-  li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
-    padding: 0;
+.list_container {
+  ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0 2rem;
 
-    .interactive_icon {
-      margin-right: 4px;
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      padding: 0;
+
+      .interactive_icon {
+        margin-right: 4px;
+      }
     }
   }
 }
 
+.tabs_container {
+  display: flex;
+  justify-content: center;
+}
+
 .tabs {
+  display: inline-block;
   margin: 1rem;
   position: relative;
   overflow-x: auto;

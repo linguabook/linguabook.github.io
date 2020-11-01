@@ -6,7 +6,7 @@ import Card from "./DataCard";
 import Empty from "./Empty";
 
 import styles from "./App.module.scss";
-import SourceSelect from "./SourceSelect";
+import useSourceMenu from "./use-source-menu";
 import { useDesktop } from "./hooks";
 
 type Props = {
@@ -15,7 +15,7 @@ type Props = {
 };
 
 const App: React.FC<Props> = ({ className, style }) => {
-  const [exclude, setExclude] = useState([]);
+  const sourceMenu = useSourceMenu();
   const search = useSearchState();
   const desktop = useDesktop();
   return (
@@ -24,16 +24,7 @@ const App: React.FC<Props> = ({ className, style }) => {
       style={style}
     >
       <header>
-        <div className={styles.item}>
-          <div className={styles.source_select_container}>
-            <SourceSelect
-              className={styles.source_select}
-              value={exclude}
-              onChange={(e) => setExclude(e.value)}
-              placeholder="Exclude sources..."
-            />
-          </div>
-        </div>
+        <div className={cx(styles.item, styles.fixed)}>{sourceMenu.view}</div>
         <div className={styles.item}>
           <SearchInput
             value={search.text}
@@ -45,7 +36,7 @@ const App: React.FC<Props> = ({ className, style }) => {
       </header>
       <main>
         {search.debouncedText ? (
-          <Card text={search.debouncedText} exclude={exclude} />
+          <Card text={search.debouncedText} exclude={sourceMenu.exclude} />
         ) : (
           <Empty />
         )}

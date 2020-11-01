@@ -5639,6 +5639,13 @@ fd-slicer@~1.1.0:
   dependencies:
     pend "~1.2.0"
 
+fetch-ponyfill@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/fetch-ponyfill/-/fetch-ponyfill-7.0.0.tgz#5a53db6fc8c3e1901476f3e9b7b146a30a412594"
+  integrity sha512-ynRMX7w11EcG3sJSYTT2N6EUl0QsqWbyW3Xw5+DuLeA2uo/yhssb7JqnjamGQaHBUo/AOUsmTz6zeUX3cPvZsQ==
+  dependencies:
+    node-fetch "~2.6.1"
+
 figgy-pudding@^3.5.1:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.2.tgz#b4eee8148abb01dcf1d1ac34367d59e12fa61d6e"
@@ -7074,14 +7081,6 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
-isomorphic-fetch@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-3.0.0.tgz#0267b005049046d2421207215d45d6a262b8b8b4"
-  integrity sha512-qvUtwJ3j6qwsF3jLxkZ72qCgjMysPzDfeV240JHiGZsANBYd+EEuu35v7dfrJ9Up0Ak07D7GGSkGhCHTqg/5wA==
-  dependencies:
-    node-fetch "^2.6.1"
-    whatwg-fetch "^3.4.1"
-
 isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
@@ -7895,13 +7894,13 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lingua-scraper@0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/lingua-scraper/-/lingua-scraper-0.9.0.tgz#debc849c920beed99c7eb8460fe3aaf0db29e3c1"
-  integrity sha512-XH2tXoVg2FsqsPD1HhWs1gFlDqlpUcmJrJsxgjOeaUgr8luNgOUXxnupDqhyFpyTv3oWiepwCQYZkNzNw+E8gw==
+lingua-scraper@0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/lingua-scraper/-/lingua-scraper-0.10.0.tgz#4619c3b00fda548c764ee591180adaf868956a2e"
+  integrity sha512-PaiG/bcYSQTlaC/48NOtEzbvyXwUoUxK69SgIkrGaw6vbgJcKdNg/Y6qxTEPkSIzKZfPfVfO24pWmogI6XcXjQ==
   dependencies:
     cheerio "^1.0.0-rc.3"
-    isomorphic-fetch "^3.0.0"
+    fetch-ponyfill "^7.0.0"
     js-base64 "^3.5.2"
     lodash "^4.17.20"
 
@@ -8545,7 +8544,7 @@ node-addon-api@^1.7.1:
   resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-1.7.2.tgz#3df30b95720b53c24e59948b49532b662444f54d"
   integrity sha512-ibPK3iA+vaY1eEjESkQkM0BbCqFOaZMiXRTtdB0u7b4djtY6JnsjvPdUHVMg6xQt3B8fpTTWHI9A+ADjM9frzg==
 
-node-fetch@^2.6.1:
+node-fetch@~2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
   integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==

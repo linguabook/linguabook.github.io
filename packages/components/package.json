@@ -1,6 +1,6 @@
 {
   "name": "words-app-components",
-  "version": "0.17.0",
+  "version": "0.18.0",
   "repository": "https://github.com/lingvograph/linguabot.git",
   "author": "Sergey Todyshev <stodyshev@gmail.com>",
   "license": "Apache",
@@ -65,6 +65,6 @@
     "poi": "^12.10.3"
   },
   "peerDependencies": {
-    "react": "^17.0.1"
+    "react": "^16.13.1"
   }
 }

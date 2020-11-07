@@ -10,5 +10,9 @@
   ],
   "devDependencies": {
     "typescript": "^4.0.5"
+  },
+  "scripts": {
+    "demo": "cd packages/app && yarn start",
+    "components": "cd packages/components && yarn dev"
   }
 }

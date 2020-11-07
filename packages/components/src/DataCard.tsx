@@ -11,6 +11,7 @@ import qs from "query-string";
 import Error from "./ErrorCard";
 import Loader from "./Loader";
 import Empty from "./Empty";
+import Less from "./Less";
 
 import styles from "./DataCard.module.scss";
 import { useDesktop } from "./hooks";
@@ -79,7 +80,9 @@ const Terms: React.FC<any> = ({ source, items }) => {
   const nodes = items.map((rec, i) => {
     return (
       <li key={i}>
-        <span>{rec.text}</span>
+        <Less id="terms" maxHeight={64}>
+          {rec.text}
+        </Less>
       </li>
     );
   });
@@ -217,7 +220,9 @@ const DataCard: React.FC<Props> = ({ text, exclude }) => {
         </div>
       )}
       <div className={styles.table_container}>
-        <table>{(tabs[activeTab] || {}).content}</table>
+        <table>
+          <tbody>{(tabs[activeTab] || {}).content}</tbody>
+        </table>
       </div>
     </div>
   );

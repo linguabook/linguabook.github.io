@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import cx from "classnames";
 import { SearchInput, useSearchState } from "./SearchInput";
 import "./icons";

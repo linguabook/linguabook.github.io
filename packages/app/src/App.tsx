@@ -4,6 +4,6 @@ import "words-app-components/dist/index.css";
 
 import styles from "./App.module.css";
 
-const App = () => <WordsApp className={styles.app} />;
+const App = () => <WordsApp className={`${styles.app} ${styles.dark}`} dark />;
 
 export default App;

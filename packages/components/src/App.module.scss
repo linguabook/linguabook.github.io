@@ -27,6 +27,11 @@
   main {
     max-width: 100vw;
   }
+
+  &.dark {
+    color: white;
+    background-color: #282c35;
+  }
 }
 
 .source_select_container {

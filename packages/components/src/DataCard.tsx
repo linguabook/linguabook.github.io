@@ -31,6 +31,7 @@ function getLabel(key: string) {
 type Props = {
   text: string;
   exclude: string[];
+  dark?: boolean;
 };
 
 type Tab = {
@@ -96,7 +97,7 @@ const Terms: React.FC<any> = ({ source, items }) => {
   );
 };
 
-const DataCard: React.FC<Props> = ({ text, exclude }) => {
+const DataCard: React.FC<Props> = ({ text, exclude, dark }) => {
   const desktop = useDesktop();
   const [activeTab, setActiveTab] = useState(0);
 
@@ -196,7 +197,12 @@ const DataCard: React.FC<Props> = ({ text, exclude }) => {
   }
 
   return (
-    <div className={cx(styles.card, { [styles.desktop]: desktop })}>
+    <div
+      className={cx(styles.card, {
+        [styles.desktop]: desktop,
+        [styles.dark]: dark,
+      })}
+    >
       {_.isEmpty(visual) ? null : (
         <div className={styles.visual}>
           <Carousel showThumbs={false} swipeable emulateTouch>

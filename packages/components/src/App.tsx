@@ -12,15 +12,19 @@ import { useDesktop } from "./hooks";
 type Props = {
   className?: string;
   style?: any;
+  dark?: boolean;
 };
 
-const App: React.FC<Props> = ({ className, style }) => {
+const App: React.FC<Props> = ({ className, style, dark }) => {
   const sourceMenu = useSourceMenu();
   const search = useSearchState();
   const desktop = useDesktop();
   return (
     <div
-      className={cx(styles.app, className, { [styles.desktop]: desktop })}
+      className={cx(styles.app, className, {
+        [styles.desktop]: desktop,
+        [styles.dark]: dark,
+      })}
       style={style}
     >
       <header>
@@ -31,12 +35,17 @@ const App: React.FC<Props> = ({ className, style }) => {
             onChange={search.onChange}
             reset={search.reset}
             placeholder="Type a word..."
+            dark={dark}
           />
         </div>
       </header>
       <main>
         {search.debouncedText ? (
-          <Card text={search.debouncedText} exclude={sourceMenu.exclude} />
+          <Card
+            text={search.debouncedText}
+            exclude={sourceMenu.exclude}
+            dark={dark}
+          />
         ) : (
           <Empty />
         )}

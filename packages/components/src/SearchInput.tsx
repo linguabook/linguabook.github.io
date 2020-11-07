@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { useDebounce } from "use-debounce";
+import cx from "classnames";
 
 import styles from "./SearchInput.module.scss";
 
@@ -27,6 +28,7 @@ type Props = {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   reset(): void;
   placeholder?: string;
+  dark?: boolean;
 };
 
 export const SearchInput: React.FC<Props> = ({
@@ -34,9 +36,10 @@ export const SearchInput: React.FC<Props> = ({
   onChange,
   reset,
   placeholder = "Search...",
+  dark,
 }) => {
   return (
-    <div className={styles.container}>
+    <div className={cx(styles.container, { [styles.dark]: dark })}>
       <button className={styles.left}>
         <Icon icon="search" />
       </button>

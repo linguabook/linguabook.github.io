@@ -57,4 +57,15 @@ $border: hsl(0,0%,80%);
       outline: none;
     }
   }
+
+  &.dark {
+    button {
+      color: white;
+    }
+
+    input {
+      color: white;
+      background-color: #282c35;
+    }
+  }
 }

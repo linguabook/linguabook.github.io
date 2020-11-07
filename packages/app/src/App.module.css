@@ -1,3 +1,7 @@
 .app {
   font-family: "Open Sans", sans-serif;
 }
+
+.app.dark {
+  background-color: #282c35;
+}

@@ -13,6 +13,7 @@ import Loader from "./Loader";
 import Empty from "./Empty";
 import Less from "./Less";
 import FlagIcon from "./FlagIcon";
+import GenderIcon from "./GenderIcon";
 
 import styles from "./DataCard.module.scss";
 import { useDesktop } from "./hooks";
@@ -62,7 +63,12 @@ const Playlist: React.FC<any> = ({ source, audio }) => {
           <Icon icon="volume-up" />
         </span>
         <span>{rec.author || "human"}</span>
-        <FlagIcon country={rec.country} />
+        <span className={styles.ml}>
+          <GenderIcon gender={rec.gender} />
+        </span>
+        <span className={styles.ml}>
+          <FlagIcon country={rec.country} />
+        </span>
       </li>
     );
   });

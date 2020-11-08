@@ -2,8 +2,6 @@ import React from "react";
 import { countries } from "country-code-lookup";
 import { flags } from "./flags";
 
-import styles from "./FlagIcon.module.scss";
-
 const countryMap = new Map<string, string>(
   countries.map((c) => [c.country.toLowerCase(), c.iso2.toLowerCase()])
 );
@@ -21,11 +19,7 @@ const FlagIcon: React.FC<Props> = ({ country }) => {
   if (!Flag) {
     return null;
   }
-  return (
-    <span className={styles.container}>
-      <Flag width="1.5em" height="1.5em" />
-    </span>
-  );
+  return <Flag width="1.5em" height="1.5em" />;
 };
 
 export default FlagIcon;

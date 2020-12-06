@@ -13,7 +13,9 @@
     "build": "poi --no-html --extract-css && tsc",
     "dev": "poi --no-html --extract-css --watch",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "browserslist": {
     "production": [
@@ -50,12 +52,16 @@
     "react-responsive-carousel": "^3.2.11",
     "readline": "^1.3.0",
     "swr": "^0.3.9",
-    "use-debounce": "^5.1.0",
-    "use-force-update": "^1.0.7",
-    "use-item-size": "^0.2.1"
+    "use-debounce": "^5.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.9",
     "@poi/plugin-typescript": "^12.3.1",
+    "@storybook/addon-actions": "^6.1.10",
+    "@storybook/addon-essentials": "^6.1.10",
+    "@storybook/addon-links": "^6.1.10",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.1.10",
     "@types/classnames": "^2.2.11",
     "@types/exenv": "^1.2.0",
     "@types/jest": "^26.0.16",
@@ -64,8 +70,12 @@
     "@types/react": "16.9.56",
     "@types/react-dom": "^16.9.9",
     "@types/react-responsive": "^8.0.2",
+    "babel-loader": "8.1.0",
+    "css-loader": "^5.0.1",
     "playwright": "^1.6.2",
-    "poi": "^12.10.3"
+    "poi": "^12.10.3",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0"
   },
   "peerDependencies": {
     "react": "^16.13.1"

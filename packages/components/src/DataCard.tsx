@@ -89,7 +89,7 @@ const Terms: React.FC<any> = ({ source, items }) => {
   const nodes = items.map((rec, i) => {
     return (
       <li key={i}>
-        <Less id="terms" maxHeight={64}>
+        <Less maxLines={3}>
           {rec.text}
         </Less>
       </li>

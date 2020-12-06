@@ -1,5 +1,6 @@
 .app {
   font-family: "Open Sans", sans-serif;
+  margin: 5em 10em;
 }
 
 .app.dark {

@@ -20,7 +20,7 @@ export default function useSourceMenu() {
   };
 
   const items = sources.map((source, i) => (
-    <MenuItem onClick={handleClose}>
+    <MenuItem key={i} onClick={handleClose}>
       <FormControlLabel
         control={
           <Checkbox

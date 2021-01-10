@@ -1,4 +1,5 @@
 import React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
 import cx from "classnames";
 import { SearchInput, useSearchState } from "./SearchInput";
 import "./icons";
@@ -20,37 +21,39 @@ const App: React.FC<Props> = ({ className, style, dark }) => {
   const search = useSearchState();
   const desktop = useDesktop();
   return (
-    <div
-      className={cx(styles.app, className, {
-        [styles.desktop]: desktop,
-        [styles.dark]: dark,
-      })}
-      style={style}
-    >
-      <header>
-        <div className={cx(styles.item, styles.fixed)}>{sourceMenu.view}</div>
-        <div className={styles.item}>
-          <SearchInput
-            value={search.text}
-            onChange={search.onChange}
-            reset={search.reset}
-            placeholder="Type a word..."
-            dark={dark}
-          />
-        </div>
-      </header>
-      <main>
-        {search.debouncedText ? (
-          <Card
-            text={search.debouncedText}
-            exclude={sourceMenu.exclude}
-            dark={dark}
-          />
-        ) : (
-          <Empty />
-        )}
-      </main>
-    </div>
+    <ChakraProvider>
+      <div
+        className={cx(styles.app, className, {
+          [styles.desktop]: desktop,
+          [styles.dark]: dark,
+        })}
+        style={style}
+      >
+        <header>
+          <div className={cx(styles.item, styles.fixed)}>{sourceMenu.view}</div>
+          <div className={styles.item}>
+            <SearchInput
+              value={search.text}
+              onChange={search.onChange}
+              reset={search.reset}
+              placeholder="Type a word..."
+              dark={dark}
+            />
+          </div>
+        </header>
+        <main>
+          {search.debouncedText ? (
+            <Card
+              text={search.debouncedText}
+              exclude={sourceMenu.exclude}
+              dark={dark}
+            />
+          ) : (
+            <Empty />
+          )}
+        </main>
+      </div>
+    </ChakraProvider>
   );
 };
 

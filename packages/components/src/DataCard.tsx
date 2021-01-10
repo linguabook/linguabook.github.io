@@ -1,5 +1,6 @@
 import _ from "lodash";
-import React, { useState } from "react";
+import React from "react";
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
 import { Carousel } from "react-responsive-carousel";
@@ -89,9 +90,7 @@ const Terms: React.FC<any> = ({ source, items }) => {
   const nodes = items.map((rec, i) => {
     return (
       <li key={i}>
-        <Less maxLines={3}>
-          {rec.text}
-        </Less>
+        <Less maxLines={3}>{rec.text}</Less>
       </li>
     );
   });
@@ -107,21 +106,12 @@ const Terms: React.FC<any> = ({ source, items }) => {
 
 const DataCard: React.FC<Props> = ({ text, exclude, dark }) => {
   const desktop = useDesktop();
-  const [activeTab, setActiveTab] = useState(0);
 
   const q = qs.stringify({ exclude });
 
-  const { data: sources, error } = useSWR(
-    `/words/data/${text}?${q}`,
-    () => {
-      return fetchData({ text }, { exclude });
-    },
-    {
-      onSuccess() {
-        setActiveTab(0);
-      },
-    }
-  );
+  const { data: sources, error } = useSWR(`/words/data/${text}?${q}`, () => {
+    return fetchData({ text }, { exclude });
+  });
 
   if (error) {
     return <Error error={error} />;
@@ -219,25 +209,25 @@ const DataCard: React.FC<Props> = ({ text, exclude, dark }) => {
         </div>
       )}
       {_.isEmpty(tabs) ? null : (
-        <div className={styles.tabs_container}>
-          <div className={styles.tabs}>
+        <Tabs>
+          <TabList>
             {tabs.map((t, i) => (
-              <span
-                key={i}
-                className={cx(styles.tab, { [styles.active]: i === activeTab })}
-                onClick={() => setActiveTab(i)}
-              >
-                {t.label}
-              </span>
+              <Tab key={i}>{t.label}</Tab>
             ))}
-          </div>
-        </div>
+          </TabList>
+          <TabPanels>
+            {tabs.map((t, i) => (
+              <TabPanel key={i}>
+                <div className={styles.table_container}>
+                  <table>
+                    <tbody>{t.content}</tbody>
+                  </table>
+                </div>
+              </TabPanel>
+            ))}
+          </TabPanels>
+        </Tabs>
       )}
-      <div className={styles.table_container}>
-        <table>
-          <tbody>{(tabs[activeTab] || {}).content}</tbody>
-        </table>
-      </div>
     </div>
   );
 };

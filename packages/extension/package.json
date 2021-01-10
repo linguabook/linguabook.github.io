@@ -8,7 +8,7 @@
     "build": "parcel build --no-minify --no-cache -o dist/content_script.js src/index.js"
   },
   "dependencies": {
-    "lingua-scraper": "0.11.3"
+    "lingua-scraper": "0.12.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

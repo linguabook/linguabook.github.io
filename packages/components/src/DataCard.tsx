@@ -155,7 +155,7 @@ const DataCard: React.FC<Props> = ({ text, exclude, dark }) => {
     return tab;
   };
 
-  for (const sourceData of sources) {
+  for (const sourceData of _.flatten(sources)) {
     const source = sourceData.source;
     _.each(sourceData.data, (data, key) => {
       if (_.isEmpty(data)) {

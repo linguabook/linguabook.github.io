@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@svgr/core": "^5.4.0",
+    "@svgr/core": "^5.5.0",
     "flag-icon-css": "^3.5.0",
     "lodash": "^4.17.20",
     "typescript": "^4.0.5"

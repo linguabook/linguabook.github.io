@@ -13,7 +13,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
-    "core-js": "^3.8.1",
+    "core-js": "^3.8.2",
     "parcel-bundler": "^1.12.4"
   }
 }

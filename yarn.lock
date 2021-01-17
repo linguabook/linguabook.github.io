@@ -11106,10 +11106,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lingua-scraper@0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/lingua-scraper/-/lingua-scraper-0.12.0.tgz#f5cd4b1d5b61c837c2a5683f8b608d5c6b2a9c66"
-  integrity sha512-iS+FhsBXH/hjioFnKPbslpISne6tQYGnodsz4uUCqnK/kUYm/tUADGHkUhvcvlShVw1nnuw9nxEm6PJpUvOh6g==
+lingua-scraper@0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/lingua-scraper/-/lingua-scraper-0.13.1.tgz#68f962af061482ce08a161205ae97ee58f189b7d"
+  integrity sha512-rasZVVDtYzjqlEvjrFwnuvjBccyL1+mntuyGf4QEqq1bhkfihSGsEIiIdy1FcBMZYTfizc9S/fzjtYSWuO+oGg==
   dependencies:
     cheerio "^1.0.0-rc.5"
     fetch-ponyfill "^7.0.0"

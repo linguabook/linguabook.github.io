@@ -1,5 +1,7 @@
 .app {
   color: #363f41;
+  width: 100%;
+  height: 100%;
 
   header {
     display: flex;
@@ -25,7 +27,8 @@
   }
 
   main {
-    max-width: 100vw;
+    width: 100%;
+    height: 100%;
   }
 
   &.dark {

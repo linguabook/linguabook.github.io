@@ -45,6 +45,7 @@ const App: React.FC<Props> = ({ className, style, dark }) => {
           {search.debouncedText ? (
             <Card
               text={search.debouncedText}
+              lang="en"
               exclude={sourceMenu.exclude}
               dark={dark}
             />

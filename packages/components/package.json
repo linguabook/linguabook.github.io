@@ -36,13 +36,13 @@
     ]
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.1.5",
+    "@chakra-ui/react": "^1.1.6",
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "@material-ui/core": "^4.11.2",
+    "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "clsx": "^1.1.1",
     "country-code-lookup": "^0.0.18",

@@ -11,7 +11,9 @@
   "scripts": {
     "components": "cd packages/components && yarn dev",
     "demo": "cd packages/app && yarn start",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "predeploy": "yarn build && && echo \"\" >> packages/app/build/.nojekyll",
+    "deploy": "gh-pages --dist packages/app/build --branch gh-pages --add --dotfiles"
   },
   "resolutions": {
     "@types/react": "17.0.0",
@@ -29,6 +31,7 @@
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
     "flag-icon-css": "^3.5.0",
+    "gh-pages": "^3.1.0",
     "lerna": "^3.22.1",
     "lodash": "^4.17.20",
     "react-scripts": "4.0.1",

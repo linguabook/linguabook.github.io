@@ -12,7 +12,7 @@
     "components": "cd packages/components && yarn dev",
     "demo": "cd packages/app && yarn start",
     "build": "lerna run build",
-    "predeploy": "yarn build && && echo \"\" >> packages/app/build/.nojekyll",
+    "predeploy": "yarn build && echo \"\" >> packages/app/build/.nojekyll",
     "deploy": "gh-pages --dist packages/app/build --branch gh-pages --add --dotfiles"
   },
   "resolutions": {

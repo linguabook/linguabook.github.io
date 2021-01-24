@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "components": "cd packages/components && yarn dev",
-    "demo": "cd packages/app && yarn start"
+    "demo": "cd packages/app && yarn start",
+    "build": "lerna run build"
   },
   "resolutions": {
     "@types/react": "17.0.0",
@@ -28,6 +29,7 @@
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
     "flag-icon-css": "^3.5.0",
+    "lerna": "^3.22.1",
     "lodash": "^4.17.20",
     "react-scripts": "4.0.1",
     "sass": "^1.32.5",

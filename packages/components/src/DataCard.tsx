@@ -5,7 +5,7 @@ import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import cx from "classnames";
+import cx from "clsx";
 import qs from "query-string";
 
 import Error from "./ErrorCard";

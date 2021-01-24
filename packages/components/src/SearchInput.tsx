@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { useDebounce } from "use-debounce";
-import cx from "classnames";
+import cx from "clsx";
 
 import styles from "./SearchInput.module.scss";
 

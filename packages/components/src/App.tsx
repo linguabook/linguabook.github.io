@@ -1,6 +1,6 @@
 import React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
-import cx from "classnames";
+import cx from "clsx";
 import { SearchInput, useSearchState } from "./SearchInput";
 import "./icons";
 import Card from "./DataCard";

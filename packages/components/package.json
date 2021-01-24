@@ -44,7 +44,7 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
-    "classnames": "^2.2.6",
+    "clsx": "^1.1.1",
     "country-code-lookup": "^0.0.18",
     "exenv": "^1.2.2",
     "framer-motion": "^3.2.1",

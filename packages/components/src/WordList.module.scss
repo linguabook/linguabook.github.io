@@ -1,9 +1,9 @@
 .list {
   list-style-type: none;
+  margin: 1em 0;
 
   .item {
     margin: 1em 0;
-    word-break: keep-all;
   }
 }
 
@@ -14,5 +14,7 @@
 }
 
 .word {
+  display: inline-block;
   margin-right: 5px;
+  color: blueviolet;
 }

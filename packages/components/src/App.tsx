@@ -43,8 +43,8 @@ const App: React.FC<Props> = ({ className, style }) => {
             dark={dark}
           />
         </div>
-        <div className={styles.item}>
-          <div style={{ marginLeft: 10 }}>
+        <div className={cx(styles.item, styles.fixed)}>
+          <div style={{ marginLeft: 5 }}>
             <ThemeSwitch />
           </div>
         </div>
@@ -58,7 +58,7 @@ const App: React.FC<Props> = ({ className, style }) => {
             dark={dark}
           />
         ) : (
-          <Box margin="0 20px">
+          <Box margin="0 20px" marginBottom="20px">
             <p>
               Below is a list of{" "}
               <a href="http://basic-english.org/">Basic English</a> words you

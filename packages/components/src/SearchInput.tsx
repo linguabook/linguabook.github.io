@@ -1,25 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { useDebounce } from "use-debounce";
 import cx from "clsx";
 
+import useState from "./use-search-state";
 import styles from "./SearchInput.module.scss";
 
 export function useSearchState() {
-  const [text, setText] = useState("apple");
-  const [debouncedText] = useDebounce(text, 500);
-
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setText(e.target.value);
-  };
+  const state = useState();
+  const [debouncedText] = useDebounce(state.text, 500);
 
   return {
-    text,
+    ...state,
     debouncedText,
-    onChange,
-    reset() {
-      setText("");
-    },
   };
 }
 

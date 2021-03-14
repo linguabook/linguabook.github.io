@@ -1,17 +1,17 @@
 import React from "react";
-import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
-import { SizeProp } from "@fortawesome/fontawesome-svg-core";
+import { Icon } from "@chakra-ui/react";
+import { FaFemale, FaMale } from "react-icons/fa";
 
 type Props = {
   gender: string;
-  size?: SizeProp;
+  size?: string | number;
 };
 
 const GenderIcon: React.FC<Props> = ({ gender, size }) => {
   if (!gender) {
     return null;
   }
-  return <Icon icon={gender === "f" ? "female" : "male"} size={size} />;
+  return <Icon as={gender === "f" ? FaFemale : FaMale} size={size} />;
 };
 
 export default GenderIcon;

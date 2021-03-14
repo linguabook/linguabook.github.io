@@ -1,5 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
+import { Icon } from "@chakra-ui/react";
+import { MdSearch } from "react-icons/md";
 import { useDebounce } from "use-debounce";
 import cx from "clsx";
 
@@ -34,7 +35,7 @@ export const SearchInput: React.FC<Props> = ({
   return (
     <div className={cx(styles.container, { [styles.dark]: dark })}>
       <button className={styles.left}>
-        <Icon icon="search" />
+        <Icon as={MdSearch} />
       </button>
       <input
         className={value ? styles.not_empty : undefined}

@@ -1,5 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
+import { Icon } from "@chakra-ui/react";
+import { FaVolumeUp } from "react-icons/fa";
 
 type Props = {
   url: string;
@@ -12,7 +13,7 @@ const SoundIcon: React.FC<Props> = ({ url }) => {
   };
   return (
     <span onClick={play} style={{ cursor: "pointer", marginRight: "10px" }}>
-      <Icon icon="volume-up" />
+      <Icon as={FaVolumeUp} />
     </span>
   );
 };

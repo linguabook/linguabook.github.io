@@ -11,6 +11,7 @@ import ThemeSwitch from "./ThemeSwitch";
 import useTheme from "./use-theme";
 import useSourceMenu from "./use-source-menu";
 import { useDesktop } from "./hooks";
+import Feed from "./Feed";
 import styles from "./App.module.scss";
 
 type Props = {
@@ -58,19 +59,22 @@ const App: React.FC<Props> = ({ className, style }) => {
             dark={dark}
           />
         ) : (
-          <Box margin="0 20px" marginBottom="20px">
-            <p>
-              Below is a list of{" "}
-              <a href="http://basic-english.org/">Basic English</a> words you
-              can use as a good learning start.
-            </p>
-            <WordList />
-          </Box>
+          <Feed dark={dark} exclude={sourceMenu.exclude} />
         )}
       </main>
     </div>
   );
 };
+
+const WordsPage = () => (
+  <Box margin="0 20px" marginBottom="20px">
+    <p>
+      Below is a list of <a href="http://basic-english.org/">Basic English</a>{" "}
+      words you can use as a good learning start.
+    </p>
+    <WordList />
+  </Box>
+);
 
 const AppContainer: React.FC<Props> = (props) => {
   return (

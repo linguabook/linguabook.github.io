@@ -13,7 +13,7 @@ import { SearchInput, useSearchState } from "./SearchInput";
 import Card from "./DataCard";
 import WordList from "./WordList";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
-import useSourceMenu from "./use-source-menu";
+import useConfigMenu from "./use-config-menu";
 import Feed from "./Feed";
 import styles from "./App.module.scss";
 
@@ -23,14 +23,14 @@ type Props = {
 };
 
 const App: React.FC<Props> = ({ className, style }) => {
-  const sourceMenu = useSourceMenu();
+  const config = useConfigMenu();
   const search = useSearchState();
   const { colorMode } = useColorMode();
   const dark = colorMode === "dark";
   return (
     <VStack className={className} style={style}>
       <HStack spacing={2} mt={1}>
-        <Box>{sourceMenu.view}</Box>
+        <Box>{config.view}</Box>
         <Box className={styles.item}>
           <SearchInput
             value={search.text}
@@ -48,24 +48,28 @@ const App: React.FC<Props> = ({ className, style }) => {
           <Card
             text={search.debouncedText}
             lang="en"
-            exclude={sourceMenu.exclude}
+            exclude={config.exclude}
             dark={dark}
           />
         ) : (
-          <Feed dark={dark} exclude={sourceMenu.exclude} />
+          <Feed
+            dark={dark}
+            exclude={config.exclude}
+            wordList={config.wordList}
+          />
         )}
       </main>
     </VStack>
   );
 };
 
-const WordsPage = () => (
+const WordsPage = ({ wordList }) => (
   <Box margin="0 20px" marginBottom="20px">
     <p>
       Below is a list of <a href="http://basic-english.org/">Basic English</a>{" "}
       words you can use as a good learning start.
     </p>
-    <WordList />
+    <WordList wordList={wordList} />
   </Box>
 );
 

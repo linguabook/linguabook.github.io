@@ -19,6 +19,7 @@ export default function useKnownWords() {
 
   return useMemo(() => {
     return {
+      state,
       has(s: string) {
         return s && !!state[s.trim().toLowerCase()];
       },

@@ -1,16 +1,20 @@
 import React from "react";
-import { ogden } from "lingua-scraper";
 import useQueryString from "./use-query-string";
 import { PARAM_NAME } from "./use-search-state";
+import { WordList } from "./internal-types";
 import styles from "./WordList.module.scss";
 
-const WordList: React.FC<{}> = () => {
+type Props = {
+  wordList: WordList;
+};
+
+const WordListView: React.FC<Props> = ({ wordList }) => {
   const { setParam } = useQueryString();
   const selectWord = (word) => {
     setParam(PARAM_NAME, word);
   };
 
-  const items = ogden.categories.map((c, k) => (
+  const items = wordList.categories.map((c, k) => (
     <li key={c.name} className={styles.item}>
       <h2 className={styles.category}>{c.name}</h2>
       <div>
@@ -36,4 +40,4 @@ const WordList: React.FC<{}> = () => {
   return <ul className={styles.list}>{items}</ul>;
 };
 
-export default WordList;
+export default WordListView;

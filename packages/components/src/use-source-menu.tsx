@@ -6,6 +6,7 @@ import {
   MenuItem,
   Checkbox,
   Icon,
+  IconButton,
 } from "@chakra-ui/react";
 import { MdSettings } from "react-icons/md";
 import { sources } from "lingua-scraper";
@@ -35,7 +36,7 @@ export default function useSourceMenu() {
 
   const view = (
     <Menu>
-      <MenuButton>
+      <MenuButton as={IconButton}>
         <Icon as={MdSettings} />
       </MenuButton>
       <MenuList>{items}</MenuList>

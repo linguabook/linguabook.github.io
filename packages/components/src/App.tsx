@@ -1,15 +1,20 @@
 import React from "react";
-import { ChakraProvider, Box, theme, useColorMode } from "@chakra-ui/react";
+import {
+  ChakraProvider,
+  Box,
+  theme,
+  useColorMode,
+  VStack,
+  HStack,
+} from "@chakra-ui/react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { RecoilRoot } from "recoil";
-import cx from "clsx";
 import { SearchInput, useSearchState } from "./SearchInput";
 import "./icons";
 import Card from "./DataCard";
 import WordList from "./WordList";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import useSourceMenu from "./use-source-menu";
-import { useDesktop } from "./hooks";
 import Feed from "./Feed";
 import styles from "./App.module.scss";
 
@@ -21,33 +26,24 @@ type Props = {
 const App: React.FC<Props> = ({ className, style }) => {
   const sourceMenu = useSourceMenu();
   const search = useSearchState();
-  const desktop = useDesktop();
   const { colorMode } = useColorMode();
   const dark = colorMode === "dark";
   return (
-    <div
-      className={cx(styles.app, className, {
-        [styles.desktop]: desktop,
-        [styles.dark]: dark,
-      })}
-      style={style}
-    >
-      <header>
-        <div className={cx(styles.item, styles.fixed)}>{sourceMenu.view}</div>
-        <div className={styles.item}>
+    <VStack className={className} style={style}>
+      <HStack spacing={2} mt={1}>
+        <Box>{sourceMenu.view}</Box>
+        <Box className={styles.item}>
           <SearchInput
             value={search.text}
             onChange={search.onChange}
             reset={search.resetText}
             placeholder="Type a word..."
           />
-        </div>
-        <div className={cx(styles.item, styles.fixed)}>
-          <div style={{ marginLeft: 5 }}>
-            <ColorModeSwitcher />
-          </div>
-        </div>
-      </header>
+        </Box>
+        <Box>
+          <ColorModeSwitcher />
+        </Box>
+      </HStack>
       <main>
         {search.debouncedText ? (
           <Card
@@ -60,7 +56,7 @@ const App: React.FC<Props> = ({ className, style }) => {
           <Feed dark={dark} exclude={sourceMenu.exclude} />
         )}
       </main>
-    </div>
+    </VStack>
   );
 };
 

@@ -2,7 +2,7 @@
   "name": "linguabot",
   "version": "0.0.0",
   "private": true,
-  "repository": "https://github.com/lingvograph/linguabot.git",
+  "repository": "https://github.com/linguabook/linguabook.github.io.git",
   "license": "Apache",
   "author": "Sergey Todyshev <stodyshev@gmail.com>",
   "workspaces": [

@@ -10,7 +10,6 @@ import {
 import { BrowserRouter as Router } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 import { SearchInput, useSearchState } from "./SearchInput";
-import "./icons";
 import Card from "./DataCard";
 import WordList from "./WordList";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";

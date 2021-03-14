@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "Apache",
   "scripts": {
-    "build": "parcel build --no-minify --no-cache -o dist/content_script.js src/index.js"
+    "bundle": "parcel build --no-minify --no-cache -o dist/content_script.js src/index.js"
   },
   "dependencies": {
     "lingua-scraper": "0.15.1"

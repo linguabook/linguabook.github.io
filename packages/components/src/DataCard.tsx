@@ -232,6 +232,7 @@ const DataCard: React.FC<Props> = ({ text, lang, exclude, dark }) => {
           </Carousel>
         </div>
       )}
+      <ShowMore showMore={showMore} setShowMore={setShowMore} />
       {showMore ? (
         <>
           {_.isEmpty(tabs) ? null : (
@@ -254,11 +255,8 @@ const DataCard: React.FC<Props> = ({ text, lang, exclude, dark }) => {
               </TabPanels>
             </Tabs>
           )}
-          <ShowMore showMore={showMore} setShowMore={setShowMore} />
         </>
-      ) : (
-        <ShowMore showMore={showMore} setShowMore={setShowMore} />
-      )}
+      ) : null}
     </div>
   );
 };

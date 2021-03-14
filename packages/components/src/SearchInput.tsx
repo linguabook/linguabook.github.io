@@ -2,7 +2,6 @@ import React from "react";
 import {
   Box,
   Icon,
-  IconButton,
   InputGroup,
   Input,
   InputLeftElement,
@@ -40,17 +39,13 @@ export const SearchInput: React.FC<Props> = ({
   return (
     <Box>
       <InputGroup>
-        <InputLeftElement>
-          <IconButton aria-label={placeholder}>
-            <Icon as={MdSearch} />
-          </IconButton>
+        <InputLeftElement pointerEvents="none">
+          <Icon as={MdSearch} />
         </InputLeftElement>
         <Input value={value} onChange={onChange} placeholder={placeholder} />
         {value ? (
-          <InputRightElement>
-            <IconButton onClick={reset} aria-label="Reset search">
-              <Icon as={CloseIcon} />
-            </IconButton>
+          <InputRightElement cursor="pointer" onClick={reset}>
+            <Icon as={CloseIcon} />
           </InputRightElement>
         ) : null}
       </InputGroup>

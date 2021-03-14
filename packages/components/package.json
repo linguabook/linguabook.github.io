@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "yarn build:js && yarn build:css",
+    "build": "run-p build:js build:css",
     "build:js": "tsc",
     "build:css": "cpx \"src/**/*.{scss,gif,png,jpg}\" dist",
     "dev": "run-p dev:js dev:css",
@@ -38,18 +38,17 @@
     ]
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.0.6",
     "@chakra-ui/react": "^1.3.4",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "@material-ui/core": "^4.11.3",
-    "@material-ui/icons": "^4.11.2",
     "clsx": "^1.1.1",
     "country-code-lookup": "^0.0.19",
     "exenv": "^1.2.2",
-    "framer-motion": "^3.10.3",
+    "framer-motion": ">= 3.10.3",
     "lingua-scraper": "0.15.1",
     "lodash": "^4.17.21",
     "query-string": "^6.14.1",

@@ -1,5 +1,5 @@
 import React from "react";
-import { ChakraProvider, Box } from "@chakra-ui/react";
+import { ChakraProvider, Box, theme } from "@chakra-ui/react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 import cx from "clsx";
@@ -79,7 +79,7 @@ const WordsPage = () => (
 const AppContainer: React.FC<Props> = (props) => {
   return (
     <RecoilRoot>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <Router>
           <App {...props} />
         </Router>

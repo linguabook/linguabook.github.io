@@ -1,8 +1,6 @@
 {
   "name": "words-extension",
   "version": "0.0.0",
-  "repository": "https://github.com/lingvograph/linguabot.git",
-  "author": "Sergey Todyshev <stodyshev@gmail.com>",
   "license": "Apache",
   "scripts": {
     "build": "parcel build --no-minify --no-cache -o dist/content_script.js src/index.js"

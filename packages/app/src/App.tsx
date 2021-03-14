@@ -1,9 +1,7 @@
-import React from "react";
-import WordsApp from "words-app-components";
-import "words-app-components/dist/index.css";
+import BookApp from "linguabook-components";
 
 import styles from "./App.module.css";
 
-const App = () => <WordsApp className={styles.app} />;
+const App = () => <BookApp className={styles.app} />;
 
 export default App;

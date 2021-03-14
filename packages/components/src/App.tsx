@@ -1,5 +1,5 @@
 import React from "react";
-import { ChakraProvider, Box, theme } from "@chakra-ui/react";
+import { ChakraProvider, Box, theme, useColorMode } from "@chakra-ui/react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 import cx from "clsx";
@@ -7,8 +7,7 @@ import { SearchInput, useSearchState } from "./SearchInput";
 import "./icons";
 import Card from "./DataCard";
 import WordList from "./WordList";
-import ThemeSwitch from "./ThemeSwitch";
-import useTheme from "./use-theme";
+import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import useSourceMenu from "./use-source-menu";
 import { useDesktop } from "./hooks";
 import Feed from "./Feed";
@@ -23,8 +22,8 @@ const App: React.FC<Props> = ({ className, style }) => {
   const sourceMenu = useSourceMenu();
   const search = useSearchState();
   const desktop = useDesktop();
-  const [theme] = useTheme();
-  const dark = theme === "dark";
+  const { colorMode } = useColorMode();
+  const dark = colorMode === "dark";
   return (
     <div
       className={cx(styles.app, className, {
@@ -41,12 +40,11 @@ const App: React.FC<Props> = ({ className, style }) => {
             onChange={search.onChange}
             reset={search.resetText}
             placeholder="Type a word..."
-            dark={dark}
           />
         </div>
         <div className={cx(styles.item, styles.fixed)}>
           <div style={{ marginLeft: 5 }}>
-            <ThemeSwitch />
+            <ColorModeSwitcher />
           </div>
         </div>
       </header>

@@ -1,8 +1,10 @@
 import React from "react";
-import styles from "./Empty.module.scss";
+import { Text } from "@chakra-ui/react";
 
 const Empty: React.FC<{}> = () => (
-  <div className={styles.empty}>Nothing to show</div>
+  <Text textAlign="center" fontSize="lg">
+    Nothing to show
+  </Text>
 );
 
 export default Empty;

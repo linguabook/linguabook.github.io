@@ -21,12 +21,12 @@ const WordList: React.FC<{}> = () => {
           };
           return (
             <a
-              key={word}
+              key={word.text}
               className={styles.word}
               onClick={handleClick}
-              href={`#${word}`}
+              href={`#${word.text}`}
             >
-              {word}
+              {word.text}
             </a>
           );
         })}

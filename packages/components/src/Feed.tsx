@@ -4,15 +4,23 @@ import { ogden } from "lingua-scraper";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Card from "./DataCard";
 
-const WORDS = _.flatten(
-  _.map(
-    ogden.categories.map((c) =>
-      c.words.map((w) => ({
-        category: c.name,
-        text: w,
-      }))
-    )
-  )
+const WORDS = _.uniqBy(
+  _.orderBy(
+    _.flatten(
+      _.map(
+        ogden.categories.map((c) =>
+          c.words.map((w) => ({
+            category: c.name,
+            text: w.text,
+            freq: w.freq,
+          }))
+        )
+      )
+    ),
+    (t) => t.freq,
+    "desc"
+  ),
+  (t) => t.text
 );
 
 type Props = {

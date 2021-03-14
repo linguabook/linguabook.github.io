@@ -12908,15 +12908,15 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lingua-scraper@0.14.1:
-  version "0.14.1"
-  resolved "https://registry.yarnpkg.com/lingua-scraper/-/lingua-scraper-0.14.1.tgz#b794428877ae14b58590777ef6e0cfa0d958e951"
-  integrity sha512-+zvjRwqVpxj+BGQL1vzB4Wo3t2Un1uLlrFkzLVS+FSrIBX9QVBg1UW6fhpW0fSb08X2+wgO0aMfO/lOj3KDikQ==
+lingua-scraper@0.15.1:
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/lingua-scraper/-/lingua-scraper-0.15.1.tgz#04ba224a3e4ab17182e101a6f57eb5ed11395c85"
+  integrity sha512-OevzhxaK+0xqJK+uWQWhnQEBKrkugRm1c89TsOOEZ1bQwKpq++UcOYJ88HzhtdoqrsImCq8GBY9A/dhPfWDGgA==
   dependencies:
     cheerio "^1.0.0-rc.5"
     fetch-ponyfill "^7.1.0"
     js-base64 "^3.6.0"
-    lodash "^4.17.20"
+    lodash "^4.17.21"
 
 load-json-file@^1.0.0:
   version "1.1.0"

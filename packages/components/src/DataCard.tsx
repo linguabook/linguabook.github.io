@@ -119,9 +119,9 @@ const DataCard: React.FC<Props> = ({ text, lang, exclude, dark }) => {
 
   if (!sources) {
     return (
-      <div className={styles.text_center}>
+      <Box textAlign="center">
         <Loader />
-      </div>
+      </Box>
     );
   }
 
@@ -227,7 +227,14 @@ const DataCard: React.FC<Props> = ({ text, lang, exclude, dark }) => {
     >
       {_.isEmpty(visual) ? null : (
         <div className={styles.visual}>
-          <Carousel showThumbs={false} swipeable emulateTouch>
+          <Carousel
+            showThumbs={false}
+            swipeable
+            emulateTouch
+            showArrows={false}
+            showStatus={false}
+            infiniteLoop={false}
+          >
             {slides}
           </Carousel>
         </div>

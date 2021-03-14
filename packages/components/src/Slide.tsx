@@ -1,8 +1,10 @@
 import React from "react";
-import { Box, Image } from "@chakra-ui/react";
+import { Box, IconButton, Image, Icon } from "@chakra-ui/react";
+import { MdCheck } from "react-icons/md";
 import isEmpty from "lodash/isEmpty";
 import map from "lodash/map";
 import SoundIcon from "./SoundIcon";
+import useKnownWords from "./use-known-words";
 import styles from "./Slide.module.scss";
 
 type Text = {
@@ -29,6 +31,7 @@ const Slide: React.FC<Props> = ({
   audio,
   translations,
 }) => {
+  const knownWords = useKnownWords();
   return (
     <Box position="relative" maxHeight={640}>
       <Image
@@ -56,6 +59,16 @@ const Slide: React.FC<Props> = ({
                 </Box>
               ))}
         </Box>
+      </Box>
+      <Box className={styles.action_btn}>
+        <IconButton
+          icon={<Icon as={MdCheck} />}
+          colorScheme="green"
+          aria-label="I know this"
+          onClick={() => {
+            knownWords.add(text.text);
+          }}
+        />
       </Box>
     </Box>
   );

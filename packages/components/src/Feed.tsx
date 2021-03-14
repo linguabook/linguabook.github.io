@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { ogden } from "lingua-scraper";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Card from "./DataCard";
+import useKnownWords from "./use-known-words";
 
 const WORDS = _.uniqBy(
   _.orderBy(
@@ -36,17 +37,20 @@ const Feed: React.FC<Props> = ({ dark, exclude }) => {
       setWords(WORDS.slice(0, words.length + pageSize));
     }, 0);
   };
-  const items = words.map((w) => {
-    return (
-      <Card
-        key={w.text}
-        text={w.text}
-        lang="en"
-        dark={dark}
-        exclude={exclude}
-      />
-    );
-  });
+  const knownWords = useKnownWords();
+  const items = words
+    .filter((w) => !knownWords.has(w.text))
+    .map((w) => {
+      return (
+        <Card
+          key={w.text}
+          text={w.text}
+          lang="en"
+          dark={dark}
+          exclude={exclude}
+        />
+      );
+    });
   return (
     <InfiniteScroll
       dataLength={words.length}

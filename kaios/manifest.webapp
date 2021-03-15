@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "name": "Linguabook",
+  "description": "Small tool for learning second languages",
+  "type": "web",
+  "launch_path": "/index.html",
+  "icons": {
+    "56": "/logo192.png",
+    "112": "/logo112.png"
+  },
+  "developer": {
+    "name": "Sergey Todyshev",
+    "url": "https://linguabook.github.io/"
+  },
+  "locales": {
+    "en-US": {
+      "name": "Linguabook",
+      "subtitle": "Small tool for learning second languages",
+      "description": "Brief description of your app"
+    }
+  },
+  "default_locale": "en-US"
+}

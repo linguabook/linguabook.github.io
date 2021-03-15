@@ -5,3 +5,5 @@ build
 .eslintcache
 .idea
 *.iml
+kaios/kaios-app
+kaios/kaios-app.zip

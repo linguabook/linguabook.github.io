@@ -18,8 +18,9 @@ document.addEventListener("click", function (e) {
   const width = "512px";
   const height = "800px";
 
-  const appURL = "http://localhost:3000";
-  // const appURL = "https://linguabook.github.io";
+  // for local dev
+  // const appURL = "http://localhost:3000";
+  const appURL = "https://linguabook.github.io";
   const iframe = document.createElement("iframe");
   iframe.src = appURL + "/?search-string=" + encodeURIComponent(text);
   iframe.width = "100%";

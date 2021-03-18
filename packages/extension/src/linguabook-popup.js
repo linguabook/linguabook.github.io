@@ -1,5 +1,7 @@
 console.log("LinguaBook extension is loaded");
 
+var iframeContainer;
+
 document.addEventListener("click", function (e) {
   const selection = window.getSelection();
   if (!selection) {
@@ -16,31 +18,42 @@ document.addEventListener("click", function (e) {
   const width = "512px";
   const height = "800px";
 
+  const appURL = "http://localhost:3000";
+  // const appURL = "https://linguabook.github.io";
   const iframe = document.createElement("iframe");
-  iframe.src =
-    "https://linguabook.github.io/?search-string=" + encodeURIComponent(text);
+  iframe.src = appURL + "/?search-string=" + encodeURIComponent(text);
   iframe.width = "100%";
   iframe.height = "100%";
+  iframe.onload = function () {
+    var eventMethod = window.addEventListener
+      ? "addEventListener"
+      : "attachEvent";
+    var eventer = window[eventMethod];
+    var messageEvent = eventMethod === "attachEvent" ? "onmessage" : "message";
+
+    eventer(messageEvent, function (e) {
+      if (e.data === "LBOOK.CLOSE" && iframeContainer) {
+        iframeContainer.parentElement.removeChild(iframeContainer);
+        iframeContainer = undefined;
+      }
+    });
+  };
+
+  // TODO reuse iframe
+  if (iframeContainer) {
+    iframeContainer.parentElement.removeChild(iframeContainer);
+    iframeContainer = undefined;
+  }
 
   // TODO position relative to selected text range
-  const container = document.createElement("div");
-  container.style.position = "absolute";
-  container.style.width = width;
-  container.style.height = height;
-  container.style.top = "0";
-  container.style.overflow = "auto";
-  container.style.zIndex = "999999";
-  container.appendChild(iframe);
+  iframeContainer = document.createElement("div");
+  iframeContainer.style.position = "absolute";
+  iframeContainer.style.width = width;
+  iframeContainer.style.height = height;
+  iframeContainer.style.top = "0";
+  iframeContainer.style.overflow = "auto";
+  iframeContainer.style.zIndex = "999999";
+  iframeContainer.appendChild(iframe);
 
-  const closeBtn = document.createElement("button");
-  closeBtn.style.position = "absolute";
-  closeBtn.style.top = "10px";
-  closeBtn.style.right = "10px";
-  closeBtn.innerHTML = "Close";
-  closeBtn.addEventListener("click", function () {
-    container.parentElement.removeChild(container);
-  });
-  container.appendChild(closeBtn);
-
-  document.body.appendChild(container);
+  document.body.appendChild(iframeContainer);
 });

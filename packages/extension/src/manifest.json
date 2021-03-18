@@ -1,0 +1,20 @@
+{
+  "name": "LingvoBook",
+  "author": "Sergey Todyshev",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Small chrome extension using linguabook",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "all_frames": true,
+      "js": ["linguabook-popup.js"]
+    }
+  ],
+  "permissions": [
+    "*://*/*",
+    "storage"
+  ]
+}

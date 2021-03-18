@@ -9,6 +9,8 @@ import {
 } from "@chakra-ui/react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { RecoilRoot } from "recoil";
+import cx from "clsx";
+
 import { SearchInput, useSearchState } from "./SearchInput";
 import Card from "./DataCard";
 import WordList from "./WordList";
@@ -16,33 +18,50 @@ import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import useConfigMenu from "./use-config-menu";
 import Feed from "./Feed";
 import styles from "./App.module.scss";
+import { AppCloseButton } from "./buttons";
 
 type Props = {
   className?: string;
   style?: any;
 };
 
+function inIframe() {
+  try {
+    return window.self !== window.top;
+  } catch (e) {
+    return true;
+  }
+}
+
 const App: React.FC<Props> = ({ className, style }) => {
+  const isEmbedded = inIframe();
   const config = useConfigMenu();
   const search = useSearchState();
   const { colorMode } = useColorMode();
   const dark = colorMode === "dark";
   return (
-    <VStack className={className} style={style}>
-      <HStack spacing={2} mt={1}>
-        <Box>{config.view}</Box>
-        <Box className={styles.item}>
-          <SearchInput
-            value={search.text}
-            onChange={search.onChange}
-            reset={search.resetText}
-            placeholder="Type a word..."
-          />
+    <VStack className={cx(className, styles.app)} style={style}>
+      {isEmbedded ? (
+        <Box zIndex={999}>
+          <AppCloseButton />
         </Box>
-        <Box>
-          <ColorModeSwitcher />
-        </Box>
-      </HStack>
+      ) : null}
+      {isEmbedded ? null : (
+        <HStack spacing={2} mt={1}>
+          <Box>{config.view}</Box>
+          <Box className={styles.item}>
+            <SearchInput
+              value={search.text}
+              onChange={search.onChange}
+              reset={search.resetText}
+              placeholder="Type a word..."
+            />
+          </Box>
+          <Box>
+            <ColorModeSwitcher />
+          </Box>
+        </HStack>
+      )}
       <main>
         {search.debouncedText ? (
           <Card

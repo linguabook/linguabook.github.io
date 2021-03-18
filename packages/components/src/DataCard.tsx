@@ -9,14 +9,7 @@ import {
   Box,
   VStack,
   HStack,
-  Icon,
-  IconButton,
 } from "@chakra-ui/react";
-// import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
-import {
-  FiChevronsDown as ChevronDownIcon,
-  FiChevronsUp as ChevronUpIcon,
-} from "react-icons/fi";
 import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
 
@@ -30,7 +23,7 @@ import Less from "./Less";
 import FlagIcon from "./FlagIcon";
 import GenderIcon from "./GenderIcon";
 import SoundIcon from "./SoundIcon";
-import Slide, { IKnowButton } from "./Slide";
+import Slide from "./Slide";
 
 import styles from "./DataCard.module.scss";
 import { useDesktop } from "./hooks";
@@ -42,6 +35,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
+import { ShowMore, IKnowButton } from "./buttons";
 
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, A11y]);
@@ -309,19 +303,6 @@ const ToolBar: React.FC<any> = ({ showMore, setShowMore, text }) => {
       <ShowMore showMore={showMore} setShowMore={setShowMore} />
       <IKnowButton text={text} />
     </HStack>
-  );
-};
-
-const ShowMore: React.FC<any> = ({ showMore, setShowMore }) => {
-  const handleClick = () => setShowMore(!showMore);
-  const title = showMore ? "Show less" : "Show more";
-  return (
-    <IconButton
-      icon={<Icon as={showMore ? ChevronUpIcon : ChevronDownIcon} />}
-      title={title}
-      aria-label={title}
-      onClick={handleClick}
-    />
   );
 };
 

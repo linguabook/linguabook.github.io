@@ -1,11 +1,9 @@
 import React from "react";
-import { Box, IconButton, Image, Icon } from "@chakra-ui/react";
-import { BsBookmarkCheck as IgnoreIcon } from "react-icons/bs";
+import { Box, Image } from "@chakra-ui/react";
 import isEmpty from "lodash/isEmpty";
 import map from "lodash/map";
 import take from "lodash/take";
 import SoundIcon from "./SoundIcon";
-import useKnownWords from "./use-known-words";
 import styles from "./Slide.module.scss";
 
 type Text = {
@@ -61,21 +59,6 @@ const Slide: React.FC<Props> = ({
         </Box>
       </Box>
     </Box>
-  );
-};
-
-export const IKnowButton: React.FC<{ text: string }> = ({ text }) => {
-  const knownWords = useKnownWords();
-  const title = "I know this phrase";
-  return (
-    <IconButton
-      icon={<Icon as={IgnoreIcon} />}
-      title={title}
-      aria-label={title}
-      onClick={() => {
-        knownWords.add(text);
-      }}
-    />
   );
 };
 

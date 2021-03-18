@@ -3,6 +3,7 @@ import { Box, IconButton, Image, Icon } from "@chakra-ui/react";
 import { MdCheck } from "react-icons/md";
 import isEmpty from "lodash/isEmpty";
 import map from "lodash/map";
+import take from "lodash/take";
 import SoundIcon from "./SoundIcon";
 import useKnownWords from "./use-known-words";
 import styles from "./Slide.module.scss";
@@ -33,7 +34,7 @@ const Slide: React.FC<Props> = ({
 }) => {
   const knownWords = useKnownWords();
   return (
-    <Box position="relative" maxHeight={640}>
+    <Box className={styles.slide} position="relative" maxHeight={640}>
       <Image
         src={src}
         fallbackSrc={fallbackSrc}
@@ -53,7 +54,7 @@ const Slide: React.FC<Props> = ({
           </Box>
           {isEmpty(translations)
             ? null
-            : map(translations, (t, k) => (
+            : map(take(translations, 1), (t, k) => (
                 <Box className={styles.label} key={k}>
                   {t.text}
                 </Box>

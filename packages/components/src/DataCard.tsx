@@ -1,10 +1,25 @@
 import _ from "lodash";
 import React, { useState } from "react";
-import { Tabs, TabList, TabPanels, Tab, TabPanel, Box } from "@chakra-ui/react";
+import {
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
+  Box,
+  VStack,
+  HStack,
+  Icon,
+  IconButton,
+} from "@chakra-ui/react";
+// import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
+import {
+  FiChevronsDown as ChevronDownIcon,
+  FiChevronsUp as ChevronUpIcon,
+} from "react-icons/fi";
 import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
 import cx from "clsx";
 import qs from "query-string";
 
@@ -15,10 +30,23 @@ import Less from "./Less";
 import FlagIcon from "./FlagIcon";
 import GenderIcon from "./GenderIcon";
 import SoundIcon from "./SoundIcon";
-import Slide from "./Slide";
+import Slide, { IKnowButton } from "./Slide";
 
 import styles from "./DataCard.module.scss";
 import { useDesktop } from "./hooks";
+
+import SwiperCore, { Navigation, A11y, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+
+// install Swiper modules
+SwiperCore.use([Navigation, Pagination, A11y]);
+
+const SLIDE_WIDTH = 1080;
 
 const nonPlural = ["audio"];
 
@@ -204,14 +232,20 @@ const DataCard: React.FC<Props> = ({ text, lang, exclude, dark }) => {
   }
 
   const slides = visual.map((d, i) => (
-    <Slide
+    <SwiperSlide
       key={i}
-      src={d.url}
-      text={{ text, lang }}
-      transcription={transcriptions[0] ? transcriptions[0].text : ""}
-      audio={_.head(audio)}
-      translations={translations.filter((t) => t.lang === "ru")}
-    />
+      style={{
+        width: SLIDE_WIDTH,
+      }}
+    >
+      <Slide
+        src={d.url}
+        text={{ text, lang }}
+        transcription={transcriptions[0] ? transcriptions[0].text : ""}
+        audio={_.head(audio)}
+        translations={translations.filter((t) => t.lang === "ru")}
+      />
+    </SwiperSlide>
   ));
 
   if (_.isEmpty(visual) && _.isEmpty(tabs)) {
@@ -219,7 +253,7 @@ const DataCard: React.FC<Props> = ({ text, lang, exclude, dark }) => {
   }
 
   return (
-    <div
+    <VStack
       className={cx(styles.card, {
         [styles.desktop]: desktop,
         [styles.dark]: dark,
@@ -227,19 +261,19 @@ const DataCard: React.FC<Props> = ({ text, lang, exclude, dark }) => {
     >
       {_.isEmpty(visual) ? null : (
         <div className={styles.visual}>
-          <Carousel
-            showThumbs={false}
-            swipeable
-            emulateTouch
-            showArrows={false}
-            showStatus={false}
-            infiniteLoop={false}
+          <Swiper
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            style={{
+              width: SLIDE_WIDTH,
+            }}
           >
             {slides}
-          </Carousel>
+          </Swiper>
         </div>
       )}
-      <ShowMore showMore={showMore} setShowMore={setShowMore} />
+      <ToolBar showMore={showMore} setShowMore={setShowMore} text={text} />
       {showMore ? (
         <>
           {_.isEmpty(tabs) ? null : (
@@ -264,15 +298,30 @@ const DataCard: React.FC<Props> = ({ text, lang, exclude, dark }) => {
           )}
         </>
       ) : null}
-    </div>
+    </VStack>
+  );
+};
+
+// TODO improve toolbar
+const ToolBar: React.FC<any> = ({ showMore, setShowMore, text }) => {
+  return (
+    <HStack>
+      <ShowMore showMore={showMore} setShowMore={setShowMore} />
+      <IKnowButton text={text} />
+    </HStack>
   );
 };
 
 const ShowMore: React.FC<any> = ({ showMore, setShowMore }) => {
+  const handleClick = () => setShowMore(!showMore);
+  const title = showMore ? "Show less" : "Show more";
   return (
-    <Box className={styles.show_more} onClick={() => setShowMore(!showMore)}>
-      {showMore ? "Show less" : "Show more"}
-    </Box>
+    <IconButton
+      icon={<Icon as={showMore ? ChevronUpIcon : ChevronDownIcon} />}
+      title={title}
+      aria-label={title}
+      onClick={handleClick}
+    />
   );
 };
 

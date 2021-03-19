@@ -7,4 +7,4 @@ mkdir -p dist
 cd src
 ZIP=../dist/linguabook-extension.zip
 rm -f $ZIP
-zip $ZIP *.*
+zip $ZIP assets/*.* *.*

@@ -1,7 +1,7 @@
 {
   "name": "LingvoBook",
   "author": "Sergey Todyshev",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "manifest_version": 2,
   "description": "Chrome extension for https://linguabook.github.io",
   "icons": {
@@ -12,14 +12,19 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*/*"
+        "https://google.com/*",
+        "https://tsvbits.com/*",
+        "https://dei.com/*",
+        "https://*.dei.com/*"
       ],
       "all_frames": true,
       "js": ["linguabook-popup.js"]
     }
   ],
   "permissions": [
-    "*://*/*",
-    "storage"
+    "https://google.com/*",
+    "https://tsvbits.com/*",
+    "https://dei.com/*",
+    "https://*.dei.com/*"
   ]
 }

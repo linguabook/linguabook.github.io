@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon, IconButton } from "@chakra-ui/react";
+import { Box, Icon, IconButton } from "@chakra-ui/react";
 import {
   FiChevronsUp as ChevronUpIcon,
   FiChevronsDown as ChevronDownIcon,
@@ -72,8 +72,10 @@ export const AppCloseButton: React.FC<any> = ({ style, ...props }) => {
     window.parent.postMessage("LBOOK.CLOSE", "*");
   };
   return (
-    <span
+    <Box
+      as="span"
       id="btn-close-app"
+      color="white"
       title={title}
       aria-label={title}
       style={{ ...baseStyle, ...style }}
@@ -81,6 +83,6 @@ export const AppCloseButton: React.FC<any> = ({ style, ...props }) => {
       {...props}
     >
       <Icon as={CloseIcon} />
-    </span>
+    </Box>
   );
 };

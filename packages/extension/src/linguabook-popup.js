@@ -16,7 +16,7 @@ document.addEventListener("click", function (e) {
   }
 
   var width = "512px";
-  var height = "800px";
+  var height = "100vh";
 
   // for local dev
   // var appURL = "http://localhost:3000";

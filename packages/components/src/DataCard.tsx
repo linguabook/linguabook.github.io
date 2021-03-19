@@ -9,6 +9,8 @@ import {
   Box,
   VStack,
   HStack,
+  Text,
+  useColorMode,
 } from "@chakra-ui/react";
 import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
@@ -35,12 +37,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
-import { ShowMore, IKnowButton } from "./buttons";
+import { ShowMore, KnowButton, LikeButton, ShareButton } from "./buttons";
+import Card from "./Card";
 
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, A11y]);
 
-const SLIDE_WIDTH = 1080;
+const SLIDE_WIDTH = 512;
 
 const nonPlural = ["audio"];
 
@@ -70,11 +73,20 @@ type Tab = {
   content: any[];
 };
 
-const SourceHeader: React.FC<any> = ({ source }) => (
-  <div className={styles.source_header}>
-    <a href={source.url}>{source.name}</a>
-  </div>
-);
+const SourceHeader: React.FC<any> = ({ source }) => {
+  const { colorMode } = useColorMode();
+  const color = colorMode == "dark" ? "blue.100" : "gray.300";
+  return (
+    <Text
+      textColor={color}
+      letterSpacing="wide"
+      className={styles.source_header}
+      fontWeight="bold"
+    >
+      <a href={source.url}>{source.name}</a>
+    </Text>
+  );
+};
 
 const Playlist: React.FC<any> = ({ source, audio }) => {
   if (_.isEmpty(audio)) {
@@ -84,7 +96,7 @@ const Playlist: React.FC<any> = ({ source, audio }) => {
     return (
       <li key={i}>
         <SoundIcon url={rec.url} />
-        <span>{rec.author || "human"}</span>
+        <Text>{rec.author || "human"}</Text>
         <span className={styles.ml}>
           <GenderIcon gender={rec.gender} />
         </span>
@@ -141,14 +153,18 @@ const DataCard: React.FC<Props> = ({ text, lang, exclude, dark }) => {
 
   if (!sources) {
     return (
-      <Box textAlign="center">
+      <Card textAlign="center">
         <Loader />
-      </Box>
+      </Card>
     );
   }
 
   const visual: any[] = [];
-  const transcriptions: { text: string; source: string }[] = [];
+  type TextItem = { text: string; source: string };
+  const textData = {
+    transcription: [] as TextItem[],
+    definition: [] as TextItem[],
+  };
   const translations: { text: string; lang: string; source: string }[] = [];
   const audio: { source: any; url: string }[] = [];
   let tabs: Tab[] = [];
@@ -174,9 +190,9 @@ const DataCard: React.FC<Props> = ({ text, lang, exclude, dark }) => {
       if (_.isEmpty(data)) {
         return;
       }
-      if (key === "transcription") {
+      if (textData[key]) {
         for (const item of data) {
-          transcriptions.push({
+          textData[key].push({
             text: item,
             source: source.name,
           });
@@ -230,12 +246,15 @@ const DataCard: React.FC<Props> = ({ text, lang, exclude, dark }) => {
       key={i}
       style={{
         width: SLIDE_WIDTH,
+        height: SLIDE_WIDTH / 2,
       }}
     >
       <Slide
         src={d.url}
         text={{ text, lang }}
-        transcription={transcriptions[0] ? transcriptions[0].text : ""}
+        transcription={
+          textData.transcription[0] ? textData.transcription[0].text : ""
+        }
         audio={_.head(audio)}
         translations={translations.filter((t) => t.lang === "ru")}
       />
@@ -247,61 +266,75 @@ const DataCard: React.FC<Props> = ({ text, lang, exclude, dark }) => {
   }
 
   return (
-    <VStack
+    <Card
       className={cx(styles.card, {
         [styles.desktop]: desktop,
         [styles.dark]: dark,
       })}
+      borderWidth={1}
+      borderColor="gray.300"
     >
-      {_.isEmpty(visual) ? null : (
-        <div className={styles.visual}>
-          <Swiper
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
-            style={{
-              width: SLIDE_WIDTH,
-            }}
-          >
-            {slides}
-          </Swiper>
-        </div>
-      )}
-      <ToolBar showMore={showMore} setShowMore={setShowMore} text={text} />
-      {showMore ? (
-        <>
-          {_.isEmpty(tabs) ? null : (
-            <Tabs>
-              <TabList>
-                {tabs.map((t, i) => (
-                  <Tab key={i}>{t.label}</Tab>
-                ))}
-              </TabList>
-              <TabPanels>
-                {tabs.map((t, i) => (
-                  <TabPanel key={i}>
-                    <div className={styles.table_container}>
-                      <table>
-                        <tbody>{t.content}</tbody>
-                      </table>
-                    </div>
-                  </TabPanel>
-                ))}
-              </TabPanels>
-            </Tabs>
-          )}
-        </>
-      ) : null}
-    </VStack>
+      <VStack spacing={0}>
+        {_.isEmpty(visual) ? null : (
+          <div className={styles.visual}>
+            <Swiper
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              style={{
+                width: SLIDE_WIDTH,
+              }}
+            >
+              {slides}
+            </Swiper>
+          </div>
+        )}
+        {textData.definition[0] && textData.definition[0].text ? (
+          <Box w="100%" h="100%" p={5}>
+            <Text>{textData.definition[0].text}</Text>
+          </Box>
+        ) : null}
+        <ToolBar showMore={showMore} setShowMore={setShowMore} text={text} />
+        {showMore ? (
+          <>
+            {_.isEmpty(tabs) ? null : (
+              <Box>
+                <Tabs maxW={SLIDE_WIDTH}>
+                  <TabList maxW={SLIDE_WIDTH}>
+                    {tabs.map((t, i) => (
+                      <Tab key={i}>{t.label}</Tab>
+                    ))}
+                  </TabList>
+                  <TabPanels maxW={SLIDE_WIDTH}>
+                    {tabs.map((t, i) => (
+                      <TabPanel key={i} maxW={SLIDE_WIDTH}>
+                        <div className={styles.table_container}>
+                          <table>
+                            <tbody>{t.content}</tbody>
+                          </table>
+                        </div>
+                      </TabPanel>
+                    ))}
+                  </TabPanels>
+                </Tabs>
+              </Box>
+            )}
+          </>
+        ) : null}
+      </VStack>
+    </Card>
   );
 };
 
 // TODO improve toolbar
 const ToolBar: React.FC<any> = ({ showMore, setShowMore, text }) => {
   return (
-    <HStack>
+    <HStack w="100%" py={2} px={5} spacing={5}>
       <ShowMore showMore={showMore} setShowMore={setShowMore} />
-      <IKnowButton text={text} />
+      <Text>Part of Speech?</Text>
+      <LikeButton />
+      <ShareButton />
+      <KnowButton text={text} />
     </HStack>
   );
 };

@@ -9,27 +9,9 @@
   }
 }
 
-.source_header {
-  a {
-    color: #999;
-    text-decoration: none;
-    margin-left: 1rem;
-
-    &:hover {
-      color: #aaa;
-      text-decoration: none;
-    }
-  }
-}
-
 .card {
-  width: 1080px;
-}
-
-.card.dark {
-  .source_header a {
-    color: whitesmoke;
-  }
+  width: 512px;
+  margin-bottom: 20px;
 }
 
 .interactive_icon {
@@ -44,7 +26,6 @@
 .list_container {
   ul {
     display: inline-block;
-    list-style: none;
     padding: 0 2rem;
 
     li {

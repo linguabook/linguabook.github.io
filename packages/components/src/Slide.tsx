@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Image } from "@chakra-ui/react";
+import { Box, Image, AspectRatio } from "@chakra-ui/react";
 import isEmpty from "lodash/isEmpty";
 import map from "lodash/map";
 import take from "lodash/take";
@@ -31,14 +31,16 @@ const Slide: React.FC<Props> = ({
   translations,
 }) => {
   return (
-    <Box className={styles.slide} position="relative" maxHeight={640}>
-      <Image
-        src={src}
-        fallbackSrc={fallbackSrc}
-        alt={text.text}
-        fit="cover"
-        maxHeight={640}
-      />
+    <Box className={styles.slide} position="relative">
+      <AspectRatio ratio={[1, 1]}>
+        <Image
+          src={src}
+          fallbackSrc={fallbackSrc}
+          alt={text.text}
+          height="100%"
+          objectFit="cover"
+        />
+      </AspectRatio>
       <Box className={styles.overlay} />
       <Box className={styles.text_container}>
         <Box>

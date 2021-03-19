@@ -4,9 +4,11 @@ import {
   FiChevronsUp as ChevronUpIcon,
   FiChevronsDown as ChevronDownIcon,
 } from "react-icons/fi";
-import useKnownWords from "./use-known-words";
 import { BsBookmarkCheck as IgnoreIcon } from "react-icons/bs";
 import { MdClose as CloseIcon } from "react-icons/md";
+import { IoIosHeartEmpty as HeartIcon } from "react-icons/io";
+import { BiShareAlt as ShareIcon } from "react-icons/bi";
+import useKnownWords from "./use-known-words";
 
 export const ShowMore: React.FC<any> = ({ showMore, setShowMore }) => {
   const handleClick = () => setShowMore(!showMore);
@@ -21,7 +23,7 @@ export const ShowMore: React.FC<any> = ({ showMore, setShowMore }) => {
   );
 };
 
-export const IKnowButton: React.FC<{ text: string }> = ({ text }) => {
+export const KnowButton: React.FC<{ text: string }> = ({ text }) => {
   const knownWords = useKnownWords();
   const title = "I know this phrase";
   return (
@@ -32,6 +34,28 @@ export const IKnowButton: React.FC<{ text: string }> = ({ text }) => {
       onClick={() => {
         knownWords.add(text);
       }}
+    />
+  );
+};
+
+export const LikeButton: React.FC<{}> = () => {
+  const title = "I like this phrase";
+  return (
+    <IconButton
+      icon={<Icon as={HeartIcon} />}
+      title={title}
+      aria-label={title}
+    />
+  );
+};
+
+export const ShareButton: React.FC<{}> = () => {
+  const title = "Share this phrase";
+  return (
+    <IconButton
+      icon={<Icon as={ShareIcon} />}
+      title={title}
+      aria-label={title}
     />
   );
 };

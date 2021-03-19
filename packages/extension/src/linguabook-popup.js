@@ -10,18 +10,18 @@ document.addEventListener("click", function (e) {
   if (!e.target && e.target.containsNode(selection.anchorNode)) {
     return;
   }
-  const text = selection.toString();
-  if (!text) {
+  const text = (selection.toString() || "").trim();
+  if (!text || !isWord(text)) {
     return;
   }
 
-  const width = "512px";
-  const height = "800px";
+  var width = "512px";
+  var height = "800px";
 
   // for local dev
-  // const appURL = "http://localhost:3000";
-  const appURL = "https://linguabook.github.io";
-  const iframe = document.createElement("iframe");
+  // var appURL = "http://localhost:3000";
+  var appURL = "https://linguabook.github.io";
+  var iframe = document.createElement("iframe");
   iframe.src = appURL + "/?search-string=" + encodeURIComponent(text);
   iframe.width = "100%";
   iframe.height = "100%";
@@ -58,3 +58,7 @@ document.addEventListener("click", function (e) {
 
   document.body.appendChild(iframeContainer);
 });
+
+function isWord(s) {
+  return /[\w-]+/.test(s);
+}

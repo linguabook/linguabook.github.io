@@ -180,11 +180,24 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
   let tabs: Tab[] = [];
 
   const makeTab = (key) => {
+    const lt = (a: string, b: string) => {
+      const kind = (s: string) => {
+        switch (s) {
+          case "Audio":
+            return 1;
+          default:
+            return 0;
+        }
+      };
+      const k1 = kind(a);
+      const k2 = kind(b);
+      return k1 != k2 ? _.lt(k1, k2) : _.lt(a, b);
+    };
     let tab = tabs.find((t) => t.key === key);
     if (!tab) {
       tab = { key, label: getLabel(key), content: [] };
       for (let i = 0; i < tabs.length; i++) {
-        if (_.lt(tab.label, tabs[i].label)) {
+        if (lt(tab.label, tabs[i].label)) {
           tabs.splice(i, 0, tab);
           return tab;
         }

@@ -11,19 +11,16 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://google.com/*",
-        "https://tsvbits.com/*",
-        "https://dei.com/*",
-        "https://*.dei.com/*"
-      ],
+      "matches": ["<all_urls>"],
       "all_frames": true,
       "js": ["linguabook-popup.js"]
     }
   ],
   "permissions": [
-    "https://google.com/*",
     "https://tsvbits.com/*",
+    "https://google.com/*",
+    "https://*.google.com/*",
+    "https://linkedin.com/*",
     "https://dei.com/*",
     "https://*.dei.com/*"
   ]

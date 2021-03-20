@@ -18,7 +18,6 @@ import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import useConfigMenu, { ConfigMenu } from "./use-config-menu";
 import Feed from "./Feed";
 import { AppCloseButton } from "./buttons";
-import styles from "./App.module.scss";
 import useKnownWords from "./use-known-words";
 
 type Props = {
@@ -39,7 +38,7 @@ const App: React.FC<Props> = ({ className, style }) => {
   const search = useSearchState();
   const config = useConfigMenu();
   return (
-    <VStack className={cx(className, styles.app)} style={style}>
+    <VStack className={cx(className)} style={style} pos="relative">
       {isEmbedded ? (
         <Box zIndex={999}>
           <AppCloseButton />
@@ -64,20 +63,15 @@ const TopBar: React.FC<{}> = () => {
       <Box>
         <ConfigMenu />
       </Box>
-      <Box className={styles.item}>
+      <Box>
         <SearchInput />
       </Box>
       <Box>
         <Badge
-          bgColor="blue.400"
-          textColor="white"
+          variant="solid"
           rounded="full"
-          fontSize="sm"
-          fontWeight="bold"
-          minWidth="20px"
-          minHeight="20px"
-          textAlign="center"
           title="Number of known words"
+          px={2}
         >
           {words.size}
         </Badge>

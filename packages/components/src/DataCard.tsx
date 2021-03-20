@@ -10,6 +10,7 @@ import {
   VStack,
   HStack,
   Text,
+  Badge,
   useColorMode,
 } from "@chakra-ui/react";
 import { fetchData } from "lingua-scraper";
@@ -172,6 +173,7 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
   const textData = {
     transcription: [] as TextItem[],
     definition: [] as TextItem[],
+    tag: [] as TextItem[],
   };
   const translations: { text: string; lang: string; source: string }[] = [];
   const audio: { source: any; url: string }[] = [];
@@ -302,7 +304,12 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
             <Text>{textData.definition[0].text}</Text>
           </Box>
         ) : null}
-        <ToolBar showMore={showMore} setShowMore={setShowMore} text={text} />
+        <ToolBar
+          showMore={showMore}
+          setShowMore={setShowMore}
+          text={text}
+          tags={textData.tag}
+        />
         {showMore ? (
           <>
             {_.isEmpty(tabs) ? null : (
@@ -335,11 +342,30 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
 };
 
 // TODO improve toolbar
-const ToolBar: React.FC<any> = ({ showMore, setShowMore, text }) => {
+const ToolBar: React.FC<any> = ({
+  showMore,
+  setShowMore,
+  text,
+  tags: inputTags,
+}) => {
+  const tags = _.take(
+    _.uniq(
+      (_.isEmpty(inputTags) ? [{ text: "UNKNOWN" }] : inputTags).map(
+        (t) => t.text
+      )
+    ),
+    3
+  ) as string[];
   return (
     <HStack w="100%" py={2} px={5} spacing={5}>
       <ShowMore showMore={showMore} setShowMore={setShowMore} />
-      <Text>Part of Speech?</Text>
+      <HStack>
+        {tags.map((tag, key) => (
+          <Badge key={key} variant="solid" rounded="full" px={2}>
+            {tag}
+          </Badge>
+        ))}
+      </HStack>
       <KnowButton text={text} />
       <BookmarkButton text={text} />
       <ShareButton />

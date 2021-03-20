@@ -1,17 +1,6 @@
 {
-  "name": "words-extension",
+  "name": "@linguabook/extension",
   "version": "0.0.0",
   "license": "Apache",
-  "scripts": {
-    "bundle": "parcel build --no-minify --no-cache -o dist/content_script.js src/linguabook-popup.js"
-  },
-  "dependencies": {
-    "lingua-scraper": "0.16.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.13.10",
-    "@babel/preset-env": "^7.13.10",
-    "core-js": "^3.9.1",
-    "parcel-bundler": "^1.12.4"
-  }
+  "private": "true"
 }

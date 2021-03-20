@@ -48,7 +48,7 @@
     "eventemitter3": "^4.0.7",
     "exenv": "^1.2.2",
     "framer-motion": "^3.10.6",
-    "lingua-scraper": "0.16.2",
+    "lingua-scraper": "0.17.3",
     "lodash": "^4.17.21",
     "query-string": "^7.0.0",
     "react-content-loader": "^6.0.2",

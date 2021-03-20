@@ -8,6 +8,7 @@ import {
   Badge,
 } from "@chakra-ui/react";
 import { BrowserRouter as Router } from "react-router-dom";
+import Analytics from "react-router-ga";
 import { RecoilRoot } from "recoil";
 import cx from "clsx";
 
@@ -98,7 +99,9 @@ const AppContainer: React.FC<Props> = (props) => {
     <RecoilRoot>
       <ChakraProvider theme={theme}>
         <Router>
-          <App {...props} />
+          <Analytics id="G-SHK7Q8TMPJ">
+            <App {...props} />
+          </Analytics>
         </Router>
       </ChakraProvider>
     </RecoilRoot>

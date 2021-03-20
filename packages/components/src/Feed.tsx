@@ -1,6 +1,7 @@
 import _ from "lodash";
 import React, { useEffect, useMemo, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
+import { requestAnimationFrame } from "dom-helpers";
 import Card from "./DataCard";
 import useKnownWords from "./use-known-words";
 import { WordList } from "./internal-types";
@@ -22,15 +23,15 @@ const Feed: React.FC<Props> = ({ wordList }) => {
 
   useEffect(() => {
     const init = allWords.slice(0, pageSize);
-    if (!_.isEqual(words, init)) {
+    if (_.isEmpty(words)) {
       setWords(init);
     }
   }, [words, allWords]);
 
   const loadMore = () => {
-    setTimeout(() => {
+    requestAnimationFrame(() => {
       setWords(allWords.slice(0, words.length + pageSize));
-    }, 0);
+    });
   };
 
   const items = words
@@ -38,11 +39,12 @@ const Feed: React.FC<Props> = ({ wordList }) => {
     .map((w) => {
       return <Card key={w.text} text={w.text} lang="en" />;
     });
+
   return (
     <InfiniteScroll
-      dataLength={words.length}
+      dataLength={items.length}
       next={loadMore}
-      hasMore={words.length < allWords.length}
+      hasMore={items.length < allWords.length}
       loader={<div></div>}
     >
       {items}

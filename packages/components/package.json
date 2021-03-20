@@ -44,6 +44,7 @@
     "@emotion/styled": "^11.1.5",
     "clsx": "^1.1.1",
     "country-code-lookup": "^0.0.19",
+    "dom-helpers": "^5.2.0",
     "eventemitter3": "^4.0.7",
     "exenv": "^1.2.2",
     "framer-motion": "^3.10.6",

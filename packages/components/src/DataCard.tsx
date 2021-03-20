@@ -11,7 +11,9 @@ import {
   HStack,
   Text,
   Badge,
-  useColorMode,
+  Heading,
+  UnorderedList,
+  ListItem,
 } from "@chakra-ui/react";
 import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
@@ -44,6 +46,7 @@ import {
   LikeButton,
   ShareButton,
   BookmarkButton,
+  ToggleButton,
 } from "./buttons";
 import Card from "./Card";
 import useConfigState from "./use-config-menu";
@@ -80,18 +83,16 @@ type Tab = {
   content: any[];
 };
 
-const SourceHeader: React.FC<any> = ({ source }) => {
-  const { colorMode } = useColorMode();
-  const color = colorMode == "dark" ? "blue.100" : "gray.300";
+const HeadingLink: React.FC<any> = ({ source }) => {
   return (
-    <Text
-      textColor={color}
+    <Heading
+      size="lg"
       letterSpacing="wide"
       className={styles.source_header}
       fontWeight="bold"
     >
       <a href={source.url}>{source.name}</a>
-    </Text>
+    </Heading>
   );
 };
 
@@ -99,9 +100,10 @@ const Playlist: React.FC<any> = ({ source, audio }) => {
   if (_.isEmpty(audio)) {
     return null;
   }
-  const items = audio.map((rec, i) => {
+  const [expanded, setExpanded] = useState(false);
+  const items = (expanded ? audio : _.take(audio, 3)).map((rec, i) => {
     return (
-      <li key={i}>
+      <ListItem key={i}>
         <SoundIcon url={rec.url} />
         <Text>{rec.author || "human"}</Text>
         <span className={styles.ml}>
@@ -110,35 +112,42 @@ const Playlist: React.FC<any> = ({ source, audio }) => {
         <span className={styles.ml}>
           <FlagIcon country={rec.country} />
         </span>
-      </li>
+      </ListItem>
     );
   });
   return (
-    <tr className={styles.list_container}>
+    <tr>
       <td>
-        <SourceHeader source={source} />
-        <ul className={styles.playlist}>{items}</ul>
+        <HStack justify="space-between">
+          <HeadingLink source={source} />
+          <ToggleButton expanded={expanded} setExpanded={setExpanded} />
+        </HStack>
+        <UnorderedList pl={1}>{items}</UnorderedList>
       </td>
     </tr>
   );
 };
 
-const Terms: React.FC<any> = ({ source, items }) => {
+const TermList: React.FC<any> = ({ source, items }) => {
   if (_.isEmpty(items)) {
     return null;
   }
-  const nodes = items.map((rec, i) => {
+  const [expanded, setExpanded] = useState(false);
+  const nodes = (expanded ? items : _.take(items, 3)).map((rec, i) => {
     return (
-      <li key={i}>
+      <ListItem key={i}>
         <Less maxLines={3}>{rec.text}</Less>
-      </li>
+      </ListItem>
     );
   });
   return (
-    <tr className={styles.list_container}>
+    <tr>
       <td>
-        <SourceHeader source={source} />
-        <ul className={styles.terms}>{nodes}</ul>
+        <HStack justify="space-between">
+          <HeadingLink source={source} />
+          <ToggleButton expanded={expanded} setExpanded={setExpanded} />
+        </HStack>
+        <UnorderedList pl={1}>{nodes}</UnorderedList>
       </td>
     </tr>
   );
@@ -258,7 +267,11 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
         }
 
         tab.content.push(
-          <Terms key={`${source.name}-${key}`} source={source} items={items} />
+          <TermList
+            key={`${source.name}-${key}`}
+            source={source}
+            items={items}
+          />
         );
       }
     });

@@ -1,8 +1,10 @@
 import React from "react";
 import { Box, Icon, IconButton } from "@chakra-ui/react";
 import {
-  FiChevronsUp as ChevronUpIcon,
-  FiChevronsDown as ChevronDownIcon,
+  FiChevronsUp as ChevronsUpIcon,
+  FiChevronsDown as ChevronsDownIcon,
+  FiChevronUp as ChevronUpIcon,
+  FiChevronDown as ChevronDownIcon,
 } from "react-icons/fi";
 import { FaBrain as IgnoreIcon } from "react-icons/fa";
 import { BsBookmark as BookmarkIcon } from "react-icons/bs";
@@ -17,7 +19,20 @@ export const ShowMore: React.FC<any> = ({ showMore, setShowMore }) => {
   const title = showMore ? "Show less" : "Show more";
   return (
     <IconButton
-      icon={<Icon as={showMore ? ChevronUpIcon : ChevronDownIcon} />}
+      icon={<Icon as={showMore ? ChevronsUpIcon : ChevronsDownIcon} />}
+      title={title}
+      aria-label={title}
+      onClick={handleClick}
+    />
+  );
+};
+
+export const ToggleButton: React.FC<any> = ({ expanded, setExpanded }) => {
+  const handleClick = () => setExpanded(!expanded);
+  const title = expanded ? "Collapse this section" : "Expand this section";
+  return (
+    <IconButton
+      icon={<Icon as={expanded ? ChevronUpIcon : ChevronDownIcon} />}
       title={title}
       aria-label={title}
       onClick={handleClick}

@@ -23,24 +23,6 @@
   justify-content: center;
 }
 
-.list_container {
-  ul {
-    display: inline-block;
-    padding: 0 2rem;
-
-    li {
-      display: flex;
-      align-items: center;
-      margin-bottom: 0.5rem;
-      padding: 0;
-
-      .interactive_icon {
-        margin-right: 0.5rem;
-      }
-    }
-  }
-}
-
 .ml {
   margin-left: 0.5rem;
 }
@@ -68,12 +50,6 @@
       font-weight: bold;
       border-bottom: 3px solid blueviolet;
     }
-  }
-}
-
-.desktop {
-  .playlist {
-    columns: 2;
   }
 }
 

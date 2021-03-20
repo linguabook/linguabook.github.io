@@ -8,37 +8,28 @@ import {
   Text,
 } from "@chakra-ui/react";
 import styles from "./DataCard.module.scss";
-import Less from "./Less";
 import _ from "lodash";
 import { ToggleButton } from "./buttons";
 import SoundIcon from "./SoundIcon";
 import GenderIcon from "./GenderIcon";
 import FlagIcon from "./FlagIcon";
 
-const SourceLink: React.FC<{ source: Source }> = ({ source }) => {
-  return <a href={source.url}>{source.name}</a>;
-};
+const SourceLink: React.FC<{ source: Source }> = ({ source }) => (
+  <a href={source.url}>{source.name}</a>
+);
 
-const ListHeading: React.FC<{ children: any }> = ({ children }) => {
-  return (
-    <Heading
-      size="lg"
-      letterSpacing="wide"
-      className={styles.source_header}
-      fontWeight="bold"
-    >
-      {children}
-    </Heading>
-  );
-};
+const ListHeading: React.FC<{ children: any }> = ({ children }) => (
+  <Heading
+    size="lg"
+    letterSpacing="wide"
+    className={styles.source_header}
+    fontWeight="bold"
+  >
+    {children}
+  </Heading>
+);
 
-const TextItem: React.FC<any> = ({ item }) => {
-  return (
-    <ListItem>
-      <Less maxLines={3}>{item.text}</Less>
-    </ListItem>
-  );
-};
+const TextItem: React.FC<any> = ({ item }) => <ListItem>{item.text}</ListItem>;
 
 const ItemList: React.FC<any> = ({ source, items, ItemView = TextItem }) => {
   if (_.isEmpty(items)) {

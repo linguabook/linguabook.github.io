@@ -11,9 +11,6 @@ import {
   HStack,
   Text,
   Badge,
-  Heading,
-  UnorderedList,
-  ListItem,
 } from "@chakra-ui/react";
 import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
@@ -24,10 +21,6 @@ import qs from "query-string";
 import Error from "./ErrorCard";
 import Loader from "./Loader";
 import Empty from "./Empty";
-import Less from "./Less";
-import FlagIcon from "./FlagIcon";
-import GenderIcon from "./GenderIcon";
-import SoundIcon from "./SoundIcon";
 import Slide from "./Slide";
 
 import styles from "./DataCard.module.scss";
@@ -51,11 +44,11 @@ import {
 import Card from "./Card";
 import useConfigState from "./use-config-menu";
 import { useDarkMode } from "./use-dark-mode";
+import { Source } from "lingua-scraper/dist/types";
+import { Playlist, TermList } from "./ItemList";
 
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, A11y]);
-
-const SLIDE_WIDTH = 512;
 
 const nonPlural = ["audio"];
 
@@ -83,81 +76,13 @@ type Tab = {
   content: any[];
 };
 
-const HeadingLink: React.FC<any> = ({ source }) => {
-  return (
-    <Heading
-      size="lg"
-      letterSpacing="wide"
-      className={styles.source_header}
-      fontWeight="bold"
-    >
-      <a href={source.url}>{source.name}</a>
-    </Heading>
-  );
-};
-
-const Playlist: React.FC<any> = ({ source, audio }) => {
-  if (_.isEmpty(audio)) {
-    return null;
-  }
-  const [expanded, setExpanded] = useState(false);
-  const items = (expanded ? audio : _.take(audio, 3)).map((rec, i) => {
-    return (
-      <ListItem key={i}>
-        <SoundIcon url={rec.url} />
-        <Text>{rec.author || "human"}</Text>
-        <span className={styles.ml}>
-          <GenderIcon gender={rec.gender} />
-        </span>
-        <span className={styles.ml}>
-          <FlagIcon country={rec.country} />
-        </span>
-      </ListItem>
-    );
-  });
-  return (
-    <tr>
-      <td>
-        <HStack justify="space-between">
-          <HeadingLink source={source} />
-          <ToggleButton expanded={expanded} setExpanded={setExpanded} />
-        </HStack>
-        <UnorderedList pl={1}>{items}</UnorderedList>
-      </td>
-    </tr>
-  );
-};
-
-const TermList: React.FC<any> = ({ source, items }) => {
-  if (_.isEmpty(items)) {
-    return null;
-  }
-  const [expanded, setExpanded] = useState(false);
-  const nodes = (expanded ? items : _.take(items, 3)).map((rec, i) => {
-    return (
-      <ListItem key={i}>
-        <Less maxLines={3}>{rec.text}</Less>
-      </ListItem>
-    );
-  });
-  return (
-    <tr>
-      <td>
-        <HStack justify="space-between">
-          <HeadingLink source={source} />
-          <ToggleButton expanded={expanded} setExpanded={setExpanded} />
-        </HStack>
-        <UnorderedList pl={1}>{nodes}</UnorderedList>
-      </td>
-    </tr>
-  );
-};
-
 const DataCard: React.FC<Props> = ({ text, lang }) => {
   const dark = useDarkMode();
   const { exclude } = useConfigState();
   const desktop = useDesktop();
   const [showMore, setShowMore] = useState(false);
+  const slideWidth = desktop ? "512px" : "100vw";
+  const slideHeight = desktop ? 512 / 2 + "px" : "calc(100vw/2)";
 
   const q = qs.stringify({ exclude });
 
@@ -249,7 +174,7 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
           <Playlist
             key={`${source.name}-${key}`}
             source={source}
-            audio={audioData}
+            items={audioData}
           />
         );
       } else {
@@ -281,8 +206,8 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
     <SwiperSlide
       key={i}
       style={{
-        width: SLIDE_WIDTH,
-        height: SLIDE_WIDTH / 2,
+        width: slideWidth,
+        height: slideHeight,
       }}
     >
       <Slide
@@ -318,7 +243,7 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
               navigation
               pagination={{ clickable: true }}
               style={{
-                width: SLIDE_WIDTH,
+                width: slideWidth,
               }}
             >
               {slides}
@@ -340,15 +265,15 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
           <>
             {_.isEmpty(tabs) ? null : (
               <Box>
-                <Tabs maxW={SLIDE_WIDTH}>
-                  <TabList maxW={SLIDE_WIDTH}>
+                <Tabs maxW={slideWidth}>
+                  <TabList maxW={slideWidth}>
                     {tabs.map((t, i) => (
                       <Tab key={i}>{t.label}</Tab>
                     ))}
                   </TabList>
-                  <TabPanels maxW={SLIDE_WIDTH}>
+                  <TabPanels maxW={slideWidth}>
                     {tabs.map((t, i) => (
-                      <TabPanel key={i} maxW={SLIDE_WIDTH}>
+                      <TabPanel key={i} maxW={slideWidth}>
                         <div className={styles.table_container}>
                           <table>
                             <tbody>{t.content}</tbody>
@@ -383,18 +308,40 @@ const ToolBar: React.FC<any> = ({
     3
   ) as string[];
   return (
-    <HStack w="100%" py={2} px={5} spacing={5}>
-      <ShowMore showMore={showMore} setShowMore={setShowMore} />
-      <HStack>
+    <HStack
+      w="100%"
+      py={2}
+      px={5}
+      spacing={5}
+      justify="space-between"
+      overflow="hidden"
+    >
+      <Box flex="1 1 25px">
+        <ShowMore showMore={showMore} setShowMore={setShowMore} />
+      </Box>
+      <HStack flex="1 1 300px" overflow="hidden">
         {tags.map((tag, key) => (
-          <Badge key={key} variant="solid" rounded="full" px={2}>
+          <Badge
+            key={key}
+            variant="solid"
+            rounded="full"
+            px={2}
+            overflow="hidden"
+            fontFamily="monospace"
+            fontSize="md"
+            flex={`1 0 auto`}
+            title={tag}
+            textOverflow="ellipsis"
+          >
             {tag}
           </Badge>
         ))}
       </HStack>
-      <KnowButton text={text} />
-      <BookmarkButton text={text} />
-      <ShareButton />
+      <HStack flex="1 0 100px">
+        <KnowButton text={text} />
+        <BookmarkButton text={text} />
+        <ShareButton />
+      </HStack>
     </HStack>
   );
 };

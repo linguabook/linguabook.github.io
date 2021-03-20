@@ -69,6 +69,8 @@ const TopBar: React.FC<{}> = () => {
       </Box>
       <Box>
         <Badge
+          fontFamily="monospace"
+          fontSize="md"
           variant="solid"
           rounded="full"
           title="Number of known words"

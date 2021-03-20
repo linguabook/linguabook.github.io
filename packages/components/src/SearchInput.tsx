@@ -30,7 +30,7 @@ type Props = {
   placeholder?: string;
 };
 
-export const SearchInput: React.FC<Props> = ({
+export const StatelessSearchInput: React.FC<Props> = ({
   value,
   onChange,
   reset,
@@ -50,5 +50,17 @@ export const SearchInput: React.FC<Props> = ({
         ) : null}
       </InputGroup>
     </Box>
+  );
+};
+
+export const SearchInput: React.FC<{}> = () => {
+  const state = useSearchState();
+  return (
+    <StatelessSearchInput
+      value={state.text}
+      onChange={state.onChange}
+      reset={state.resetText}
+      placeholder="Type a word..."
+    />
   );
 };

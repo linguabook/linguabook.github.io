@@ -37,8 +37,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
-import { ShowMore, KnowButton, LikeButton, ShareButton } from "./buttons";
+import {
+  ShowMore,
+  KnowButton,
+  LikeButton,
+  ShareButton,
+  BookmarkButton,
+} from "./buttons";
 import Card from "./Card";
+import useConfigState from "./use-config-menu";
+import { useDarkMode } from "./use-dark-mode";
 
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, A11y]);
@@ -63,8 +71,6 @@ function getLabel(key: string) {
 type Props = {
   text: string;
   lang: string;
-  exclude: string[];
-  dark?: boolean;
 };
 
 type Tab = {
@@ -137,7 +143,9 @@ const Terms: React.FC<any> = ({ source, items }) => {
   );
 };
 
-const DataCard: React.FC<Props> = ({ text, lang, exclude, dark }) => {
+const DataCard: React.FC<Props> = ({ text, lang }) => {
+  const dark = useDarkMode();
+  const { exclude } = useConfigState();
   const desktop = useDesktop();
   const [showMore, setShowMore] = useState(false);
 
@@ -332,9 +340,9 @@ const ToolBar: React.FC<any> = ({ showMore, setShowMore, text }) => {
     <HStack w="100%" py={2} px={5} spacing={5}>
       <ShowMore showMore={showMore} setShowMore={setShowMore} />
       <Text>Part of Speech?</Text>
-      <LikeButton />
-      <ShareButton />
       <KnowButton text={text} />
+      <BookmarkButton text={text} />
+      <ShareButton />
     </HStack>
   );
 };

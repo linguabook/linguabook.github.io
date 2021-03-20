@@ -3,9 +3,9 @@ import {
   ChakraProvider,
   Box,
   theme,
-  useColorMode,
   VStack,
   HStack,
+  Badge,
 } from "@chakra-ui/react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { RecoilRoot } from "recoil";
@@ -15,10 +15,11 @@ import { SearchInput, useSearchState } from "./SearchInput";
 import Card from "./DataCard";
 import WordList from "./WordList";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
-import useConfigMenu from "./use-config-menu";
+import useConfigMenu, { ConfigMenu } from "./use-config-menu";
 import Feed from "./Feed";
-import styles from "./App.module.scss";
 import { AppCloseButton } from "./buttons";
+import styles from "./App.module.scss";
+import useKnownWords from "./use-known-words";
 
 type Props = {
   className?: string;
@@ -35,10 +36,8 @@ function inIframe() {
 
 const App: React.FC<Props> = ({ className, style }) => {
   const isEmbedded = inIframe();
-  const config = useConfigMenu();
   const search = useSearchState();
-  const { colorMode } = useColorMode();
-  const dark = colorMode === "dark";
+  const config = useConfigMenu();
   return (
     <VStack className={cx(className, styles.app)} style={style}>
       {isEmbedded ? (
@@ -46,39 +45,47 @@ const App: React.FC<Props> = ({ className, style }) => {
           <AppCloseButton />
         </Box>
       ) : null}
-      {isEmbedded ? null : (
-        <HStack spacing={2} mt={1}>
-          <Box>{config.view}</Box>
-          <Box className={styles.item}>
-            <SearchInput
-              value={search.text}
-              onChange={search.onChange}
-              reset={search.resetText}
-              placeholder="Type a word..."
-            />
-          </Box>
-          <Box>
-            <ColorModeSwitcher />
-          </Box>
-        </HStack>
-      )}
+      {isEmbedded ? null : <TopBar />}
       <main>
         {search.debouncedText ? (
-          <Card
-            text={search.debouncedText}
-            lang="en"
-            exclude={config.exclude}
-            dark={dark}
-          />
+          <Card text={search.debouncedText} lang="en" />
         ) : (
-          <Feed
-            dark={dark}
-            exclude={config.exclude}
-            wordList={config.wordList}
-          />
+          <Feed wordList={config.wordList} />
         )}
       </main>
     </VStack>
+  );
+};
+
+const TopBar: React.FC<{}> = () => {
+  const words = useKnownWords();
+  return (
+    <HStack spacing={2} mt={1}>
+      <Box>
+        <ConfigMenu />
+      </Box>
+      <Box className={styles.item}>
+        <SearchInput />
+      </Box>
+      <Box>
+        <Badge
+          bgColor="blue.400"
+          textColor="white"
+          rounded="full"
+          fontSize="sm"
+          fontWeight="bold"
+          minWidth="20px"
+          minHeight="20px"
+          textAlign="center"
+          title="Number of known words"
+        >
+          {words.size}
+        </Badge>
+      </Box>
+      <Box>
+        <ColorModeSwitcher />
+      </Box>
+    </HStack>
   );
 };
 

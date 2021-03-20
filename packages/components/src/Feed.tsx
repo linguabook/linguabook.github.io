@@ -4,39 +4,17 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import Card from "./DataCard";
 import useKnownWords from "./use-known-words";
 import { WordList } from "./internal-types";
+import { flatWordList } from "./CustomWordList";
 
 type Props = {
-  dark: boolean;
-  exclude: string[];
   wordList: WordList;
 };
 
-const Feed: React.FC<Props> = ({ dark, exclude, wordList }) => {
+const Feed: React.FC<Props> = ({ wordList }) => {
   const pageSize = 2;
   const knownWords = useKnownWords();
   const allWords = useMemo(
-    () =>
-      _.filter(
-        _.uniqBy(
-          _.orderBy(
-            _.flatten(
-              _.map(
-                wordList.categories.map((c) =>
-                  c.words.map((w) => ({
-                    category: c.name,
-                    text: w.text,
-                    freq: w.freq,
-                  }))
-                )
-              )
-            ),
-            (t) => t.freq,
-            "desc"
-          ),
-          (t) => t.text
-        ),
-        (t) => !knownWords.has(t.text)
-      ),
+    () => _.filter(flatWordList(wordList), (t) => !knownWords.has(t.text)),
     [wordList, knownWords]
   );
 
@@ -58,15 +36,7 @@ const Feed: React.FC<Props> = ({ dark, exclude, wordList }) => {
   const items = words
     .filter((w) => !knownWords.has(w.text))
     .map((w) => {
-      return (
-        <Card
-          key={w.text}
-          text={w.text}
-          lang="en"
-          dark={dark}
-          exclude={exclude}
-        />
-      );
+      return <Card key={w.text} text={w.text} lang="en" />;
     });
   return (
     <InfiniteScroll

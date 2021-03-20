@@ -4,11 +4,13 @@ import {
   FiChevronsUp as ChevronUpIcon,
   FiChevronsDown as ChevronDownIcon,
 } from "react-icons/fi";
-import { BsBookmarkCheck as IgnoreIcon } from "react-icons/bs";
+import { FaBrain as IgnoreIcon } from "react-icons/fa";
+import { BsBookmark as BookmarkIcon } from "react-icons/bs";
 import { MdClose as CloseIcon } from "react-icons/md";
 import { IoIosHeartEmpty as HeartIcon } from "react-icons/io";
 import { BiShareAlt as ShareIcon } from "react-icons/bi";
 import useKnownWords from "./use-known-words";
+import { useMyWords } from "./CustomWordList";
 
 export const ShowMore: React.FC<any> = ({ showMore, setShowMore }) => {
   const handleClick = () => setShowMore(!showMore);
@@ -33,6 +35,21 @@ export const KnowButton: React.FC<{ text: string }> = ({ text }) => {
       aria-label={title}
       onClick={() => {
         knownWords.add(text);
+      }}
+    />
+  );
+};
+
+export const BookmarkButton: React.FC<{ text: string }> = ({ text }) => {
+  const words = useMyWords();
+  const title = "Add to my list";
+  return (
+    <IconButton
+      icon={<Icon as={BookmarkIcon} />}
+      title={title}
+      aria-label={title}
+      onClick={() => {
+        words.add(text);
       }}
     />
   );

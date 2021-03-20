@@ -13,20 +13,63 @@ import {
 } from "@chakra-ui/react";
 import { MdSettings } from "react-icons/md";
 import { sources, ogden, dolch } from "lingua-scraper";
+import { atom, useRecoilState } from "recoil";
 import { WordList } from "./internal-types";
+import { CustomWordList } from "./CustomWordList";
 
 const WORD_LISTS = {
-  ogden,
-  dolch,
+  ogden: {
+    name: "ogden",
+    ...ogden,
+  },
+  dolch: {
+    name: "dolch",
+    ...dolch,
+  },
+  mylist: CustomWordList.instance,
 };
 
-export default function useConfigMenu() {
-  const [exclude, setExclude] = useState<string[]>([]);
-  const [activeList, setActiveList] = useState("ogden");
+const ConfigAtom = atom({
+  key: "app-config",
+  default: {
+    excludedSources: [] as string[],
+    activeList: "ogden",
+  },
+});
+
+export default function useConfigState() {
+  const [state, setState] = useRecoilState(ConfigAtom);
+
+  const activeList = state.activeList;
   const wordList = useMemo<WordList>(() => WORD_LISTS[activeList], [
     activeList,
   ]);
 
+  const setActiveList = (value: string) => {
+    setState({
+      ...state,
+      activeList: value,
+    });
+  };
+
+  const setExclude = (value: string[]) => {
+    setState({
+      ...state,
+      excludedSources: value,
+    });
+  };
+
+  return {
+    exclude: state.excludedSources,
+    wordList,
+    setExclude,
+    activeList,
+    setActiveList,
+  };
+}
+
+export const ConfigMenu: React.FC<{}> = () => {
+  const { exclude, setExclude, activeList, setActiveList } = useConfigState();
   const sourceItems = sources.map((source, i) => (
     <MenuItem key={i}>
       <Checkbox
@@ -47,7 +90,7 @@ export default function useConfigMenu() {
     </MenuItem>
   ));
 
-  const view = (
+  return (
     <Menu>
       <MenuButton as={IconButton}>
         <Icon as={MdSettings} />
@@ -62,6 +105,7 @@ export default function useConfigMenu() {
             setActiveList(value);
           }}
         >
+          <MenuItemOption value="mylist">My Word List</MenuItemOption>
           <MenuItemOption value="ogden">Ogden Basic English</MenuItemOption>
           <MenuItemOption value="dolch">Dolch Sight Words</MenuItemOption>
         </MenuOptionGroup>
@@ -69,6 +113,4 @@ export default function useConfigMenu() {
       </MenuList>
     </Menu>
   );
-
-  return { exclude, wordList, view };
-}
+};

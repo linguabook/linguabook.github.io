@@ -52,7 +52,7 @@ export default function useConfigMenu() {
       <MenuButton as={IconButton}>
         <Icon as={MdSettings} />
       </MenuButton>
-      <MenuList>
+      <MenuList zIndex={11}>
         <MenuOptionGroup
           defaultValue="asc"
           title="Word List"

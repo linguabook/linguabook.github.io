@@ -13,15 +13,15 @@
     {
       "matches": ["<all_urls>"],
       "all_frames": true,
-      "js": ["linguabook-popup.js"]
+      "js": ["linguabook-content.js"]
     }
   ],
   "permissions": [
     "https://tsvbits.com/*",
-    "https://google.com/*",
     "https://*.google.com/*",
+    "https://*.microsoft.com/*",
     "https://linkedin.com/*",
-    "https://dei.com/*",
-    "https://*.dei.com/*"
+    "https://*.slack.com/*",
+    "https://*.twitter.com/*"
   ]
 }

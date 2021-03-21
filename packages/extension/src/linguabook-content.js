@@ -2,7 +2,7 @@ console.log("LinguaBook extension is loaded");
 
 var iframeContainer;
 
-document.addEventListener("click", function (e) {
+document.addEventListener("mouseup", function (e) {
   const selection = window.getSelection();
   if (!selection) {
     return;
@@ -15,8 +15,7 @@ document.addEventListener("click", function (e) {
     return;
   }
 
-  var width = "512px";
-  var height = "100vh";
+  
 
   // for local dev
   // var appURL = "http://localhost:3000";
@@ -29,6 +28,7 @@ document.addEventListener("click", function (e) {
     var eventMethod = window.addEventListener
       ? "addEventListener"
       : "attachEvent";
+    console.log("eventMethod", eventMethod);
     var eventer = window[eventMethod];
     var messageEvent = eventMethod === "attachEvent" ? "onmessage" : "message";
 
@@ -45,13 +45,28 @@ document.addEventListener("click", function (e) {
     iframeContainer.parentElement.removeChild(iframeContainer);
     iframeContainer = undefined;
   }
+  
+  const placement = getPlacement();
+  let top = "0";
+  let left = "0";
+  let width = "512px";
+  let height = "100vh";
+  
+  if (placement && placement.ontop) {
+    const b = placement.ontop.getBoundingClientRect();
+    // width = b.width + "px";
+    height = b.height + "px";
+    left = b.left + "px";
+    top = b.top + "px";
+  }
 
   // TODO position relative to selected text range
   iframeContainer = document.createElement("div");
   iframeContainer.style.position = "absolute";
   iframeContainer.style.width = width;
   iframeContainer.style.height = height;
-  iframeContainer.style.top = "0";
+  iframeContainer.style.top = top;
+  iframeContainer.style.left = left;
   iframeContainer.style.overflow = "auto";
   iframeContainer.style.zIndex = "999999";
   iframeContainer.appendChild(iframe);
@@ -60,5 +75,14 @@ document.addEventListener("click", function (e) {
 });
 
 function isWord(s) {
-  return /[\w-]+/.test(s);
+  return /^[\w-]+$/.test(s);
+}
+
+function getPlacement() {
+  // TODO site map
+  // google.com
+  const google_kb_card = document.querySelector(".liYKde");
+  if (google_kb_card) {
+    return { ontop: google_kb_card };
+  }
 }

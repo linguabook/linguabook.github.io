@@ -2,5 +2,9 @@
   "name": "@linguabook/extension",
   "version": "0.0.0",
   "license": "Apache",
-  "private": "true"
+  "private": "true",
+  "dependencies": {
+    "popper.js": "^1.16.1",
+    "tippy.js": "^6.3.1"
+  }
 }

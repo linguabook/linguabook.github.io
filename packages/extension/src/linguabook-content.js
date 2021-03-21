@@ -1,8 +1,37 @@
 console.log("LinguaBook extension is loaded");
 
-var iframeContainer;
-
 document.addEventListener("mouseup", function (e) {
+  const text = getSelectedWord(e);
+  if (!text) {
+    return;
+  }
+
+  function action(label, text) {
+    const event = `LB.${label}`;
+    return `<button class="lb_extension_action" onclick="document.dispatchEvent(new CustomEvent('${event}', {detail: '${text}'}))">${label}</button>`;
+  }
+
+  const target = selection.anchorNode.parentElement;
+  const tip = tippy(target, {
+    allowHTML: true,
+    content: `${action("SHOW", text)}`,
+    interactive: true,
+    sticky: true,
+    trigger: "manual",
+    getReferenceClientRect() {
+      const range = selection.getRangeAt(0);
+      const rect = range.getClientRects()[0];
+      return rect;
+    },
+  });
+  tip.show();
+});
+
+document.addEventListener("LB.SHOW", e => {
+  showCard(e.detail);
+});
+
+function getSelectedWord(e) {
   const selection = window.getSelection();
   if (!selection) {
     return;
@@ -14,9 +43,16 @@ document.addEventListener("mouseup", function (e) {
   if (!text || !isWord(text)) {
     return;
   }
+  return text;
+}
 
-  
+function isWord(s) {
+  return /^[\w-]+$/.test(s);
+}
 
+var iframeContainer;
+
+function showCard(text) {
   // for local dev
   // var appURL = "http://localhost:3000";
   var appURL = "https://linguabook.github.io";
@@ -45,13 +81,13 @@ document.addEventListener("mouseup", function (e) {
     iframeContainer.parentElement.removeChild(iframeContainer);
     iframeContainer = undefined;
   }
-  
+
   const placement = getPlacement();
   let top = "0";
   let left = "0";
   let width = "512px";
   let height = "100vh";
-  
+
   if (placement && placement.ontop) {
     const b = placement.ontop.getBoundingClientRect();
     // width = b.width + "px";
@@ -72,10 +108,6 @@ document.addEventListener("mouseup", function (e) {
   iframeContainer.appendChild(iframe);
 
   document.body.appendChild(iframeContainer);
-});
-
-function isWord(s) {
-  return /^[\w-]+$/.test(s);
 }
 
 function getPlacement() {

@@ -13,13 +13,16 @@
     {
       "matches": ["<all_urls>"],
       "all_frames": true,
-      "js": ["linguabook-content.js"]
+      "css": ["tippy.css", "content.css"],
+      "js": ["popper.js", "tippy.js", "linguabook-content.js"]
     }
   ],
   "permissions": [
     "https://tsvbits.com/*",
     "https://*.google.com/*",
     "https://*.microsoft.com/*",
+    "https://github.com/*",
+    "https://*.github.io/*",
     "https://linkedin.com/*",
     "https://*.slack.com/*",
     "https://*.twitter.com/*"

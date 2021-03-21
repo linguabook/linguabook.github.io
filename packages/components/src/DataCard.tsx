@@ -33,11 +33,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
-import {
-  ShowMore,
-  KnowButton,
-  BookmarkButton,
-} from "./buttons";
+import { ShowMore, KnowButton, BookmarkButton } from "./buttons";
 import Card from "./Card";
 import useConfigState from "./use-config-menu";
 import { useDarkMode } from "./use-dark-mode";
@@ -99,13 +95,12 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
   }
 
   const visual: any[] = [];
-  type TextItem = { text: string; source: string };
   const textData = {
-    transcription: [] as TextItem[],
-    definition: [] as TextItem[],
-    tag: [] as TextItem[],
+    transcription: [] as string[],
+    definition: [] as string[],
+    tag: [] as string[],
   };
-  const translations: { text: string; lang: string; source: string }[] = [];
+  const translations: { text: string; lang: string }[] = [];
   const audio: { source: any; url: string }[] = [];
   let tabs: Tab[] = [];
 
@@ -145,11 +140,13 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
       }
       if (textData[key]) {
         for (const item of data) {
-          textData[key].push({
-            text: item,
-            source: source.name,
-          });
+          if (_.isArray(item)) {
+            textData[key] = textData[key].concat(item);
+          } else {
+            textData[key].push(item);
+          }
         }
+        textData[key] = _.uniq(textData[key]);
       }
       if (key === "visual") {
         const target = visual;
@@ -209,9 +206,7 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
       <Slide
         src={d.url}
         text={{ text, lang }}
-        transcription={
-          textData.transcription[0] ? textData.transcription[0].text : ""
-        }
+        transcription={textData.transcription[0]}
         audio={_.head(audio)}
         translations={translations.filter((t) => t.lang === "ru")}
       />
@@ -246,9 +241,9 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
             </Swiper>
           </div>
         )}
-        {textData.definition[0] && textData.definition[0].text ? (
+        {textData.definition[0] ? (
           <Box w="100%" h="100%" p={5}>
-            <Text>{textData.definition[0].text}</Text>
+            <Text>{textData.definition[0]}</Text>
           </Box>
         ) : null}
         <ToolBar
@@ -295,14 +290,7 @@ const ToolBar: React.FC<any> = ({
   text,
   tags: inputTags,
 }) => {
-  const tags = _.take(
-    _.uniq(
-      (_.isEmpty(inputTags) ? [{ text: "UNKNOWN" }] : inputTags).map(
-        (t) => t.text
-      )
-    ),
-    3
-  ) as string[];
+  const tags: string[] = _.take(_.isEmpty(inputTags) ? ["UNKNOWN"] : inputTags, 3);
   return (
     <HStack
       w="100%"

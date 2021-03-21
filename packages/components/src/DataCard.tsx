@@ -325,7 +325,7 @@ const ToolBar: React.FC<any> = ({
             overflow="hidden"
             fontFamily="monospace"
             fontSize="md"
-            flex={`1 0 auto`}
+            flex={`0 0 auto`}
             title={tag}
             textOverflow="ellipsis"
           >

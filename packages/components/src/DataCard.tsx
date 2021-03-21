@@ -36,15 +36,11 @@ import "swiper/components/pagination/pagination.scss";
 import {
   ShowMore,
   KnowButton,
-  LikeButton,
-  ShareButton,
   BookmarkButton,
-  ToggleButton,
 } from "./buttons";
 import Card from "./Card";
 import useConfigState from "./use-config-menu";
 import { useDarkMode } from "./use-dark-mode";
-import { Source } from "lingua-scraper/dist/types";
 import { Playlist, TermList } from "./ItemList";
 
 // install Swiper modules
@@ -337,10 +333,9 @@ const ToolBar: React.FC<any> = ({
           </Badge>
         ))}
       </HStack>
-      <HStack flex="1 0 100px">
+      <HStack flex="1 0 50px">
         <KnowButton text={text} />
         <BookmarkButton text={text} />
-        <ShareButton />
       </HStack>
     </HStack>
   );

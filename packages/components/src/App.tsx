@@ -101,7 +101,7 @@ const AppContainer: React.FC<Props> = (props) => {
     <RecoilRoot>
       <ChakraProvider theme={theme}>
         <Router>
-          <Analytics id="G-SHK7Q8TMPJ">
+          <Analytics id="G-SHK7Q8TMPJ" debug>
             <App {...props} />
           </Analytics>
         </Router>

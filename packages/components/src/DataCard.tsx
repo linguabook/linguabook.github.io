@@ -1,16 +1,13 @@
 import _ from "lodash";
 import React, { useState } from "react";
 import {
-  Tabs,
-  TabList,
-  TabPanels,
   Tab,
-  TabPanel,
   Box,
   VStack,
   HStack,
   Text,
   Badge,
+  Heading,
 } from "@chakra-ui/react";
 import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
@@ -75,11 +72,19 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
   const [showMore, setShowMore] = useState(false);
   const slideWidth = desktop ? "512px" : "100vw";
   const slideHeight = desktop ? 512 / 2 + "px" : "calc(100vw/2)";
+  const [activeTab, setActiveTab] = useState(0);
 
   const q = qs.stringify({ exclude });
 
   const { data: sources, error } = useSWR(`/words/data/${text}?${q}`, () => {
     return fetchData({ text }, { exclude });
+  }, {
+    onSuccess: () => {
+      setActiveTab(0);
+    },
+    onError: () => {
+      setActiveTab(0);
+    },
   });
 
   if (error) {
@@ -132,6 +137,7 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
     return tab;
   };
 
+  // TODO convert data to more usable way to easy map it to react elements
   for (const sourceData of sources) {
     const source = sourceData.source;
     _.each(sourceData.data, (data, key) => {
@@ -256,24 +262,28 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
           <>
             {_.isEmpty(tabs) ? null : (
               <Box>
-                <Tabs maxW={slideWidth}>
-                  <TabList maxW={slideWidth}>
-                    {tabs.map((t, i) => (
-                      <Tab key={i}>{t.label}</Tab>
-                    ))}
-                  </TabList>
-                  <TabPanels maxW={slideWidth}>
-                    {tabs.map((t, i) => (
-                      <TabPanel key={i} maxW={slideWidth}>
-                        <div className={styles.table_container}>
-                          <table>
-                            <tbody>{t.content}</tbody>
-                          </table>
-                        </div>
-                      </TabPanel>
-                    ))}
-                  </TabPanels>
-                </Tabs>
+                <Swiper
+                  navigation
+                  onSlideChange={(s) => {
+                    setActiveTab(s.activeIndex);
+                  }}
+                  style={{
+                    width: slideWidth,
+                  }}
+                >
+                  {tabs.map((t, i) => (
+                    <SwiperSlide key={i}>
+                      <Box textAlign="center">
+                        <Heading size="lg">{t.label}</Heading>
+                      </Box>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+                <Box className={styles.table_container} p={2} px={4}>
+                  <table>
+                    <tbody>{tabs[activeTab].content}</tbody>
+                  </table>
+                </Box>
               </Box>
             )}
           </>

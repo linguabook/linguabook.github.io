@@ -111,23 +111,26 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
 
   const makeTab = (key) => {
     const lt = (a: string, b: string) => {
-      const kind = (s: string) => {
-        switch (s) {
-          case "Audio":
-            return 1;
-          default:
-            return 0;
-        }
+      const knownOrder = [
+        "definition",
+        "in",
+        "translated_as",
+        "synonym",
+        "audio"
+      ];
+      const order = (s: string) => {
+        const i = knownOrder.indexOf(s);
+        return i >= 0 ? i : 1000;
       };
-      const k1 = kind(a);
-      const k2 = kind(b);
+      const k1 = order(a);
+      const k2 = order(b);
       return k1 != k2 ? _.lt(k1, k2) : _.lt(a, b);
     };
     let tab = tabs.find((t) => t.key === key);
     if (!tab) {
       tab = { key, label: getLabel(key), content: [] };
       for (let i = 0; i < tabs.length; i++) {
-        if (lt(tab.label, tabs[i].label)) {
+        if (lt(tab.key, tabs[i].key)) {
           tabs.splice(i, 0, tab);
           return tab;
         }

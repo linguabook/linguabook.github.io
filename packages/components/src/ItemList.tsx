@@ -32,13 +32,15 @@ const ListHeading: React.FC<{ children: any }> = ({ children }) => (
 const TextItem: React.FC<any> = ({ item }) => <ListItem>{item.text}</ListItem>;
 
 const ItemList: React.FC<any> = ({ source, items, ItemView = TextItem }) => {
+  const [expanded, setExpanded] = useState(false);
   if (_.isEmpty(items)) {
     return null;
   }
-  const [expanded, setExpanded] = useState(false);
+
   const nodes = (expanded ? items : _.take(items, 3)).map((rec, i) => {
     return <ItemView key={i} item={rec} />;
   });
+
   return (
     <tr>
       <td>
@@ -57,14 +59,16 @@ const ItemList: React.FC<any> = ({ source, items, ItemView = TextItem }) => {
 const AudioItem: React.FC<any> = ({ item }) => {
   return (
     <ListItem>
-      <SoundIcon url={item.url} />
-      <Text>{item.author || "unknown"}</Text>
-      <span className={styles.ml}>
-        <GenderIcon gender={item.gender} />
-      </span>
-      <span className={styles.ml}>
-        <FlagIcon country={item.country} />
-      </span>
+      <HStack>
+        <SoundIcon url={item.url} />
+        <Text>{item.author || "unknown"}</Text>
+        <span className={styles.ml}>
+          <GenderIcon gender={item.gender} />
+        </span>
+        <span className={styles.ml}>
+          <FlagIcon country={item.country} />
+        </span>
+      </HStack>
     </ListItem>
   );
 };

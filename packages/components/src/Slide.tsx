@@ -1,21 +1,21 @@
 import React from "react";
-import { Box, Image, AspectRatio } from "@chakra-ui/react";
+import { Box, Image, AspectRatio, Text } from "@chakra-ui/react";
 import isEmpty from "lodash/isEmpty";
 import map from "lodash/map";
 import take from "lodash/take";
 import SoundIcon from "./SoundIcon";
 import styles from "./Slide.module.scss";
 
-type Text = {
+type TextItem = {
   text: string;
   lang: string;
 };
 
 type Props = {
   src: string;
-  text: Text;
+  text: TextItem;
   transcription?: string;
-  translations?: Text[];
+  translations?: TextItem[];
   audio?: { url: string };
 };
 
@@ -44,8 +44,10 @@ const Slide: React.FC<Props> = ({
       <Box className={styles.overlay} />
       <Box className={styles.text_container}>
         <Box>
-          <Box className={styles.label} fontSize="42px" fontWeight="bold">
-            {text.text}
+          <Box className={styles.label}>
+            <Text fontSize="xxx-large" fontWeight="bold">
+              {text.text}
+            </Text>
           </Box>
           <Box className={styles.label} fontSize="18px">
             {audio ? <SoundIcon url={audio.url} /> : null}
@@ -55,7 +57,7 @@ const Slide: React.FC<Props> = ({
             ? null
             : map(take(translations, 1), (t, k) => (
                 <Box className={styles.label} key={k}>
-                  {t.text}
+                  <Text fontSize="large" fontWeight="bold">{t.text}</Text>
                 </Box>
               ))}
         </Box>

@@ -20,7 +20,7 @@ const SourceLink: React.FC<{ source: Source }> = ({ source }) => (
 
 const ListHeading: React.FC<{ children: any }> = ({ children }) => (
   <Heading
-    size="lg"
+    size="md"
     letterSpacing="wide"
     className={styles.source_header}
     fontWeight="bold"

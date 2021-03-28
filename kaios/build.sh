@@ -8,6 +8,7 @@ rm -rf $APP_DIR
 mkdir -p $APP_DIR
 cp manifest.webapp $APP_DIR
 cd ..
+yarn build
 yarn cpx "packages/app/build/**/*" kaios/$APP_DIR
 cd $DIR
 zip kaios-app.zip $APP_DIR

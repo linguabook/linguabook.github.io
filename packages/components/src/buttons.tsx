@@ -7,7 +7,10 @@ import {
   FiChevronDown as ChevronDownIcon,
 } from "react-icons/fi";
 import { FaBrain as IgnoreIcon } from "react-icons/fa";
-import { BsBookmark as BookmarkIcon } from "react-icons/bs";
+import {
+  BsBookmark as BookmarkIcon,
+  BsThreeDots as DotsIcon,
+} from "react-icons/bs";
 import { MdClose as CloseIcon } from "react-icons/md";
 import { IoIosHeartEmpty as HeartIcon } from "react-icons/io";
 import { BiShareAlt as ShareIcon } from "react-icons/bi";
@@ -38,15 +41,23 @@ export const ToggleIcon: React.FC<any> = ({ expanded, setExpanded }) => {
   );
 };
 
-export const ToggleButton: React.FC<any> = ({ expanded, setExpanded }) => {
+export const ToggleButton: React.FC<any> = ({
+  expanded,
+  setExpanded,
+  dots,
+}) => {
   const toggle = () => setExpanded(!expanded);
   const title = expanded ? "Collapse this section" : "Expand this section";
+  const icon = dots ? DotsIcon : expanded ? ChevronUpIcon : ChevronDownIcon;
   return (
     <IconButton
-      icon={<Icon as={expanded ? ChevronUpIcon : ChevronDownIcon} />}
+      icon={<Icon as={icon} />}
       title={title}
       aria-label={title}
       onClick={toggle}
+      p={dots ? 0 : undefined}
+      w={dots ? "auto" : undefined}
+      h={dots ? "auto" : undefined}
     />
   );
 };

@@ -48,9 +48,11 @@ const ItemList: React.FC<any> = ({ source, items, ItemView = TextItem }) => {
           <ListHeading>
             <SourceLink source={source} />
           </ListHeading>
-          <ToggleButton expanded={expanded} setExpanded={setExpanded} />
         </HStack>
-        <UnorderedList pl={1}>{nodes}</UnorderedList>
+        <UnorderedList pl={1}>
+          {nodes}
+          <ToggleButton expanded={expanded} setExpanded={setExpanded} dots />
+        </UnorderedList>
       </td>
     </tr>
   );

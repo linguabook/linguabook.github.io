@@ -27,15 +27,26 @@ export const ShowMore: React.FC<any> = ({ showMore, setShowMore }) => {
   );
 };
 
+export const ToggleIcon: React.FC<any> = ({ expanded, setExpanded }) => {
+  const toggle = () => setExpanded(!expanded);
+  return (
+    <Icon
+      as={expanded ? ChevronUpIcon : ChevronDownIcon}
+      onClick={toggle}
+      cursor="pointer"
+    />
+  );
+};
+
 export const ToggleButton: React.FC<any> = ({ expanded, setExpanded }) => {
-  const handleClick = () => setExpanded(!expanded);
+  const toggle = () => setExpanded(!expanded);
   const title = expanded ? "Collapse this section" : "Expand this section";
   return (
     <IconButton
       icon={<Icon as={expanded ? ChevronUpIcon : ChevronDownIcon} />}
       title={title}
       aria-label={title}
-      onClick={handleClick}
+      onClick={toggle}
     />
   );
 };

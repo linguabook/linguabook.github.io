@@ -8,6 +8,7 @@ import {
   Text,
   Badge,
   Heading,
+  Table,
 } from "@chakra-ui/react";
 import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
@@ -30,7 +31,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
-import { ShowMore, KnowButton, BookmarkButton } from "./buttons";
+import { ShowMore, KnowButton, BookmarkButton, ToggleIcon } from "./buttons";
 import Card from "./Card";
 import useConfigState from "./use-config-menu";
 import { useDarkMode } from "./use-dark-mode";
@@ -72,20 +73,12 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
   const [showMore, setShowMore] = useState(false);
   const slideWidth = desktop ? "512px" : "100vw";
   const slideHeight = desktop ? 512 / 2 + "px" : "calc(100vw/2)";
-  const [activeTab, setActiveTab] = useState(0);
 
   const q = qs.stringify({ exclude });
 
-  const { data: sources, error } = useSWR(`/words/data/${text}?${q}`, () => {
-    return fetchData({ text }, { exclude });
-  }, {
-    onSuccess: () => {
-      setActiveTab(0);
-    },
-    onError: () => {
-      setActiveTab(0);
-    },
-  });
+  const { data: sources, error } = useSWR(`/words/data/${text}?${q}`, () =>
+    fetchData({ text }, { exclude })
+  );
 
   if (error) {
     return <Error error={error} />;
@@ -116,7 +109,7 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
         "in",
         "translated_as",
         "synonym",
-        "audio"
+        "audio",
       ];
       const order = (s: string) => {
         const i = knownOrder.indexOf(s);
@@ -262,37 +255,42 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
           tags={textData.tag}
         />
         {showMore ? (
-          <>
-            {_.isEmpty(tabs) ? null : (
-              <Box>
-                <Swiper
-                  navigation
-                  onSlideChange={(s) => {
-                    setActiveTab(s.activeIndex);
-                  }}
-                  style={{
-                    width: slideWidth,
-                  }}
-                >
-                  {tabs.map((t, i) => (
-                    <SwiperSlide key={i}>
-                      <Box textAlign="center">
-                        <Heading size="lg">{t.label}</Heading>
-                      </Box>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-                <Box className={styles.table_container} p={2} px={4}>
-                  <table>
-                    <tbody>{tabs[activeTab].content}</tbody>
-                  </table>
-                </Box>
-              </Box>
-            )}
-          </>
+          <Box w="100%" textAlign="left" px={2}>
+            {tabs.map((t) => (
+              <Section key={t.key} label={t.label} content={t.content} />
+            ))}
+          </Box>
         ) : null}
       </VStack>
     </Card>
+  );
+};
+
+const Section: React.FC<any> = ({ label, content }) => {
+  const [expanded, setExpanded] = useState(false);
+  const toggle = () => setExpanded(!expanded);
+  return (
+    <Box w="100%">
+      <Heading
+        size="lg"
+        onClick={toggle}
+        cursor="pointer"
+        borderBottom="1px solid gray"
+        borderBottomColor="gray.100"
+        w="100%"
+        py={1}
+      >
+        <ToggleIcon expanded={expanded} setExpanded={setExpanded} />
+        {label}
+      </Heading>
+      {expanded ? (
+        <Box py={1}>
+          <Table>
+            <tbody>{content}</tbody>
+          </Table>
+        </Box>
+      ) : null}
+    </Box>
   );
 };
 
@@ -303,7 +301,10 @@ const ToolBar: React.FC<any> = ({
   text,
   tags: inputTags,
 }) => {
-  const tags: string[] = _.take(_.isEmpty(inputTags) ? ["UNKNOWN"] : inputTags, 3);
+  const tags: string[] = _.take(
+    _.isEmpty(inputTags) ? ["UNKNOWN"] : inputTags,
+    3
+  );
   return (
     <HStack
       w="100%"

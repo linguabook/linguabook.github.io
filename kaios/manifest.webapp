@@ -6,7 +6,7 @@
   "launch_path": "/index.html",
   "icons": {
     "56": "/logo192.png",
-    "112": "/logo112.png"
+    "112": "/logo512.png"
   },
   "developer": {
     "name": "Sergey Todyshev",

@@ -6,4 +6,4 @@ build
 .idea
 *.iml
 kaios/kaios-app
-kaios/kaios-app.zip
+kaios/*.zip

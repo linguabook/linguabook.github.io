@@ -11,4 +11,6 @@ cd ..
 yarn build
 yarn cpx "packages/app/build/**/*" kaios/$APP_DIR
 cd $DIR
-zip kaios-app.zip $APP_DIR
+rm -rf linguabook.zip
+cd $APP_DIR
+zip -r ../linguabook.zip *

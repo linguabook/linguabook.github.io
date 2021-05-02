@@ -3,15 +3,16 @@
   overflow: hidden;
 }
 
-.desktop {
-  .visual {
-    // margin: 0 24rem;
-  }
-}
-
 .card {
-  width: 512px;
   margin-bottom: 20px;
+
+  &.desktop {
+    width: 512px;
+  }
+
+  &.mobile {
+    width: 100vw;
+  }
 }
 
 .interactive_icon {

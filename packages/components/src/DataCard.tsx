@@ -223,6 +223,7 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
     <Card
       className={cx(styles.card, {
         [styles.desktop]: desktop,
+        [styles.mobile]: !desktop,
         [styles.dark]: dark,
       })}
       borderWidth={1}
@@ -244,7 +245,7 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
           </div>
         )}
         {textData.definition[0] ? (
-          <Box w="100%" h="100%" p={5}>
+          <Box p={5}>
             <Text>{textData.definition[0]}</Text>
           </Box>
         ) : null}
@@ -306,19 +307,12 @@ const ToolBar: React.FC<any> = ({
     3
   );
   return (
-    <HStack
-      w="100%"
-      py={2}
-      px={5}
-      spacing={5}
-      justify="space-between"
-      overflow="hidden"
-    >
-      <Box flex="1 1 25px">
+    <HStack py={2} px={5} justify="space-between" overflow="hidden">
+      <Box flex="0 0">
         <ShowMore showMore={showMore} setShowMore={setShowMore} />
       </Box>
-      <HStack flex="1 1 300px" overflow="hidden">
-        {tags.map((tag, key) => (
+      <HStack flex="1 1" overflow="hidden">
+        {_.take(tags, 3).map((tag, key) => (
           <Badge
             key={key}
             variant="solid"
@@ -326,8 +320,7 @@ const ToolBar: React.FC<any> = ({
             px={2}
             overflow="hidden"
             fontFamily="monospace"
-            fontSize="md"
-            flex={`0 0 auto`}
+            fontSize="sm"
             title={tag}
             textOverflow="ellipsis"
           >
@@ -335,7 +328,7 @@ const ToolBar: React.FC<any> = ({
           </Badge>
         ))}
       </HStack>
-      <HStack flex="1 0 50px">
+      <HStack flex="0 0">
         <KnowButton text={text} />
         <BookmarkButton text={text} />
       </HStack>

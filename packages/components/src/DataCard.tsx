@@ -272,7 +272,7 @@ const Section: React.FC<any> = ({ label, content }) => {
   return (
     <Box w="100%">
       <Heading
-        size="lg"
+        size="md"
         onClick={toggle}
         cursor="pointer"
         borderBottom="1px solid gray"

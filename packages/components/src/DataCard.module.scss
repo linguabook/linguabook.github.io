@@ -7,10 +7,19 @@
   .visual {
     // margin: 0 24rem;
   }
+
+  .card {
+    width: 512px;
+  }
+}
+
+.mobile {
+  .card {
+    width: 100vw;
+  }
 }
 
 .card {
-  width: 512px;
   margin-bottom: 20px;
 }
 

@@ -1,7 +1,7 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "Linguabook",
-  "description": "Small tool for learning second languages",
+  "description": "Small and free education tool for learning Basic English",
   "type": "web",
   "launch_path": "/index.html",
   "icons": {
@@ -15,8 +15,8 @@
   "locales": {
     "en-US": {
       "name": "Linguabook",
-      "subtitle": "Small tool for learning second languages",
-      "description": "Brief description of your app"
+      "subtitle": "Learn Basic English for free",
+      "description": "Small and free education tool for learning Basic English"
     }
   },
   "default_locale": "en-US"

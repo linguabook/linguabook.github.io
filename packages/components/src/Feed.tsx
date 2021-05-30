@@ -2,10 +2,16 @@ import _ from "lodash";
 import React, { useEffect, useMemo, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { requestAnimationFrame } from "dom-helpers";
-import Card from "./DataCard";
+import DataCard from "./DataCard";
 import useKnownWords from "./use-known-words";
 import { WordList } from "./internal-types";
 import { flatWordList } from "./CustomWordList";
+import { ComponentMap as CardComponents } from "./generated-cards";
+
+const Card = ({text, ...props}) => {
+  const Component = CardComponents[text] || DataCard;
+  return <Component text={text} {...props}/>;
+};
 
 type Props = {
   wordList: WordList;

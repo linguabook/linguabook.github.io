@@ -67,16 +67,10 @@ type Tab = {
 };
 
 const DataCard: React.FC<Props> = ({ text, lang }) => {
-  const dark = useDarkMode();
   const { exclude } = useConfigState();
-  const desktop = useDesktop();
-  const [showMore, setShowMore] = useState(false);
-  const slideWidth = desktop ? "512px" : "100vw";
-  const slideHeight = desktop ? 512 / 2 + "px" : "calc(100vw/2)";
-
   const q = qs.stringify({ exclude });
 
-  const { data: sources, error } = useSWR(`/words/data/${text}?${q}`, () =>
+  const { data, error } = useSWR(`/words/data/${text}?${q}`, () =>
     fetchData({ text }, { exclude })
   );
 
@@ -84,13 +78,31 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
     return <Error error={error} />;
   }
 
-  if (!sources) {
+  if (!data) {
     return (
       <Card textAlign="center">
         <Loader />
       </Card>
     );
   }
+
+  return <StatelessCard text={text} lang={lang} data={data} />;
+};
+
+type StatelessCardProps = Props & {
+  data: any;
+};
+
+export const StatelessCard: React.FC<StatelessCardProps> = ({
+  text,
+  lang,
+  data: sources,
+}) => {
+  const dark = useDarkMode();
+  const desktop = useDesktop();
+  const [showMore, setShowMore] = useState(false);
+  const slideWidth = desktop ? "512px" : "100vw";
+  const slideHeight = desktop ? 512 / 2 + "px" : "calc(100vw/2)";
 
   const visual: any[] = [];
   const textData = {

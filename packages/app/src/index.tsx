@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import ReactDOM from "react-dom";
 import { ColorModeScript } from "@chakra-ui/react";
 import "./index.css";
@@ -7,7 +8,9 @@ import reportWebVitals from "./reportWebVitals";
 ReactDOM.render(
   <>
     <ColorModeScript />
-    <App />
+    <Suspense fallback={() => <div>loading...</div>}>
+      <App />
+    </Suspense>
   </>,
   document.getElementById("root")
 );

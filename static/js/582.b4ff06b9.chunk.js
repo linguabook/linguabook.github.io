@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[582],{967:function(t,e,n){"use strict";n.r(e);var s=n(0),a=n(74);e.default=function(){return Object(s.jsx)(a.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/steel.json",text:"steel",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=582.b4ff06b9.chunk.js.map

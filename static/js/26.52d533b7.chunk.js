@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[26],{942:function(t,a,n){"use strict";n.r(a);var p=n(0),e=n(74);a.default=function(){return Object(p.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/apple.json",text:"apple",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=26.52d533b7.chunk.js.map

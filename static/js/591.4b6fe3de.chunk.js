@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[591],{911:function(t,e,n){"use strict";n.r(e);var s=n(0),a=n(74);e.default=function(){return Object(s.jsx)(a.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/street.json",text:"street",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=591.4b6fe3de.chunk.js.map

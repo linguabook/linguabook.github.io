@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[628],{787:function(t,n,a){"use strict";a.r(n);var s=a(0),u=a(74);n.default=function(){return Object(s.jsx)(u.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/thumb.json",text:"thumb",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=628.ffafabf8.chunk.js.map

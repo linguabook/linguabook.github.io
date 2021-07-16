@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[108],{1179:function(t,a,n){"use strict";n.r(a);var s=n(0),i=n(74);a.default=function(){return Object(s.jsx)(i.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/chair.json",text:"chair",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=108.d03ddfaf.chunk.js.map

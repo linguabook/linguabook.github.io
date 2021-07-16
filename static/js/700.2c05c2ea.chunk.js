@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[700],{580:function(t,n,a){"use strict";a.r(n);var e=a(0),s=a(74);n.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/wire.json",text:"wire",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=700.2c05c2ea.chunk.js.map

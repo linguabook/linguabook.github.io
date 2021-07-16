@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[359],{814:function(t,o,n){"use strict";n.r(o);var a=n(0),s=n(74);o.default=function(){return Object(a.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/look.json",text:"look",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=359.00b279c7.chunk.js.map

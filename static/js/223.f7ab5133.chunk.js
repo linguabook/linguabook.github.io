@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[223],{694:function(t,n,a){"use strict";a.r(n);var e=a(0),s=a(74);n.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/fire.json",text:"fire",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=223.f7ab5133.chunk.js.map

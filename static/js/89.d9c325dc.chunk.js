@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[89],{835:function(s,t,n){"use strict";n.r(t);var a=n(0),e=n(74);t.default=function(){return Object(a.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/business.json",text:"business",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=89.d9c325dc.chunk.js.map

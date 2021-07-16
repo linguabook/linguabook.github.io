@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[78],{829:function(t,s,a){"use strict";a.r(s);var n=a(0),o=a(74);s.default=function(){return Object(n.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/brass.json",text:"brass",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=78.6b6df662.chunk.js.map

@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[479],{732:function(t,n,p){"use strict";p.r(n);var a=p(0),o=p(74);n.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/property.json",text:"property",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=479.936601a9.chunk.js.map

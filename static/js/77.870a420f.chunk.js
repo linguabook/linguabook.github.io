@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[77],{790:function(t,n,a){"use strict";a.r(n);var s=a(0),i=a(74);n.default=function(){return Object(s.jsx)(i.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/brain.json",text:"brain",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=77.870a420f.chunk.js.map

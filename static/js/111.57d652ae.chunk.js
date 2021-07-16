@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[111],{646:function(t,e,n){"use strict";n.r(e);var s=n(0),a=n(74);e.default=function(){return Object(s.jsx)(a.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/cheese.json",text:"cheese",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=111.57d652ae.chunk.js.map

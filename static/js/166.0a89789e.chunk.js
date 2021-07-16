@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[166],{702:function(t,n,s){"use strict";s.r(n);var a=s(0),o=s(74);n.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/destruction.json",text:"destruction",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=166.0a89789e.chunk.js.map

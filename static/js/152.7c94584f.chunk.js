@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[152],{696:function(t,n,s){"use strict";s.r(n);var a=s(0),u=s(74);n.default=function(){return Object(a.jsx)(u.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/crush.json",text:"crush",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=152.7c94584f.chunk.js.map

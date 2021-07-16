@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[474],{917:function(t,n,s){"use strict";s.r(n);var a=s(0),o=s(74);n.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/prison.json",text:"prison",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=474.20200ed3.chunk.js.map

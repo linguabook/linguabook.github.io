@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[254],{867:function(t,n,a){"use strict";a.r(n);var s=a(0),i=a(74);n.default=function(){return Object(s.jsx)(i.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/girl.json",text:"girl",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=254.c1e01c16.chunk.js.map

@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[186],{649:function(t,s,n){"use strict";n.r(s);var a=n(0),e=n(74);s.default=function(){return Object(a.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/dress.json",text:"dress",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=186.d2836b9d.chunk.js.map

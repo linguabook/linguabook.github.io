@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[270],{921:function(t,a,e){"use strict";e.r(a);var n=e(0),r=e(74);a.default=function(){return Object(n.jsx)(r.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/greater.json",text:"greater",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=270.d8c85c1e.chunk.js.map

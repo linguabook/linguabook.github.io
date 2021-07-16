@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[39],{1021:function(a,t,n){"use strict";n.r(t);var s=n(0),o=n(74);t.default=function(){return Object(s.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/away.json",text:"away",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=39.911c0d5b.chunk.js.map

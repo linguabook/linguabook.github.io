@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[451],{664:function(t,n,a){"use strict";a.r(n);var e=a(0),p=a(74);n.default=function(){return Object(e.jsx)(p.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/pencil.json",text:"pencil",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=451.f8429afd.chunk.js.map

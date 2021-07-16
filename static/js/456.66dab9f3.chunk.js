@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[456],{655:function(t,n,a){"use strict";a.r(n);var p=a(0),s=a(74);n.default=function(){return Object(p.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/pin.json",text:"pin",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=456.66dab9f3.chunk.js.map

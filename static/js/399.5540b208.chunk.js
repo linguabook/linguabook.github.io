@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[399],{669:function(t,n,a){"use strict";a.r(n);var s=a(0),i=a(74);n.default=function(){return Object(s.jsx)(i.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/nail.json",text:"nail",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=399.5540b208.chunk.js.map

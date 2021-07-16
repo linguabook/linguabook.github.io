@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[129],{949:function(t,a,n){"use strict";n.r(a);var o=n(0),c=n(74);a.default=function(){return Object(o.jsx)(c.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/cocktail.json",text:"cocktail",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=129.8c983b19.chunk.js.map

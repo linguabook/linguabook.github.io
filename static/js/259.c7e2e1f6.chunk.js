@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[259],{1009:function(t,n,a){"use strict";a.r(n);var o=a(0),s=a(74);n.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/go.json",text:"go",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=259.c7e2e1f6.chunk.js.map

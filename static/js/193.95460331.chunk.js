@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[193],{511:function(t,a,n){"use strict";n.r(a);var s=n(0),e=n(74);a.default=function(){return Object(s.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/east.json",text:"east",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=193.95460331.chunk.js.map

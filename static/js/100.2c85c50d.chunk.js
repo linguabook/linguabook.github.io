@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[100],{596:function(a,t,n){"use strict";n.r(t);var s=n(0),o=n(74);t.default=function(){return Object(s.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/canvas.json",text:"canvas",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=100.2c85c50d.chunk.js.map

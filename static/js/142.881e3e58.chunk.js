@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[142],{823:function(t,n,p){"use strict";p.r(n);var a=p(0),o=p(74);n.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/copper.json",text:"copper",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=142.881e3e58.chunk.js.map

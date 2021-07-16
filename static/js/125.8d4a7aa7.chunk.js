@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[125],{653:function(t,n,a){"use strict";a.r(n);var o=a(0),s=a(74);n.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/cloth.json",text:"cloth",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=125.8d4a7aa7.chunk.js.map

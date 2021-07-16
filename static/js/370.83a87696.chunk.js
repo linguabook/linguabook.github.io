@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[370],{869:function(t,a,n){"use strict";n.r(a);var r=n(0),e=n(74);a.default=function(){return Object(r.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/married.json",text:"married",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=370.83a87696.chunk.js.map

@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[681],{510:function(t,n,s){"use strict";s.r(n);var a=s(0),e=s(74);n.default=function(){return Object(a.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/west.json",text:"west",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=681.1ca77f38.chunk.js.map

@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[181],{561:function(t,o,n){"use strict";n.r(o);var a=n(0),s=n(74);o.default=function(){return Object(a.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/door.json",text:"door",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=181.bc38fb17.chunk.js.map

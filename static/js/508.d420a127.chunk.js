@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[508],{634:function(t,n,a){"use strict";a.r(n);var o=a(0),s=a(74);n.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/rod.json",text:"rod",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=508.d420a127.chunk.js.map

@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[673],{901:function(t,a,n){"use strict";n.r(a);var e=n(0),s=n(74);a.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/water.json",text:"water",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=673.19f3010b.chunk.js.map

@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[239],{1107:function(t,n,a){"use strict";a.r(n);var o=a(0),s=a(74);n.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/found.json",text:"found",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=239.a8e05869.chunk.js.map

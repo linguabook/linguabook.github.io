@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[256],{1081:function(t,n,a){"use strict";a.r(n);var i=a(0),s=a(74);n.default=function(){return Object(i.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/giving.json",text:"giving",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=256.5368915f.chunk.js.map

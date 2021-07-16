@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[216],{788:function(t,e,n){"use strict";n.r(e);var a=n(0),s=n(74);e.default=function(){return Object(a.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/feeble.json",text:"feeble",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=216.1a7b3e98.chunk.js.map

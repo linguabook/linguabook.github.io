@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[204],{854:function(n,t,a){"use strict";a.r(t);var s=a(0),o=a(74);t.default=function(){return Object(s.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/expansion.json",text:"expansion",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=204.3801efd3.chunk.js.map

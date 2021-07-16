@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[316],{842:function(n,t,a){"use strict";a.r(t);var i=a(0),o=a(74);t.default=function(){return Object(i.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/invention.json",text:"invention",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=316.b635325e.chunk.js.map

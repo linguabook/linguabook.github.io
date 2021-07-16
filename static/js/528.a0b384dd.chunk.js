@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[528],{604:function(t,n,s){"use strict";s.r(n);var a=s(0),e=s(74);n.default=function(){return Object(a.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/screw.json",text:"screw",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=528.a0b384dd.chunk.js.map

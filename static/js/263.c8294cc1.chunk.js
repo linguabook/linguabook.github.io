@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[263],{1207:function(t,o,n){"use strict";n.r(o);var a=n(0),e=n(74);o.default=function(){return Object(a.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/good-bye.json",text:"good-bye",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=263.c8294cc1.chunk.js.map

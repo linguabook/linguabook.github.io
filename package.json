@@ -1,5 +1,5 @@
 {
-  "name": "linguabot",
+  "name": "linguabook",
   "version": "0.0.0",
   "private": true,
   "repository": "https://github.com/linguabook/linguabook.github.io.git",
@@ -15,7 +15,8 @@
     "build:components": "cd packages/components && yarn build",
     "predeploy": "yarn build && echo \"\" >> packages/app/build/.nojekyll",
     "deploy": "gh-pages --dist packages/app/build --branch gh-pages --add --dotfiles",
-    "codegen": "node tools/codegen.js"
+    "codegen": "node tools/codegen.js",
+    "dump": "node tools/dump.js"
   },
   "resolutions": {
     "@types/react": "17.0.8",
@@ -43,6 +44,7 @@
     "p-series": "^2.1.0",
     "react-scripts": "4.0.3",
     "sass": "^1.34.0",
-    "typescript": "^4.3.2"
+    "typescript": "^4.3.2",
+    "efrt": "^2.2.2"
   }
 }

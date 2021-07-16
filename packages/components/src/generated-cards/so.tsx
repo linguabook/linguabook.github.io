@@ -1,13 +1,11 @@
 
 // warning: this file is auto generated
 import React from "react";
-import DataCard, { StatelessCard } from "../DataCard";
+import { JsonCard } from "../DataCard";
 
-const DATA = undefined;
-
-const StaticCard = () => {
-  const Card = DATA ? StatelessCard : DataCard;
-  return <Card text="so" lang="en" data={DATA}/>;
+const Card = () => {
+  const url = "https://raw.githubusercontent.com/linguabook/data/main/words/so.json";
+  return <JsonCard url={url} text="so" lang="en" />;
 };
 
-export default StaticCard;
+export default Card;

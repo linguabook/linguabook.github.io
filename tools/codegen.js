@@ -2,8 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const _ = require("lodash");
 const pSeries = require("p-series");
-const { stringify } = require("javascript-stringify");
-const { fetchData, ogden, dolch } = require("lingua-scraper");
+const { ogden, dolch } = require("lingua-scraper");
 
 async function main() {
   const a1 = _.flatMap(ogden.categories, (t) => t.words);
@@ -37,26 +36,19 @@ ${compMapProps}
 
   // generate card component for each word
   const tasks = words.map((text) => async () => {
-    let data;
-    try {
-      data = await fetchData({ text });
-    } catch (err) {
-      console.log(`fetch '${text}' fail:`, err);
-    }
-    const compFile = path.resolve(outDir, `${text.toLowerCase()}.tsx`);
+    const wordKey = text.toLowerCase();
+    const compFile = path.resolve(outDir, `${wordKey}.tsx`);
     const code = `
 // warning: this file is auto generated
 import React from "react";
-import DataCard, { StatelessCard } from "../DataCard";
+import { JsonCard } from "../DataCard";
 
-const DATA = ${data ? stringify(data) : "undefined"};
-
-const StaticCard = () => {
-  const Card = DATA ? StatelessCard : DataCard;
-  return <Card text="${text}" lang="en" data={DATA}/>;
+const Card = () => {
+  const url = "https://raw.githubusercontent.com/linguabook/data/main/words/${wordKey}.json";
+  return <JsonCard url={url} text="${text}" lang="en" />;
 };
 
-export default StaticCard;
+export default Card;
 `;
     await fs.promises.writeFile(compFile, code, "utf-8");
   });

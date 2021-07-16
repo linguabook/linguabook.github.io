@@ -1,13 +1,11 @@
 
 // warning: this file is auto generated
 import React from "react";
-import DataCard, { StatelessCard } from "../DataCard";
+import { JsonCard } from "../DataCard";
 
-const DATA = [{source:{type:'visual',name:'Unsplash Pictures',url:'https://unsplash.com/s/photos/vanila'},data:{visual:['https://images.unsplash.com/photo-1514435390218-898a0e01517a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmFuaWxhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80','https://images.unsplash.com/photo-1582052342644-d3269d382186?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmFuaWxhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80']}},{source:{type:'universal',name:'Merriam Webster',url:'https://www.merriam-webster.com'},error:new Error('Not Found')},{source:{type:'universal',name:'Macmillan Dictionary',url:'https://www.macmillandictionary.com/dictionary/british/vanila'},data:{audio:[],transcription:[],tag:[],definition:[],'in':[],synonym:[]}},{source:{type:'universal',name:'Cambridge Dictionary',url:'https://dictionary.cambridge.org/dictionary/english/vanila'},data:{audio:[],transcription:[],tag:[],definition:[],visual:[],'in':[],collocation:[]}},{source:{type:'universal',name:'Cambridge Dictionary',url:'https://dictionary.cambridge.org/dictionary/english-russian/vanila'},data:{'translated_as@ru':[]}},{source:{type:'universal',name:'Cambridge Dictionary',url:'https://dictionary.cambridge.org/dictionary/english-french/vanila'},data:{'translated_as@fr':[]}},{source:{type:'universal',name:'Cambridge Dictionary',url:'https://dictionary.cambridge.org/dictionary/english-german/vanila'},data:{'translated_as@de':[]}},{source:{type:'universal',name:'Urban Dictionary',url:'https://www.urbandictionary.com/define.php?term=vanila'},data:{audio:[],definition:['Vanila is a free spirited tall Girl who sometimes annoying but she makes you laugh everyday , she also supports you even if she doesn’t know what’s going on. Vanila is super bad at math but she can help you with anything other than math ! Never let her do your math homework !! She has very bad vision but she still try’s to see far when you need something , She also has really bad memory and bad hearing. She also makes fun of you but not in a rude way . Vanila is the sweetest, Funniest, Caring, Wise, FreeSpirited, Strong, Brave, Ect person you could meet . There’s so many amazing things about her that you can never get bored of her .']}},{source:{type:'audio',name:'Forvo',url:'https://ru.forvo.com/word/vanila/#en'},data:{audio:[{url:'https://audio00.forvo.com/audios/mp3/5/j/5j_9002468_133_1172608_1.mp3',author:'pathgs',gender:'f',country:'brazil'},{url:'https://audio00.forvo.com/audios/mp3/v/e/ve_9543130_158_1172608.mp3',author:'helmik',gender:'m',country:undefined}]}},{source:{type:'audio',name:'HowJSay.com',url:'https://howjsay.com/mp3/vanila.mp3'},data:{audio:[{url:'https://howjsay.com/mp3/vanila.mp3'}]}},{source:{type:'text',name:'Compromise Lexicon',url:'http://compromise.cool/'},data:{tag:[['Noun','Singular']]}}];
-
-const StaticCard = () => {
-  const Card = DATA ? StatelessCard : DataCard;
-  return <Card text="vanila" lang="en" data={DATA}/>;
+const Card = () => {
+  const url = "https://raw.githubusercontent.com/linguabook/data/main/words/vanila.json";
+  return <JsonCard url={url} text="vanila" lang="en" />;
 };
 
-export default StaticCard;
+export default Card;

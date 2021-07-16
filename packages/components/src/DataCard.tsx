@@ -12,11 +12,11 @@ import {
 } from "@chakra-ui/react";
 import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
-
 import cx from "clsx";
 import qs from "query-string";
+import axios from "axios";
 
-import Error from "./ErrorCard";
+import ErrorCard from "./ErrorCard";
 import Loader from "./Loader";
 import Empty from "./Empty";
 import Slide from "./Slide";
@@ -75,7 +75,38 @@ const DataCard: React.FC<Props> = ({ text, lang }) => {
   );
 
   if (error) {
-    return <Error error={error} />;
+    return <ErrorCard error={error} />;
+  }
+
+  if (!data) {
+    return (
+      <Card textAlign="center">
+        <Loader />
+      </Card>
+    );
+  }
+
+  return <StatelessCard text={text} lang={lang} data={data} />;
+};
+
+type JsonCardProps = {
+  url: string;
+  text: string;
+  lang: string;
+};
+
+export const JsonCard: React.FC<JsonCardProps> = ({ url, text, lang }) => {
+  const { data, error } = useSWR(url, async () => {
+    const resp = await axios.get(url);
+    const ok = resp.status >= 200 && resp.status < 300;
+    if (!ok) {
+      throw new Error(resp.data);
+    }
+    return resp.data;
+  });
+
+  if (error) {
+    return <ErrorCard error={error} />;
   }
 
   if (!data) {

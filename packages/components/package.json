@@ -42,6 +42,7 @@
     "@chakra-ui/react": "^1.4.1",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
+    "axios": "^0.21.1",
     "clsx": "^1.1.1",
     "country-code-lookup": "^0.0.19",
     "dom-helpers": "^5.2.1",

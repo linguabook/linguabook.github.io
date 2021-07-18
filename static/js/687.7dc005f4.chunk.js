@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[687],{564:function(t,n,a){"use strict";a.r(n);var e=a(0),s=a(76);n.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/while.json",text:"while",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=687.7dc005f4.chunk.js.map

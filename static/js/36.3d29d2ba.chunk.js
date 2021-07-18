@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[36],{1061:function(t,a,n){"use strict";n.r(a);var e=n(0),s=n(76);a.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/ate.json",text:"ate",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=36.3d29d2ba.chunk.js.map

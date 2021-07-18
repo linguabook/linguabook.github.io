@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[662],{1141:function(t,n,a){"use strict";a.r(n);var e=a(0),s=a(76);n.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/very.json",text:"very",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=662.c86001b7.chunk.js.map

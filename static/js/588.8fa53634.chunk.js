@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[588],{1104:function(t,n,s){"use strict";s.r(n);var a=s(0),o=s(76);n.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/stop.json",text:"stop",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=588.8fa53634.chunk.js.map

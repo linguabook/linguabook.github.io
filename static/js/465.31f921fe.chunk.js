@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[465],{747:function(t,a,n){"use strict";n.r(a);var i=n(0),o=n(76);a.default=function(){return Object(i.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/political.json",text:"political",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=465.31f921fe.chunk.js.map

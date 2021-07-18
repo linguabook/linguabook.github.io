@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[38],{729:function(t,a,n){"use strict";n.r(a);var o=n(0),s=n(76);a.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/authority.json",text:"authority",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=38.6f007cb2.chunk.js.map

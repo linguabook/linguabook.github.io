@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[211],{1193:function(t,a,n){"use strict";n.r(a);var r=n(0),e=n(76);a.default=function(){return Object(r.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/farmer.json",text:"farmer",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=211.24743a23.chunk.js.map

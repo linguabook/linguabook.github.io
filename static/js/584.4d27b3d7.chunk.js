@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[584],{587:function(t,n,s){"use strict";s.r(n);var a=s(0),i=s(76);n.default=function(){return Object(a.jsx)(i.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/stick.json",text:"stick",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=584.4d27b3d7.chunk.js.map

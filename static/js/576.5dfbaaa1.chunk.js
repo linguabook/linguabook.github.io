@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[576],{758:function(t,a,n){"use strict";n.r(a);var s=n(0),e=n(76);a.default=function(){return Object(s.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/square.json",text:"square",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=576.5dfbaaa1.chunk.js.map

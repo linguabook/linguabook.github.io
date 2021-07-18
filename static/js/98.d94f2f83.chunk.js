@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[98],{643:function(a,t,n){"use strict";n.r(t);var e=n(0),s=n(76);t.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/camera.json",text:"camera",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=98.d94f2f83.chunk.js.map

@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[95],{602:function(t,a,n){"use strict";n.r(a);var e=n(0),s=n(76);a.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/cake.json",text:"cake",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=95.32e7459d.chunk.js.map

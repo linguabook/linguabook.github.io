@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[134],{825:function(t,o,n){"use strict";n.r(o);var a=n(0),s=n(76);o.default=function(){return Object(a.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/color.json",text:"color",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=134.7ebeb0ee.chunk.js.map

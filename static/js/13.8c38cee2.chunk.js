@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[13],{908:function(t,a,n){"use strict";n.r(a);var s=n(0),i=n(76);a.default=function(){return Object(s.jsx)(i.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/air.json",text:"air",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=13.8c38cee2.chunk.js.map

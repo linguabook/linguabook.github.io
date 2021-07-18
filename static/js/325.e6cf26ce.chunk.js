@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[325],{1151:function(t,e,n){"use strict";n.r(e);var a=n(0),p=n(76);e.default=function(){return Object(a.jsx)(p.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/keep.json",text:"keep",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=325.e6cf26ce.chunk.js.map

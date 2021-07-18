@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[618],{1034:function(t,n,a){"use strict";a.r(n);var e=a(0),s=a(76);n.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/they.json",text:"they",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=618.06d7e90a.chunk.js.map

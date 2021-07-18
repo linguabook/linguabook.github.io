@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[520],{891:function(t,n,a){"use strict";a.r(n);var s=a(0),o=a(76);n.default=function(){return Object(s.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/sand.json",text:"sand",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=520.544d7959.chunk.js.map

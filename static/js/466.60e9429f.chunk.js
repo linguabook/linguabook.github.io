@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[466],{876:function(t,n,a){"use strict";a.r(n);var o=a(0),r=a(76);n.default=function(){return Object(o.jsx)(r.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/porter.json",text:"porter",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=466.60e9429f.chunk.js.map

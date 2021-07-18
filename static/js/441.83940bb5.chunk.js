@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[441],{848:function(t,n,a){"use strict";a.r(n);var o=a(0),e=a(76);n.default=function(){return Object(o.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/owner.json",text:"owner",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=441.83940bb5.chunk.js.map

@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[418],{905:function(t,n,a){"use strict";a.r(n);var s=a(0),u=a(76);n.default=function(){return Object(s.jsx)(u.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/nut.json",text:"nut",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=418.ffa2b11e.chunk.js.map

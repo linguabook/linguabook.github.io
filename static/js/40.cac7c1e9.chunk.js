@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[40],{867:function(t,a,n){"use strict";n.r(a);var s=n(0),o=n(76);a.default=function(){return Object(s.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/baby.json",text:"baby",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=40.cac7c1e9.chunk.js.map

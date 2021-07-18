@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[299],{985:function(t,n,s){"use strict";s.r(n);var a=s(0),o=s(76);n.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/horse.json",text:"horse",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=299.551baf8d.chunk.js.map

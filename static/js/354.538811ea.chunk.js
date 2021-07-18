@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[354],{963:function(t,n,u){"use strict";u.r(n);var a=u(0),e=u(76);n.default=function(){return Object(a.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/liqueur.json",text:"liqueur",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=354.538811ea.chunk.js.map

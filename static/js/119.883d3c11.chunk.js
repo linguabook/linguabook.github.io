@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[119],{918:function(t,n,a){"use strict";a.r(n);var c=a(0),s=a(76);n.default=function(){return Object(c.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/church.json",text:"church",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=119.883d3c11.chunk.js.map

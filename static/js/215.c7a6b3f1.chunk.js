@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[215],{801:function(t,a,e){"use strict";e.r(a);var n=e(0),s=e(76);a.default=function(){return Object(n.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/feather.json",text:"feather",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=215.c7a6b3f1.chunk.js.map

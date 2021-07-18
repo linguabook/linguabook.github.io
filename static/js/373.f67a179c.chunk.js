@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[373],{1078:function(t,a,n){"use strict";n.r(a);var s=n(0),o=n(76);a.default=function(){return Object(s.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/may.json",text:"may",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=373.f67a179c.chunk.js.map

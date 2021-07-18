@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[505],{717:function(t,n,a){"use strict";a.r(n);var r=a(0),e=a(76);n.default=function(){return Object(r.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/river.json",text:"river",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=505.a2980e95.chunk.js.map

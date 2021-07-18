@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[120],{930:function(t,n,a){"use strict";a.r(n);var c=a(0),e=a(76);n.default=function(){return Object(c.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/circle.json",text:"circle",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=120.b4d887e8.chunk.js.map

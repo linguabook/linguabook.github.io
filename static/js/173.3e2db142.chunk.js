@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[173],{742:function(t,n,i){"use strict";i.r(n);var s=i(0),a=i(76);n.default=function(){return Object(s.jsx)(a.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/distribution.json",text:"distribution",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=173.3e2db142.chunk.js.map

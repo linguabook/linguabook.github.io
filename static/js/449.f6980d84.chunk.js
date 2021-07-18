@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[449],{716:function(t,a,e){"use strict";e.r(a);var n=e(0),p=e(76);a.default=function(){return Object(n.jsx)(p.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/peace.json",text:"peace",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=449.f6980d84.chunk.js.map

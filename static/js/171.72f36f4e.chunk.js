@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[171],{816:function(t,s,a){"use strict";a.r(s);var e=a(0),n=a(76);s.default=function(){return Object(e.jsx)(n.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/disease.json",text:"disease",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=171.72f36f4e.chunk.js.map

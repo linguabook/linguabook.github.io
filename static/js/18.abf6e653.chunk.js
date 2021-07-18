@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[18],{513:function(t,n,a){"use strict";a.r(n);var o=a(0),s=a(76);n.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/among.json",text:"among",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=18.abf6e653.chunk.js.map

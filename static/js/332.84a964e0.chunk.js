@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[332],{617:function(t,n,a){"use strict";a.r(n);var o=a(0),s=a(76);n.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/knot.json",text:"knot",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=332.84a964e0.chunk.js.map

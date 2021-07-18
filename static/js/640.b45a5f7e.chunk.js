@@ -1,0 +1,2 @@
+(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[640],{554:function(t,o,n){"use strict";n.r(o);var a=n(0),r=n(76);o.default=function(){return Object(a.jsx)(r.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/tomorrow.json",text:"tomorrow",lang:"en"},void 0)}}}]);
+//# sourceMappingURL=640.b45a5f7e.chunk.js.map

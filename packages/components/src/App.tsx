@@ -61,13 +61,13 @@ const TopBar: React.FC<{}> = () => {
   const words = useKnownWords();
   return (
     <HStack spacing={2} mt={1}>
-      <Box>
+      <Box flexGrow={0} flexShrink={0}>
         <ConfigMenu />
       </Box>
-      <Box>
+      <Box flexGrow={1} flexShrink={1}>
         <SearchInput />
       </Box>
-      <Box>
+      <Box flexGrow={0} flexShrink={0}>
         <Badge
           fontFamily="monospace"
           fontSize="md"
@@ -79,7 +79,7 @@ const TopBar: React.FC<{}> = () => {
           {words.size}
         </Badge>
       </Box>
-      <Box>
+      <Box flexGrow={0} flexShrink={0}>
         <ColorModeSwitcher />
       </Box>
     </HStack>

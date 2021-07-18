@@ -360,9 +360,9 @@ const ToolBar: React.FC<ToolbarProps> = ({
     _.isEmpty(inputTags) ? ["UNKNOWN"] : inputTags,
     3
   );
-  const tagLimit = mobile ? 2 : 3;
+  const tagLimit = mobile ? 1 : 3;
   return (
-    <HStack py={2} px={5} justify="space-between" overflow="hidden">
+    <HStack py={2} overflow="hidden" justifyContent="center">
       <Box flex="0 0">
         <ShowMore showMore={showMore} setShowMore={setShowMore} />
       </Box>

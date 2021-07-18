@@ -8405,11 +8405,6 @@ efrt-unpack@2.2.0:
   resolved "https://registry.yarnpkg.com/efrt-unpack/-/efrt-unpack-2.2.0.tgz#b05dbec0fb8cb346a27840e00c969df9c72fee52"
   integrity sha512-9xUSSj7qcUxz+0r4X3+bwUNttEfGfK5AH+LVa1aTpqdAfrN5VhROYCfcF+up4hp5OL7IUKcZJJrzAGipQRDoiQ==
 
-efrt@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/efrt/-/efrt-2.2.2.tgz#ec7fbaf4438987499f5fa605d2756630503a1af7"
-  integrity sha512-eiSoi7hOJByJvSDuHz45WA0nKSM8od5kPiZcbMNlui5xvKMoHSFxnlYlCnfLhalOXof0EESf44B7mM07JFxxAw==
-
 ejs@^2.6.1:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.7.4.tgz#48661287573dcc53e366c7a1ae52c3a120eec9ba"

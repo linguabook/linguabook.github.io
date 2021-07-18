@@ -131,6 +131,7 @@ export const StatelessCard: React.FC<StatelessCardProps> = ({
 }) => {
   const dark = useDarkMode();
   const desktop = useDesktop();
+  const mobile = !desktop;
   const [showMore, setShowMore] = useState(false);
   const slideWidth = desktop ? "512px" : "100vw";
   const slideHeight = desktop ? 512 / 2 + "px" : "calc(100vw/2)";
@@ -266,7 +267,7 @@ export const StatelessCard: React.FC<StatelessCardProps> = ({
     <Card
       className={cx(styles.card, {
         [styles.desktop]: desktop,
-        [styles.mobile]: !desktop,
+        [styles.mobile]: mobile,
         [styles.dark]: dark,
       })}
       borderWidth={1}
@@ -297,6 +298,7 @@ export const StatelessCard: React.FC<StatelessCardProps> = ({
           setShowMore={setShowMore}
           text={text}
           tags={textData.tag}
+          mobile={mobile}
         />
         {showMore ? (
           <Box w="100%" textAlign="left" px={2}>
@@ -338,24 +340,34 @@ const Section: React.FC<any> = ({ label, content }) => {
   );
 };
 
+type ToolbarProps = {
+  showMore: boolean;
+  setShowMore: (value: boolean) => void;
+  text: string;
+  tags: string[];
+  mobile: boolean;
+};
+
 // TODO improve toolbar
-const ToolBar: React.FC<any> = ({
+const ToolBar: React.FC<ToolbarProps> = ({
   showMore,
   setShowMore,
   text,
   tags: inputTags,
+  mobile,
 }) => {
   const tags: string[] = _.take(
     _.isEmpty(inputTags) ? ["UNKNOWN"] : inputTags,
     3
   );
+  const tagLimit = mobile ? 2 : 3;
   return (
     <HStack py={2} px={5} justify="space-between" overflow="hidden">
       <Box flex="0 0">
         <ShowMore showMore={showMore} setShowMore={setShowMore} />
       </Box>
       <HStack flex="1 1" overflow="hidden">
-        {_.take(tags, 3).map((tag, key) => (
+        {_.take(tags, tagLimit).map((tag, key) => (
           <Badge
             key={key}
             variant="solid"

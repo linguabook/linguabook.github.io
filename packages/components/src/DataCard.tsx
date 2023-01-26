@@ -13,7 +13,7 @@ import {
 import { fetchData } from "lingua-scraper";
 import useSWR from "swr";
 import cx from "clsx";
-import qs from "query-string";
+import qs from "qs";
 import axios from "axios";
 
 import ErrorCard from "./ErrorCard";
@@ -28,9 +28,7 @@ import SwiperCore, { Navigation, A11y, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import "swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.scss";
+import "swiper/swiper-bundle.css";
 import { ShowMore, KnowButton, BookmarkButton, ToggleIcon } from "./buttons";
 import Card from "./Card";
 import useConfigState from "./use-config-menu";

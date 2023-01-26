@@ -1,5 +1,5 @@
 import { useLocation, useHistory } from "react-router-dom";
-import qs from "query-string";
+import qs from "qs";
 
 export default function useQueryString() {
   const location = useLocation();

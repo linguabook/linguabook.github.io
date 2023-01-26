@@ -5,7 +5,7 @@ export const PARAM_NAME = "search-string";
 export default function useSearchState() {
   const { query, setParam } = useQueryString();
   const val = query[PARAM_NAME];
-  const text = (Array.isArray(val) ? val[0] : val) || "";
+  const text = ((Array.isArray(val) ? val[0] : val) || "") as string;
 
   const setText = (value: string) => {
     setParam(PARAM_NAME, value);

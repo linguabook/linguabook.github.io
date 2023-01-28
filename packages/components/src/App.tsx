@@ -18,7 +18,6 @@ import WordList from "./WordList";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import useConfigMenu, { ConfigMenu } from "./use-config-menu";
 import Feed from "./Feed";
-import { AppCloseButton } from "./buttons";
 import useKnownWords from "./use-known-words";
 
 type Props = {
@@ -26,26 +25,12 @@ type Props = {
   style?: any;
 };
 
-function inIframe() {
-  try {
-    return window.self !== window.top;
-  } catch (e) {
-    return true;
-  }
-}
-
 const App: React.FC<Props> = ({ className, style }) => {
-  const isEmbedded = inIframe();
   const search = useSearchState();
   const config = useConfigMenu();
   return (
     <VStack className={cx(className)} style={style} pos="relative">
-      {isEmbedded ? (
-        <Box zIndex={999}>
-          <AppCloseButton />
-        </Box>
-      ) : null}
-      {isEmbedded ? null : <TopBar />}
+      <TopBar />
       <main>
         {search.debouncedText ? (
           <Card text={search.debouncedText} lang="en" />

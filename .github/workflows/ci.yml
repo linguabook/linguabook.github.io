@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - master
-      - feat/*
   pull_request:
     branches:
       - master
-      - feat/*
 
 concurrency:
   group: ci-${{ github.ref }}

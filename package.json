@@ -16,7 +16,8 @@
     "predeploy": "yarn build && echo \"\" >> packages/app/build/.nojekyll",
     "deploy": "gh-pages --dist packages/app/build --branch gh-pages --add --dotfiles",
     "codegen": "node tools/codegen.js",
-    "dump": "node tools/dump.js"
+    "dump": "node tools/dump.js",
+    "ci": "yarn build"
   },
   "resolutions": {
     "@emotion/react": "11.7.1",

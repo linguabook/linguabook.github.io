@@ -1,0 +1,37 @@
+name: upload-extension
+
+on:
+  push:
+    branches:
+      - master
+
+concurrency:
+  group: upload-extension-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@master
+        with:
+          persist-credentials: false
+
+      - name: setup
+        uses: actions/setup-node@v1
+        with:
+          node-version: "18"
+          cache: "yarn"
+
+      - name: build
+        run: ./packages/extension/build.sh
+        shell: bash
+
+      - name: archive
+        uses: actions/upload-artifact@v3
+        with:
+          name: linguabook-extension
+          path: packages/extension/dist/*.zip
+          if-no-files-found: error

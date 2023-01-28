@@ -113,30 +113,3 @@ export const ShareButton: React.FC<{}> = () => {
     />
   );
 };
-
-export const AppCloseButton: React.FC<any> = ({ style, ...props }) => {
-  const title = "Close popup";
-  const baseStyle = {
-    cursor: "pointer",
-    position: "absolute",
-    top: 10,
-    right: 10,
-  };
-  const handleClose = () => {
-    window.parent.postMessage("LBOOK.CLOSE", "*");
-  };
-  return (
-    <Box
-      as="span"
-      id="btn-close-app"
-      color="white"
-      title={title}
-      aria-label={title}
-      style={{ ...baseStyle, ...style }}
-      onClick={handleClose}
-      {...props}
-    >
-      <Icon as={CloseIcon} />
-    </Box>
-  );
-};

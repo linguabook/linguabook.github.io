@@ -1,0 +1,17 @@
+.lb_panel {
+  position: static;
+  top: 25px;
+  right: 50px;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+}
+
+.lb_panel_header {
+  height: 20px;
+}
+
+.lb_panel_body {
+  width: 100%;
+  height: calc(100% - 20px);
+}

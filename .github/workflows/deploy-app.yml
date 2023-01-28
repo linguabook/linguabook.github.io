@@ -1,4 +1,4 @@
-name: ci_check
+name: deploy_app
 
 on:
   push:

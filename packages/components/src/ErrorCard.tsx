@@ -4,6 +4,7 @@ import Card from "./Card";
 
 type Props = {
   error: any;
+  children?: React.ReactNode;
 };
 
 const ErrorCard: React.FC<Props> = ({ error }) => (

@@ -1,23 +1,18 @@
-import React from "react";
 import {
-  ChakraProvider,
-  Box,
-  theme,
-  VStack,
-  HStack,
-  Badge,
+  Badge, Box, ChakraProvider, HStack, theme,
+  VStack
 } from "@chakra-ui/react";
-import { BrowserRouter as Router } from "react-router-dom";
-import Analytics from "react-router-ga";
-import { RecoilRoot } from "recoil";
 import cx from "clsx";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { RecoilRoot } from "recoil";
 
-import { SearchInput, useSearchState } from "./SearchInput";
-import Card from "./DataCard";
-import WordList from "./WordList";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
-import useConfigMenu, { ConfigMenu } from "./use-config-menu";
+import Card from "./DataCard";
 import Feed from "./Feed";
+import GATracking from "./GATracking";
+import { SearchInput, useSearchState } from "./SearchInput";
+import useConfigMenu, { ConfigMenu } from "./use-config-menu";
 import useKnownWords from "./use-known-words";
 
 type Props = {
@@ -71,24 +66,14 @@ const TopBar: React.FC<{}> = () => {
   );
 };
 
-const WordsPage = ({ wordList }) => (
-  <Box margin="0 20px" marginBottom="20px">
-    <p>
-      Below is a list of <a href="http://basic-english.org/">Basic English</a>{" "}
-      words you can use as a good learning start.
-    </p>
-    <WordList wordList={wordList} />
-  </Box>
-);
-
 const AppContainer: React.FC<Props> = (props) => {
   return (
     <RecoilRoot>
       <ChakraProvider theme={theme}>
         <Router>
-          <Analytics id="G-SHK7Q8TMPJ" debug>
+          <GATracking>
             <App {...props} />
-          </Analytics>
+          </GATracking>
         </Router>
       </ChakraProvider>
     </RecoilRoot>

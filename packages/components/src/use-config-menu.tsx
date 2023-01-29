@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import {
   Menu,
   MenuButton,
@@ -74,7 +74,7 @@ export const ConfigMenu: React.FC<{}> = () => {
     <MenuItem key={i}>
       <Checkbox
         size="lg"
-        defaultIsChecked={!exclude.includes(source.name)}
+        defaultChecked={!exclude.includes(source.name)}
         iconSize="2rem"
         onChange={(e) => {
           if (e.target.checked) {

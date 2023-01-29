@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[478],{846:function(t,n,a){"use strict";a.r(n);var o=a(0),p=a(74);n.default=function(){return Object(o.jsx)(p.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/profit.json",text:"profit",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=478.e451ad37.chunk.js.map

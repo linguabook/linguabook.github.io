@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[54],{948:function(t,e,n){"use strict";n.r(e);var a=n(0),s=n(74);e.default=function(){return Object(a.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/beer.json",text:"beer",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=54.d3b1fae8.chunk.js.map

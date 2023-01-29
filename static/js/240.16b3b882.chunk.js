@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[240],{1061:function(t,n,a){"use strict";a.r(n);var o=a(0),s=a(74);n.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/four.json",text:"four",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=240.16b3b882.chunk.js.map

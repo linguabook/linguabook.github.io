@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[99],{1005:function(t,n,a){"use strict";a.r(n);var s=a(0),o=a(76);n.default=function(){return Object(s.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/can.json",text:"can",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=99.72907cb1.chunk.js.map

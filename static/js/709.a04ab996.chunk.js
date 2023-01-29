@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[709],{1101:function(t,n,a){"use strict";a.r(n);var o=a(0),s=a(74);n.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/would.json",text:"would",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=709.a04ab996.chunk.js.map

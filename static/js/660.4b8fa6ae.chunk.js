@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[660],{1115:function(t,n,s){"use strict";s.r(n);var a=s(0),e=s(74);n.default=function(){return Object(a.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/use.json",text:"use",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=660.4b8fa6ae.chunk.js.map

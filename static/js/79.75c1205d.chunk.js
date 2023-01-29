@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[79],{571:function(t,a,n){"use strict";n.r(a);var e=n(0),s=n(74);a.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/bread.json",text:"bread",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=79.75c1205d.chunk.js.map

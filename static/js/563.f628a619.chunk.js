@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[563],{746:function(t,n,s){"use strict";s.r(n);var a=s(0),o=s(76);n.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/society.json",text:"society",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=563.f628a619.chunk.js.map

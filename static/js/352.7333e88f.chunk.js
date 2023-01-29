@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[352],{610:function(n,t,a){"use strict";a.r(t);var e=a(0),s=a(76);t.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/linen.json",text:"linen",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=352.7333e88f.chunk.js.map

@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[406],{801:function(t,n,e){"use strict";e.r(n);var a=e(0),s=e(74);n.default=function(){return Object(a.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/nerve.json",text:"nerve",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=406.5672b1f0.chunk.js.map

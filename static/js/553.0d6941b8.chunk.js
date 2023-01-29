@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[553],{828:function(t,n,s){"use strict";s.r(n);var a=s(0),o=s(74);n.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/sky.json",text:"sky",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=553.0d6941b8.chunk.js.map

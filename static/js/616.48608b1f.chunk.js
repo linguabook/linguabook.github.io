@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[616],{1033:function(t,e,n){"use strict";n.r(e);var a=n(0),s=n(74);e.default=function(){return Object(a.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/there.json",text:"there",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=616.48608b1f.chunk.js.map

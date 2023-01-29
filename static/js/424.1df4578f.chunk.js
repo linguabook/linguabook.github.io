@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[424],{940:function(t,n,a){"use strict";a.r(n);var o=a(0),e=a(74);n.default=function(){return Object(o.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/olive.json",text:"olive",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=424.1df4578f.chunk.js.map

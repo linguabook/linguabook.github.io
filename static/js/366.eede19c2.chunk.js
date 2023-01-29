@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[366],{853:function(a,t,n){"use strict";n.r(t);var e=n(0),s=n(74);t.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/manager.json",text:"manager",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=366.eede19c2.chunk.js.map

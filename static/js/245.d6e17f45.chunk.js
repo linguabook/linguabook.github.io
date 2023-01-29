@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[245],{528:function(t,n,a){"use strict";a.r(n);var o=a(0),s=a(76);n.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/front.json",text:"front",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=245.d6e17f45.chunk.js.map

@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[128],{585:function(t,a,n){"use strict";n.r(a);var o=n(0),s=n(76);a.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/coat.json",text:"coat",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=128.b1cf7d5d.chunk.js.map

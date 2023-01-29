@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[14],{944:function(t,a,o){"use strict";o.r(a);var n=o(0),s=o(74);a.default=function(){return Object(n.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/alcohol.json",text:"alcohol",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=14.c655caab.chunk.js.map

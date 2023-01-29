@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[518],{953:function(a,t,n){"use strict";n.r(t);var s=n(0),o=n(74);t.default=function(){return Object(s.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/salad.json",text:"salad",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=518.07c69a6b.chunk.js.map

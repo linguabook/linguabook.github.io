@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[443],{754:function(t,n,a){"use strict";a.r(n);var p=a(0),s=a(74);n.default=function(){return Object(p.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/paint.json",text:"paint",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=443.805f0bc0.chunk.js.map

@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[8],{942:function(t,n,a){"use strict";a.r(n);var i=a(0),o=a(76);n.default=function(){return Object(i.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/addition.json",text:"addition",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=8.f7aa41ce.chunk.js.map

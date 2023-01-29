@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[280],{703:function(t,a,n){"use strict";n.r(a);var o=n(0),r=n(76);a.default=function(){return Object(o.jsx)(r.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/harbor.json",text:"harbor",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=280.e2d52928.chunk.js.map

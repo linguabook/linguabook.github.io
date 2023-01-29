@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[389],{563:function(n,t,a){"use strict";a.r(t);var o=a(0),s=a(76);t.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/morning.json",text:"morning",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=389.6174e2ac.chunk.js.map

@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[655],{623:function(t,a,n){"use strict";n.r(a);var e=n(0),s=n(76);a.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/umbrella.json",text:"umbrella",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=655.fbe7f878.chunk.js.map

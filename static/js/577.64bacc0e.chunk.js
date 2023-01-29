@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[577],{1204:function(t,n,s){"use strict";s.r(n);var a=s(0),r=s(74);n.default=function(){return Object(a.jsx)(r.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/squirrel.json",text:"squirrel",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=577.64bacc0e.chunk.js.map

@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[555],{902:function(t,n,s){"use strict";s.r(n);var a=s(0),o=s(74);n.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/slope.json",text:"slope",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=555.4fadd40d.chunk.js.map

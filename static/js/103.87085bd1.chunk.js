@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[103],{590:function(a,t,n){"use strict";n.r(t);var r=n(0),e=n(76);t.default=function(){return Object(r.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/carriage.json",text:"carriage",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=103.87085bd1.chunk.js.map

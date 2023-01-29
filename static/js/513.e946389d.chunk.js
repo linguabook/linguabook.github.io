@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[513],{746:function(t,n,a){"use strict";a.r(n);var e=a(0),s=a(74);n.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/rule.json",text:"rule",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=513.e946389d.chunk.js.map

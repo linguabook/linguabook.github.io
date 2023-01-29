@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[143],{598:function(t,n,a){"use strict";a.r(n);var o=a(0),s=a(76);n.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/cord.json",text:"cord",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=143.d6ae12cc.chunk.js.map

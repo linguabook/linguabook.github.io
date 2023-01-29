@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[80],{656:function(t,n,a){"use strict";a.r(n);var s=a(0),i=a(76);n.default=function(){return Object(s.jsx)(i.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/brick.json",text:"brick",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=80.87d868e4.chunk.js.map

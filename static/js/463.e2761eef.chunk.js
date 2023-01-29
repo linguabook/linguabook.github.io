@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[463],{644:function(t,n,a){"use strict";a.r(n);var o=a(0),p=a(76);n.default=function(){return Object(o.jsx)(p.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/plow.json",text:"plow",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=463.e2761eef.chunk.js.map

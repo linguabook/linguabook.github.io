@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[649],{853:function(t,n,a){"use strict";a.r(n);var s=a(0),o=a(76);n.default=function(){return Object(s.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/transport.json",text:"transport",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=649.5ea7319b.chunk.js.map

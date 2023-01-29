@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[43],{974:function(t,n,a){"use strict";a.r(n);var s=a(0),o=a(74);n.default=function(){return Object(s.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/band.json",text:"band",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=43.4d1e8b6f.chunk.js.map

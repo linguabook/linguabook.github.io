@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[527],{761:function(s,t,n){"use strict";n.r(t);var a=n(0),o=n(74);t.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/scissors.json",text:"scissors",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=527.83b5936d.chunk.js.map

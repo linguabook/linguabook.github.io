@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[521],{1208:function(a,t,n){"use strict";n.r(t);var s=n(0),u=n(74);t.default=function(){return Object(s.jsx)(u.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/santa claus.json",text:"Santa Claus",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=521.0d8317d5.chunk.js.map

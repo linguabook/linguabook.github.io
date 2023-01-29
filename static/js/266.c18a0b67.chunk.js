@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[266],{717:function(t,n,e){"use strict";e.r(n);var a=e(0),o=e(74);n.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/government.json",text:"government",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=266.c18a0b67.chunk.js.map

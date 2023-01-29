@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[458],{687:function(t,n,a){"use strict";a.r(n);var e=a(0),p=a(74);n.default=function(){return Object(e.jsx)(p.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/plane.json",text:"plane",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=458.634e4531.chunk.js.map

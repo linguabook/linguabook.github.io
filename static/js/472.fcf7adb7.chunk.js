@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[472],{1066:function(t,n,a){"use strict";a.r(n);var e=a(0),p=a(76);n.default=function(){return Object(e.jsx)(p.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/pretty.json",text:"pretty",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=472.fcf7adb7.chunk.js.map

@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[112],{580:function(t,n,s){"use strict";s.r(n);var a=s(0),e=s(76);n.default=function(){return Object(a.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/chest.json",text:"chest",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=112.28d17139.chunk.js.map

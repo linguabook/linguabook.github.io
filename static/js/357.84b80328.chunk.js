@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[357],{647:function(t,n,a){"use strict";a.r(n);var o=a(0),s=a(76);n.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/lock.json",text:"lock",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=357.84b80328.chunk.js.map

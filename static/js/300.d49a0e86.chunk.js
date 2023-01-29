@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[300],{914:function(t,a,n){"use strict";n.r(a);var s=n(0),o=n(74);a.default=function(){return Object(s.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/hospital.json",text:"hospital",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=300.d49a0e86.chunk.js.map

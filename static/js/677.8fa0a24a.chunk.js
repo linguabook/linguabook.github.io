@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[677],{533:function(t,e,n){"use strict";n.r(e);var a=n(0),s=n(74);e.default=function(){return Object(a.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/week.json",text:"week",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=677.8fa0a24a.chunk.js.map

@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[394],{805:function(t,n,s){"use strict";s.r(n);var a=s(0),e=s(76);n.default=function(){return Object(a.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/muscle.json",text:"muscle",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=394.cf3aa434.chunk.js.map

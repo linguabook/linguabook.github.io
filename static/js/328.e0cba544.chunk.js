@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[328],{1174:function(t,n,a){"use strict";a.r(n);var s=a(0),i=a(74);n.default=function(){return Object(s.jsx)(i.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/kind.json",text:"kind",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=328.e0cba544.chunk.js.map

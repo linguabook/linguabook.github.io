@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[602],{968:function(t,a,n){"use strict";n.r(a);var o=n(0),p=n(76);a.default=function(){return Object(o.jsx)(p.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/tapioca.json",text:"tapioca",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=602.464a8a36.chunk.js.map

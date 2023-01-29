@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[137],{749:function(t,e,n){"use strict";n.r(e);var a=n(0),o=n(76);e.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/committee.json",text:"committee",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=137.f4a996b2.chunk.js.map

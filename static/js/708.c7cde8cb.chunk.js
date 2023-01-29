@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[708],{1e3:function(t,n,a){"use strict";a.r(n);var o=a(0),s=a(76);n.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/worm.json",text:"worm",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=708.c7cde8cb.chunk.js.map

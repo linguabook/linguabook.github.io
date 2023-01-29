@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[439],{534:function(t,n,a){"use strict";a.r(n);var o=a(0),e=a(76);n.default=function(){return Object(o.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/over.json",text:"over",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=439.6f47de7b.chunk.js.map

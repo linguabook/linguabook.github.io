@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[342],{890:function(t,a,e){"use strict";e.r(a);var n=e(0),s=e(74);a.default=function(){return Object(n.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/leather.json",text:"leather",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=342.b688b44f.chunk.js.map

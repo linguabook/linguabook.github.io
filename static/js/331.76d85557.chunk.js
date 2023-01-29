@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[331],{584:function(t,n,a){"use strict";a.r(n);var e=a(0),s=a(74);n.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/knife.json",text:"knife",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=331.76d85557.chunk.js.map

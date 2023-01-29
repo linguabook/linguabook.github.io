@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[636],{958:function(t,a,n){"use strict";n.r(a);var s=n(0),o=n(74);a.default=function(){return Object(s.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/toast.json",text:"toast",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=636.0bd226e2.chunk.js.map

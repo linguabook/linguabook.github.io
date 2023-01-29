@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[457],{655:function(t,n,p){"use strict";p.r(n);var a=p(0),e=p(76);n.default=function(){return Object(a.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/pipe.json",text:"pipe",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=457.56aff84f.chunk.js.map

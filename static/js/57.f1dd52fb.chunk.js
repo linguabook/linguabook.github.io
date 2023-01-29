@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[57],{943:function(t,n,a){"use strict";a.r(n);var r=a(0),e=a(74);n.default=function(){return Object(r.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/berry.json",text:"berry",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=57.f1dd52fb.chunk.js.map

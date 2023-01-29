@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[537],{839:function(t,a,n){"use strict";n.r(a);var s=n(0),e=n(76);a.default=function(){return Object(s.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/shade.json",text:"shade",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=537.fd485c63.chunk.js.map

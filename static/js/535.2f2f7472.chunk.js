@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[535],{861:function(t,n,a){"use strict";a.r(n);var s=a(0),e=a(74);n.default=function(){return Object(s.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/servant.json",text:"servant",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=535.2f2f7472.chunk.js.map

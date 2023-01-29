@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[541],{663:function(t,n,s){"use strict";s.r(n);var a=s(0),e=s(74);n.default=function(){return Object(a.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/shelf.json",text:"shelf",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=541.524b0536.chunk.js.map

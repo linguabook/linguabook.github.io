@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[531],{726:function(t,a,e){"use strict";e.r(a);var n=e(0),s=e(74);a.default=function(){return Object(n.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/secretary.json",text:"secretary",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=531.374484a8.chunk.js.map

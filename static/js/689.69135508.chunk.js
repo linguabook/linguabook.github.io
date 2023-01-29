@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[689],{955:function(t,n,s){"use strict";s.r(n);var a=s(0),i=s(76);n.default=function(){return Object(a.jsx)(i.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/whisky.json",text:"whisky",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=689.69135508.chunk.js.map

@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[393],{1139:function(t,n,a){"use strict";a.r(n);var s=a(0),u=a(74);n.default=function(){return Object(s.jsx)(u.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/much.json",text:"much",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=393.8244da6d.chunk.js.map

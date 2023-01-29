@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[433],{833:function(t,n,a){"use strict";a.r(n);var o=a(0),e=a(76);n.default=function(){return Object(o.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/orange.json",text:"orange",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=433.16b539f9.chunk.js.map

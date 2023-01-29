@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[702],{526:function(t,n,a){"use strict";a.r(n);var s=a(0),i=a(76);n.default=function(){return Object(s.jsx)(i.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/with.json",text:"with",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=702.ffcaa849.chunk.js.map

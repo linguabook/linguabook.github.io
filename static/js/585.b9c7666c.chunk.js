@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[585],{565:function(t,n,s){"use strict";s.r(n);var a=s(0),i=s(76);n.default=function(){return Object(a.jsx)(i.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/still.json",text:"still",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=585.b9c7666c.chunk.js.map

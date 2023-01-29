@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[380],{690:function(t,a,n){"use strict";n.r(a);var i=n(0),s=n(76);a.default=function(){return Object(i.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/military.json",text:"military",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=380.46322632.chunk.js.map

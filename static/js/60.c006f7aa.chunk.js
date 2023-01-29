@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[60],{498:function(t,e,n){"use strict";n.r(e);var a=n(0),s=n(74);e.default=function(){return Object(a.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/between.json",text:"between",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=60.c006f7aa.chunk.js.map

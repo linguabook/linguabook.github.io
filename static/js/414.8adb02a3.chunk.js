@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[414],{789:function(t,n,s){"use strict";s.r(n);var a=s(0),o=s(76);n.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/nose.json",text:"nose",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=414.8adb02a3.chunk.js.map

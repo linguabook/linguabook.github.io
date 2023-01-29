@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[261],{1128:function(t,n,s){"use strict";s.r(n);var a=s(0),o=s(74);n.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/goes.json",text:"goes",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=261.cffc4cab.chunk.js.map

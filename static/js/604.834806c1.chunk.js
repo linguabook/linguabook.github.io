@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[604],{965:function(t,a,n){"use strict";n.r(a);var e=n(0),s=n(76);a.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/tea.json",text:"tea",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=604.834806c1.chunk.js.map

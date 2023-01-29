@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[136],{1007:function(t,n,a){"use strict";a.r(n);var o=a(0),e=a(74);n.default=function(){return Object(o.jsx)(e.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/come.json",text:"come",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=136.db8f6690.chunk.js.map

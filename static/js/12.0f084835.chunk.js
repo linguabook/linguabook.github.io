@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[12],{739:function(t,e,n){"use strict";n.r(e);var a=n(0),s=n(76);e.default=function(){return Object(a.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/agreement.json",text:"agreement",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=12.0f084835.chunk.js.map

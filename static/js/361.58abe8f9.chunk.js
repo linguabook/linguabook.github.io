@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[361],{954:function(a,t,n){"use strict";n.r(t);var o=n(0),s=n(74);t.default=function(){return Object(o.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/macaroni.json",text:"macaroni",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=361.58abe8f9.chunk.js.map

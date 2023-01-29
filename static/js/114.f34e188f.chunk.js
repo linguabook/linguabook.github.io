@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[114],{880:function(t,n,a){"use strict";a.r(n);var e=a(0),s=a(76);n.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/chief.json",text:"chief",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=114.f34e188f.chunk.js.map

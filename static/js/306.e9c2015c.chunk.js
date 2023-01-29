@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[306],{887:function(t,n,a){"use strict";a.r(n);var e=a(0),s=a(76);n.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/ice.json",text:"ice",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=306.e9c2015c.chunk.js.map

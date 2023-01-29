@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[680],{1095:function(t,e,n){"use strict";n.r(e);var a=n(0),s=n(74);e.default=function(){return Object(a.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/were.json",text:"were",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=680.77d77fbc.chunk.js.map

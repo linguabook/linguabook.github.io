@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[330],{793:function(t,n,e){"use strict";e.r(n);var a=e(0),s=e(76);n.default=function(){return Object(a.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/knee.json",text:"knee",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=330.fa0b10a6.chunk.js.map

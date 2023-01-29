@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[227],{643:function(t,a,n){"use strict";n.r(a);var s=n(0),o=n(74);a.default=function(){return Object(s.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/flag.json",text:"flag",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=227.25dc8d31.chunk.js.map

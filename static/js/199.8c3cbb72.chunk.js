@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[199],{771:function(t,n,a){"use strict";a.r(n);var e=a(0),o=a(74);n.default=function(){return Object(e.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/encylopedia.json",text:"encylopedia",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=199.8c3cbb72.chunk.js.map

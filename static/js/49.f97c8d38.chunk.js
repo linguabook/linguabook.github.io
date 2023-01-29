@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[49],{1105:function(t,a,e){"use strict";e.r(a);var n=e(0),s=e(74);a.default=function(){return Object(n.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/because.json",text:"because",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=49.f97c8d38.chunk.js.map

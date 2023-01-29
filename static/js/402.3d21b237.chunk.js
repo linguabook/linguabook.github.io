@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[402],{911:function(t,a,n){"use strict";n.r(a);var s=n(0),u=n(76);a.default=function(){return Object(s.jsx)(u.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/natural.json",text:"natural",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=402.3d21b237.chunk.js.map

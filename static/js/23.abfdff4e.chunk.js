@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[23],{903:function(a,t,n){"use strict";n.r(t);var s=n(0),i=n(76);t.default=function(){return Object(s.jsx)(i.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/animal.json",text:"animal",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=23.abfdff4e.chunk.js.map

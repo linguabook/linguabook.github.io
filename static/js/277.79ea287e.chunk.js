@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[277],{784:function(t,a,n){"use strict";n.r(a);var s=n(0),i=n(76);a.default=function(){return Object(s.jsx)(i.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/hair.json",text:"hair",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=277.79ea287e.chunk.js.map

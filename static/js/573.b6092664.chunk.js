@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[573],{671:function(t,n,s){"use strict";s.r(n);var a=s(0),o=s(74);n.default=function(){return Object(a.jsx)(o.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/sponge.json",text:"sponge",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=573.b6092664.chunk.js.map

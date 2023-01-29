@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[647],{857:function(t,a,n){"use strict";n.r(a);var e=n(0),s=n(76);a.default=function(){return Object(e.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/trade.json",text:"trade",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=647.60c74069.chunk.js.map

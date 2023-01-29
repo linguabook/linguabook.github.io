@@ -1,2 +1,0 @@
-(this.webpackJsonpapp=this.webpackJsonpapp||[]).push([[326],{665:function(t,e,n){"use strict";n.r(e);var a=n(0),s=n(74);e.default=function(){return Object(a.jsx)(s.a,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/kettle.json",text:"kettle",lang:"en"},void 0)}}}]);
-//# sourceMappingURL=326.593d38ab.chunk.js.map

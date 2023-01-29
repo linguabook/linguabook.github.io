@@ -13,6 +13,7 @@
     "start": "cd packages/app && yarn start",
     "build": "lerna run build",
     "build:components": "cd packages/components && yarn build",
+    "build:deploy": "yarn build && echo \"\" >> packages/app/build/.nojekyll",
     "predeploy": "yarn build && echo \"\" >> packages/app/build/.nojekyll",
     "deploy": "gh-pages --dist packages/app/build --branch gh-pages --add --dotfiles",
     "codegen": "node tools/codegen.js",

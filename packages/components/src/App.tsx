@@ -3,9 +3,9 @@ import {
   VStack
 } from "@chakra-ui/react";
 import cx from "clsx";
+import { Provider } from "jotai";
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import { RecoilRoot } from "recoil";
 
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import Card from "./DataCard";
@@ -68,7 +68,7 @@ const TopBar: React.FC<{}> = () => {
 
 const AppContainer: React.FC<Props> = (props) => {
   return (
-    <RecoilRoot>
+    <Provider>
       <ChakraProvider theme={theme}>
         <Router>
           <GATracking>
@@ -76,7 +76,7 @@ const AppContainer: React.FC<Props> = (props) => {
           </GATracking>
         </Router>
       </ChakraProvider>
-    </RecoilRoot>
+    </Provider>
   );
 };
 

@@ -6,9 +6,9 @@ import {
   MenuItemOption, MenuList, MenuOptionGroup
 } from "@chakra-ui/react";
 import { MdSettings } from "@react-icons/all-files/md/MdSettings";
+import { atom, useAtom } from 'jotai';
 import { dolch, ogden, sources } from "lingua-scraper";
 import { useMemo } from "react";
-import { atom, useRecoilState } from "recoil";
 import { CustomWordList } from "./CustomWordList";
 import { WordList } from "./internal-types";
 
@@ -25,15 +25,12 @@ const WORD_LISTS = {
 };
 
 const ConfigAtom = atom({
-  key: "app-config",
-  default: {
-    excludedSources: [] as string[],
-    activeList: "ogden",
-  },
+  excludedSources: [] as string[],
+  activeList: "ogden",
 });
 
 export default function useConfigState() {
-  const [state, setState] = useRecoilState(ConfigAtom);
+  const [state, setState] = useAtom(ConfigAtom);
 
   const activeList = state.activeList;
   const wordList = useMemo<WordList>(() => WORD_LISTS[activeList], [

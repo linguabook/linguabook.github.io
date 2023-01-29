@@ -26,8 +26,7 @@ jobs:
           cache: "yarn"
 
       - name: deploy
-        run: |
-          git config --global user.email "stodyshev@gmail.com"
-          git config --global user.name "SergeyT Github Automation"
-          yarn install
-          yarn deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./packages/app/build

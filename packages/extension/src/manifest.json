@@ -1,9 +1,9 @@
 {
-  "name": "LingvoBook",
+  "name": "LinguaBook",
   "author": "Sergey Todyshev",
-  "version": "1.3.0",
-  "manifest_version": 2,
-  "description": "Chrome extension for https://linguabook.github.io",
+  "version": "2.0.0",
+  "manifest_version": 3,
+  "description": "Browser Extension for https://linguabook.github.io",
   "icons": {
     "16": "assets/logo16.png",
     "48": "assets/logo48.png",
@@ -13,12 +13,13 @@
     {
       "matches": ["<all_urls>"],
       "all_frames": true,
-      "css": ["tippy.css", "content.css"],
-      "js": ["popper.js", "tippy.js", "linguabook-content.js"]
+      "css": ["lb.css"],
+      "js": ["lib/jquery.js", "lib/popper.js", "lib/interact.js", "lb.js"]
     }
   ],
-  "permissions": [
+  "host_permissions": [
     "https://tsvbits.com/*",
+    "https://*.regie.com/*",
     "https://*.google.com/*",
     "https://*.microsoft.com/*",
     "https://github.com/*",

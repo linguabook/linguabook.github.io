@@ -1,21 +1,29 @@
+import { Icon, IconButton } from "@chakra-ui/react";
+import { BiShareAlt as ShareIcon } from "@react-icons/all-files/bi/BiShareAlt";
+import {
+  BsBookmark as BookmarkIcon
+} from "@react-icons/all-files/bs/BsBookmark";
+import {
+  BsThreeDots as DotsIcon
+} from "@react-icons/all-files/bs/BsThreeDots";
+import { FaBrain as IgnoreIcon } from "@react-icons/all-files/fa/FaBrain";
+import {
+  FiChevronDown as ChevronDownIcon
+} from "@react-icons/all-files/fi/FiChevronDown";
+import {
+  FiChevronsDown as ChevronsDownIcon
+} from "@react-icons/all-files/fi/FiChevronsDown";
+import {
+  FiChevronsUp as ChevronsUpIcon
+} from "@react-icons/all-files/fi/FiChevronsUp";
+import {
+  FiChevronUp as ChevronUpIcon
+} from "@react-icons/all-files/fi/FiChevronUp";
+
+import { IoIosHeartEmpty as HeartIcon } from "@react-icons/all-files/io/IoIosHeartEmpty";
 import React from "react";
-import { Box, Icon, IconButton } from "@chakra-ui/react";
-import {
-  FiChevronsUp as ChevronsUpIcon,
-  FiChevronsDown as ChevronsDownIcon,
-  FiChevronUp as ChevronUpIcon,
-  FiChevronDown as ChevronDownIcon,
-} from "react-icons/fi";
-import { FaBrain as IgnoreIcon } from "react-icons/fa";
-import {
-  BsBookmark as BookmarkIcon,
-  BsThreeDots as DotsIcon,
-} from "react-icons/bs";
-import { MdClose as CloseIcon } from "react-icons/md";
-import { IoIosHeartEmpty as HeartIcon } from "react-icons/io";
-import { BiShareAlt as ShareIcon } from "react-icons/bi";
-import useKnownWords from "./use-known-words";
 import { useMyWords } from "./CustomWordList";
+import useKnownWords from "./use-known-words";
 
 export const ShowMore: React.FC<any> = ({ showMore, setShowMore }) => {
   const handleClick = () => setShowMore(!showMore);

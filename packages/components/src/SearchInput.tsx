@@ -1,14 +1,11 @@
-import React from "react";
+import { CloseIcon } from "@chakra-ui/icons";
 import {
   Box,
-  Icon,
-  InputGroup,
-  Input,
-  InputLeftElement,
-  InputRightElement,
+  Icon, Input, InputGroup, InputLeftElement,
+  InputRightElement
 } from "@chakra-ui/react";
-import { CloseIcon } from "@chakra-ui/icons";
-import { MdSearch } from "react-icons/md";
+import { MdSearch } from "@react-icons/all-files/md/MdSearch";
+import React from "react";
 import { useDebounce } from "use-debounce";
 
 import useState from "./use-search-state";

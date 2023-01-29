@@ -1,21 +1,16 @@
-import { useMemo } from "react";
 import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuItem,
-  MenuItemOption,
   Checkbox,
   Icon,
-  IconButton,
+  IconButton, Menu,
+  MenuButton, MenuGroup, MenuItem,
+  MenuItemOption, MenuList, MenuOptionGroup
 } from "@chakra-ui/react";
-import { MdSettings } from "react-icons/md";
-import { sources, ogden, dolch } from "lingua-scraper";
+import { MdSettings } from "@react-icons/all-files/md/MdSettings";
+import { dolch, ogden, sources } from "lingua-scraper";
+import { useMemo } from "react";
 import { atom, useRecoilState } from "recoil";
-import { WordList } from "./internal-types";
 import { CustomWordList } from "./CustomWordList";
+import { WordList } from "./internal-types";
 
 const WORD_LISTS = {
   ogden: {

@@ -1,7 +1,6 @@
 import _ from "lodash";
 import React, { useState } from "react";
 import {
-  Tab,
   Box,
   VStack,
   HStack,
@@ -56,6 +55,7 @@ function getLabel(key: string) {
 type Props = {
   text: string;
   lang: string;
+  children?: React.ReactNode;
 };
 
 type Tab = {

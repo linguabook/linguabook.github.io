@@ -1,6 +1,6 @@
-import React from "react";
 import { Icon } from "@chakra-ui/react";
-import { FaVolumeUp } from "react-icons/fa";
+import { FaVolumeUp } from "@react-icons/all-files/fa/FaVolumeUp";
+import React from "react";
 
 type Props = {
   url: string;

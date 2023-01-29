@@ -2,6 +2,7 @@ import React from "react";
 import { Box, ChakraProps } from "@chakra-ui/react";
 
 type Props = ChakraProps & {
+  children: React.ReactNode;
   className?: string;
 };
 

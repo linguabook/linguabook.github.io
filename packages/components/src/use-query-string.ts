@@ -1,13 +1,13 @@
-import { useLocation, useHistory } from "react-router-dom";
 import qs from "qs";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function useQueryString() {
   const location = useLocation();
   const query = qs.parse(location.search);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const setParam = (key: string, value: string) => {
-    history.push({
+    navigate({
       pathname: location.pathname,
       search: qs.stringify({
         ...query,

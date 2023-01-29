@@ -1,18 +1,22 @@
-import { Suspense } from "react";
-import ReactDOM from "react-dom";
 import { ColorModeScript } from "@chakra-ui/react";
-import "./index.css";
+import { Suspense } from "react";
+import { createRoot } from 'react-dom/client';
 import App from "./App";
+import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
-ReactDOM.render(
+const rootElement = document.querySelector('#root');
+if (!rootElement) throw new Error('Root element not found')
+
+const root = createRoot(rootElement);
+
+root.render(
   <>
     <ColorModeScript />
-    <Suspense fallback={() => <div>loading...</div>}>
+    <Suspense fallback={<div>loading...</div>}>
       <App />
     </Suspense>
-  </>,
-  document.getElementById("root")
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[34742],{34742:function(n,a,t){t.r(a);var e=t(29938),u=t(47066);a.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/range.json",text:"range",lang:"en"})}}}]);
+//# sourceMappingURL=34742.8e080fc0.chunk.js.map

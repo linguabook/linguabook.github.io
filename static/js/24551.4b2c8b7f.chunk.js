@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[24551],{24551:function(t,e,n){n.r(e);var a=n(29938),u=n(47066);e.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/together.json",text:"together",lang:"en"})}}}]);
+//# sourceMappingURL=24551.4b2c8b7f.chunk.js.map

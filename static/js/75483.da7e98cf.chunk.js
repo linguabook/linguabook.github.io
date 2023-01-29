@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[75483],{75483:function(t,a,n){n.r(a);var u=n(29938),e=n(47066);a.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/tax.json",text:"tax",lang:"en"})}}}]);
+//# sourceMappingURL=75483.da7e98cf.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[83908],{83908:function(n,a,t){t.r(a);var e=t(29938),u=t(47066);a.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/plane.json",text:"plane",lang:"en"})}}}]);
+//# sourceMappingURL=83908.56cb4a3a.chunk.js.map

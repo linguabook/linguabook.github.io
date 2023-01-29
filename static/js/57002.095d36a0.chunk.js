@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[57002],{57002:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/lip.json",text:"lip",lang:"en"})}}}]);
+//# sourceMappingURL=57002.095d36a0.chunk.js.map

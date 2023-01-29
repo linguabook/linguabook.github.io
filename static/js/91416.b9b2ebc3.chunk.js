@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[91416],{91416:function(a,n,t){t.r(n);var u=t(29938),s=t(47066);n.default=function(){return(0,u.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/sugar.json",text:"sugar",lang:"en"})}}}]);
+//# sourceMappingURL=91416.b9b2ebc3.chunk.js.map

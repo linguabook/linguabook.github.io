@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[56219],{56219:function(e,n,t){t.r(n);var a=t(29938),u=t(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/agreement.json",text:"agreement",lang:"en"})}}}]);
+//# sourceMappingURL=56219.9dc77516.chunk.js.map

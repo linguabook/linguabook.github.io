@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[24702],{24702:function(n,t,e){e.r(t);var r=e(29938),a=e(47066);t.default=function(){return(0,r.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/berry.json",text:"berry",lang:"en"})}}}]);
+//# sourceMappingURL=24702.3baffba7.chunk.js.map

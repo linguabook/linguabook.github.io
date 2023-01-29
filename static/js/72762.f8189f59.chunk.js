@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[72762],{72762:function(e,n,t){t.r(n);var a=t(29938),u=t(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/before.json",text:"before",lang:"en"})}}}]);
+//# sourceMappingURL=72762.f8189f59.chunk.js.map

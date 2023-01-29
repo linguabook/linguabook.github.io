@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[95981],{95981:function(n,t,u){u.r(t);var a=u(29938),e=u(47066);t.default=function(){return(0,a.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/upon.json",text:"upon",lang:"en"})}}}]);
+//# sourceMappingURL=95981.bb0426d4.chunk.js.map

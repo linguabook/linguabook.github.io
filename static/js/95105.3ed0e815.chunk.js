@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[95105],{95105:function(t,n,a){a.r(n);var u=a(29938),e=a(47066);n.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/fight.json",text:"fight",lang:"en"})}}}]);
+//# sourceMappingURL=95105.3ed0e815.chunk.js.map

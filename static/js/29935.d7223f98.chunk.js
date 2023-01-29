@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[29935],{29935:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/wind.json",text:"wind",lang:"en"})}}}]);
+//# sourceMappingURL=29935.d7223f98.chunk.js.map

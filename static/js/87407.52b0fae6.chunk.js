@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[87407],{87407:function(n,t,e){e.r(t);var a=e(29938),u=e(47066);t.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/bone.json",text:"bone",lang:"en"})}}}]);
+//# sourceMappingURL=87407.52b0fae6.chunk.js.map

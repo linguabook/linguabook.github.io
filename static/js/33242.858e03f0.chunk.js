@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[33242],{33242:function(t,n,a){a.r(n);var r=a(29938),s=a(47066);n.default=function(){return(0,r.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/transport.json",text:"transport",lang:"en"})}}}]);
+//# sourceMappingURL=33242.858e03f0.chunk.js.map

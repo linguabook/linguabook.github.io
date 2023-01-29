@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[61003],{61003:function(n,t,u){u.r(t);var a=u(29938),e=u(47066);t.default=function(){return(0,a.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/duck.json",text:"duck",lang:"en"})}}}]);
+//# sourceMappingURL=61003.ca683af9.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[16582],{16582:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/town.json",text:"town",lang:"en"})}}}]);
+//# sourceMappingURL=16582.e0a9260f.chunk.js.map

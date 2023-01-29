@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[79995],{79995:function(n,t,a){a.r(t);var o=a(29938),u=a(47066);t.default=function(){return(0,o.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/look.json",text:"look",lang:"en"})}}}]);
+//# sourceMappingURL=79995.8f71c047.chunk.js.map

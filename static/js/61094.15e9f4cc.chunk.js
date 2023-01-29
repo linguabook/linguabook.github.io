@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[61094],{61094:function(t,a,n){n.r(a);var u=n(29938),e=n(47066);a.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/fat.json",text:"fat",lang:"en"})}}}]);
+//# sourceMappingURL=61094.15e9f4cc.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[60430],{60430:function(n,e,a){a.r(e);var t=a(29938),u=a(47066);e.default=function(){return(0,t.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/encylopedia.json",text:"encylopedia",lang:"en"})}}}]);
+//# sourceMappingURL=60430.d6c94b13.chunk.js.map

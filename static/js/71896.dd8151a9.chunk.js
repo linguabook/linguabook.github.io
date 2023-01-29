@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[71896],{71896:function(e,n,t){t.r(n);var a=t(29938),s=t(47066);n.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/sheep.json",text:"sheep",lang:"en"})}}}]);
+//# sourceMappingURL=71896.dd8151a9.chunk.js.map

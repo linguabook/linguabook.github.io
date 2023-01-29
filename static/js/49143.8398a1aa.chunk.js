@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[49143],{49143:function(t,a,n){n.r(a);var e=n(29938),u=n(47066);a.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/after.json",text:"after",lang:"en"})}}}]);
+//# sourceMappingURL=49143.8398a1aa.chunk.js.map

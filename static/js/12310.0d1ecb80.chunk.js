@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[12310],{12310:function(n,a,t){t.r(a);var u=t(29938),e=t(47066);a.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/drain.json",text:"drain",lang:"en"})}}}]);
+//# sourceMappingURL=12310.0d1ecb80.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[49289],{49289:function(n,e,t){t.r(e);var a=t(29938),u=t(47066);e.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/knee.json",text:"knee",lang:"en"})}}}]);
+//# sourceMappingURL=49289.96ef1732.chunk.js.map

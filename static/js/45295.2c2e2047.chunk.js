@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[45295],{45295:function(n,t,u){u.r(t);var e=u(29938),a=u(47066);t.default=function(){return(0,e.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/under.json",text:"under",lang:"en"})}}}]);
+//# sourceMappingURL=45295.2c2e2047.chunk.js.map

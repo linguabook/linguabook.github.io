@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[61436],{61436:function(n,t,a){a.r(t);var u=a(29938),c=a(47066);t.default=function(){return(0,u.jsx)(c.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/clock.json",text:"clock",lang:"en"})}}}]);
+//# sourceMappingURL=61436.f051b38e.chunk.js.map

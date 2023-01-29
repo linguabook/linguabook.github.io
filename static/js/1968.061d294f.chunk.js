@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[1968],{1968:function(e,n,t){t.r(n);var a=t(29938),u=t(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/needle.json",text:"needle",lang:"en"})}}}]);
+//# sourceMappingURL=1968.061d294f.chunk.js.map

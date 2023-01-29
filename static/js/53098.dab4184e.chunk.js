@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[53098],{53098:function(n,t,u){u.r(t);var e=u(29938),a=u(47066);t.default=function(){return(0,e.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/summer.json",text:"summer",lang:"en"})}}}]);
+//# sourceMappingURL=53098.dab4184e.chunk.js.map

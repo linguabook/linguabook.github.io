@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[5454],{5454:function(a,n,t){t.r(n);var u=t(29938),e=t(47066);n.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/rail.json",text:"rail",lang:"en"})}}}]);
+//# sourceMappingURL=5454.13071834.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[11437],{11437:function(a,n,t){t.r(n);var e=t(29938),u=t(47066);n.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/champagne.json",text:"champagne",lang:"en"})}}}]);
+//# sourceMappingURL=11437.655b09d8.chunk.js.map

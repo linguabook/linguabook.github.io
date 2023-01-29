@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[70073],{70073:function(n,t,e){e.r(t);var a=e(29938),s=e(47066);t.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/shelf.json",text:"shelf",lang:"en"})}}}]);
+//# sourceMappingURL=70073.6607bff3.chunk.js.map

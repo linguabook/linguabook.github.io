@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[39910],{39910:function(s,n,t){t.r(n);var a=t(29938),u=t(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/scissors.json",text:"scissors",lang:"en"})}}}]);
+//# sourceMappingURL=39910.cc307c9b.chunk.js.map

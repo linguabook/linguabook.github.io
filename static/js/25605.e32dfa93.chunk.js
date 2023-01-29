@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[25605],{25605:function(t,a,n){n.r(a);var s=n(29938),u=n(47066);a.default=function(){return(0,s.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/salt.json",text:"salt",lang:"en"})}}}]);
+//# sourceMappingURL=25605.e32dfa93.chunk.js.map

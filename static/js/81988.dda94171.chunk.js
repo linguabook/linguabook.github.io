@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[81988],{81988:function(n,t,u){u.r(t);var a=u(29938),e=u(47066);t.default=function(){return(0,a.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/cloud.json",text:"cloud",lang:"en"})}}}]);
+//# sourceMappingURL=81988.dda94171.chunk.js.map

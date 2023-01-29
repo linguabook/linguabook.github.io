@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[84665],{84665:function(n,a,t){t.r(a);var e=t(29938),s=t(47066);a.default=function(){return(0,e.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/expansion.json",text:"expansion",lang:"en"})}}}]);
+//# sourceMappingURL=84665.54d96356.chunk.js.map

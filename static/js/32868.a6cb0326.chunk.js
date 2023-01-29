@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[32868],{32868:function(t,e,a){a.r(e);var n=a(29938),s=a(47066);e.default=function(){return(0,n.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/yesterday.json",text:"yesterday",lang:"en"})}}}]);
+//# sourceMappingURL=32868.a6cb0326.chunk.js.map

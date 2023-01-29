@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[64089],{64089:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/kind.json",text:"kind",lang:"en"})}}}]);
+//# sourceMappingURL=64089.8ef80b0d.chunk.js.map

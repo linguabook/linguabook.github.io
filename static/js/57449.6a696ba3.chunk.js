@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[57449],{57449:function(a,n,t){t.r(n);var s=t(29938),u=t(47066);n.default=function(){return(0,s.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/against.json",text:"against",lang:"en"})}}}]);
+//# sourceMappingURL=57449.6a696ba3.chunk.js.map

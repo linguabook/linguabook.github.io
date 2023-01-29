@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[37123],{37123:function(n,a,t){t.r(a);var e=t(29938),u=t(47066);a.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/orange.json",text:"orange",lang:"en"})}}}]);
+//# sourceMappingURL=37123.315b07f7.chunk.js.map

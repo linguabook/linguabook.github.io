@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[35827],{35827:function(n,a,t){t.r(a);var e=t(29938),u=t(47066);a.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/angle.json",text:"angle",lang:"en"})}}}]);
+//# sourceMappingURL=35827.085cb357.chunk.js.map

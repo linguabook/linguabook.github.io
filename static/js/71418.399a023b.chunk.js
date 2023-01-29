@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[71418],{71418:function(a,n,t){t.r(n);var u=t(29938),e=t(47066);n.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/flag.json",text:"flag",lang:"en"})}}}]);
+//# sourceMappingURL=71418.399a023b.chunk.js.map

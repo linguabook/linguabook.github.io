@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[82560],{82560:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/do.json",text:"do",lang:"en"})}}}]);
+//# sourceMappingURL=82560.4a9e2dcf.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[4736],{4736:function(a,n,t){t.r(n);var e=t(29938),r=t(47066);n.default=function(){return(0,e.jsx)(r.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/farmer.json",text:"farmer",lang:"en"})}}}]);
+//# sourceMappingURL=4736.2f9aeafb.chunk.js.map

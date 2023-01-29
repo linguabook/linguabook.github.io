@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[13646],{13646:function(n,t,e){e.r(t);var a=e(29938),s=e(47066);t.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/does.json",text:"does",lang:"en"})}}}]);
+//# sourceMappingURL=13646.e0f4842b.chunk.js.map

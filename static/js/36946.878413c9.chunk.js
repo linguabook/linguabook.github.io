@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[36946],{36946:function(a,n,t){t.r(n);var e=t(29938),u=t(47066);n.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/have.json",text:"have",lang:"en"})}}}]);
+//# sourceMappingURL=36946.878413c9.chunk.js.map

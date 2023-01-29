@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[56785],{56785:function(a,n,t){t.r(n);var u=t(29938),e=t(47066);n.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/coal.json",text:"coal",lang:"en"})}}}]);
+//# sourceMappingURL=56785.0eaf532c.chunk.js.map

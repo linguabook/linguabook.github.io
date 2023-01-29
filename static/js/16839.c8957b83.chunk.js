@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[16839],{16839:function(e,n,t){t.r(n);var a=t(29938),u=t(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/feeble.json",text:"feeble",lang:"en"})}}}]);
+//# sourceMappingURL=16839.c8957b83.chunk.js.map

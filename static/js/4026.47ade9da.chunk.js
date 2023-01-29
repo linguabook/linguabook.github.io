@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[4026],{4026:function(n,t,u){u.r(t);var a=u(29938),c=u(47066);t.default=function(){return(0,a.jsx)(c.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/church.json",text:"church",lang:"en"})}}}]);
+//# sourceMappingURL=4026.47ade9da.chunk.js.map

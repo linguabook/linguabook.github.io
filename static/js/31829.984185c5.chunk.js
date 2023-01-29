@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[31829],{31829:function(n,t,u){u.r(t);var a=u(29938),e=u(47066);t.default=function(){return(0,a.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/rum.json",text:"rum",lang:"en"})}}}]);
+//# sourceMappingURL=31829.984185c5.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[16643],{16643:function(t,a,n){n.r(a);var u=n(29938),e=n(47066);a.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/at.json",text:"at",lang:"en"})}}}]);
+//# sourceMappingURL=16643.88adc13b.chunk.js.map

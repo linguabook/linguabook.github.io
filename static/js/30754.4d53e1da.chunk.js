@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[30754],{30754:function(t,e,a){a.r(e);var n=a(29938),r=a(47066);e.default=function(){return(0,n.jsx)(r.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/secretary.json",text:"secretary",lang:"en"})}}}]);
+//# sourceMappingURL=30754.4d53e1da.chunk.js.map

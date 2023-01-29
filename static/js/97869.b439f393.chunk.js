@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[97869],{97869:function(n,t,e){e.r(t);var r=e(29938),a=e(47066);t.default=function(){return(0,r.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/order.json",text:"order",lang:"en"})}}}]);
+//# sourceMappingURL=97869.b439f393.chunk.js.map

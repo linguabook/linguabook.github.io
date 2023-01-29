@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[6887],{6887:function(n,t,a){a.r(t);var o=a(29938),s=a(47066);t.default=function(){return(0,o.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/position.json",text:"position",lang:"en"})}}}]);
+//# sourceMappingURL=6887.bd41e25f.chunk.js.map

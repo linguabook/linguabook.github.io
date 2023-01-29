@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[68907],{68907:function(n,a,t){t.r(a);var u=t(29938),e=t(47066);a.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/grain.json",text:"grain",lang:"en"})}}}]);
+//# sourceMappingURL=68907.36947b23.chunk.js.map

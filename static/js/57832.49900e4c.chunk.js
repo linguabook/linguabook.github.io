@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[57832],{57832:function(t,n,e){e.r(n);var a=e(29938),s=e(47066);n.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/society.json",text:"society",lang:"en"})}}}]);
+//# sourceMappingURL=57832.49900e4c.chunk.js.map

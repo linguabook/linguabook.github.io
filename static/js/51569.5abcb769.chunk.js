@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[51569],{51569:function(n,t,i){i.r(t);var a=i(29938),s=i(47066);t.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/division.json",text:"division",lang:"en"})}}}]);
+//# sourceMappingURL=51569.5abcb769.chunk.js.map

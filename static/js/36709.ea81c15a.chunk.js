@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[36709],{36709:function(t,n,e){e.r(n);var a=e(29938),u=e(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/tell.json",text:"tell",lang:"en"})}}}]);
+//# sourceMappingURL=36709.ea81c15a.chunk.js.map

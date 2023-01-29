@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[63127],{63127:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/morning.json",text:"morning",lang:"en"})}}}]);
+//# sourceMappingURL=63127.dd947725.chunk.js.map

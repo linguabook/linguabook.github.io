@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[48369],{48369:function(a,n,t){t.r(n);var r=t(29938),u=t(47066);n.default=function(){return(0,r.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/forward.json",text:"forward",lang:"en"})}}}]);
+//# sourceMappingURL=48369.de531b91.chunk.js.map

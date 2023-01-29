@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[3226],{3226:function(t,n,u){u.r(n);var a=u(29938),s=u(47066);n.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/south.json",text:"south",lang:"en"})}}}]);
+//# sourceMappingURL=3226.35b3a7e5.chunk.js.map

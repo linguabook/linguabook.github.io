@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[38408],{38408:function(e,n,t){t.r(n);var a=t(29938),u=t(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/every.json",text:"every",lang:"en"})}}}]);
+//# sourceMappingURL=38408.d5e33010.chunk.js.map

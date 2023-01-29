@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[22193],{22193:function(e,n,t){t.r(n);var a=t(29938),s=t(47066);n.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/sneeze.json",text:"sneeze",lang:"en"})}}}]);
+//# sourceMappingURL=22193.73a40e13.chunk.js.map

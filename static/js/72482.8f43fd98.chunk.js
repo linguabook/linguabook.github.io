@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[72482],{72482:function(a,n,t){t.r(n);var u=t(29938),e=t(47066);n.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/hair.json",text:"hair",lang:"en"})}}}]);
+//# sourceMappingURL=72482.8f43fd98.chunk.js.map

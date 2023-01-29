@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[27578],{27578:function(t,e,n){n.r(e);var a=n(29938),u=n(47066);e.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/three.json",text:"three",lang:"en"})}}}]);
+//# sourceMappingURL=27578.490d02a1.chunk.js.map

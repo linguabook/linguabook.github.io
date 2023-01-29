@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[31514],{31514:function(n,t,e){e.r(t);var a=e(29938),p=e(47066);t.default=function(){return(0,a.jsx)(p.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/copper.json",text:"copper",lang:"en"})}}}]);
+//# sourceMappingURL=31514.d6aff227.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[25775],{25775:function(n,t,u){u.r(t);var a=u(29938),s=u(47066);t.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/crush.json",text:"crush",lang:"en"})}}}]);
+//# sourceMappingURL=25775.4843f2b2.chunk.js.map

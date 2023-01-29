@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[73811],{73811:function(n,t,e){e.r(t);var a=e(29938),u=e(47066);t.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/office.json",text:"office",lang:"en"})}}}]);
+//# sourceMappingURL=73811.489ac0e1.chunk.js.map

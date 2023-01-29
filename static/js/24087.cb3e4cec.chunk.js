@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[24087],{24087:function(t,e,n){n.r(e);var a=n(29938),u=n(47066);e.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/kettle.json",text:"kettle",lang:"en"})}}}]);
+//# sourceMappingURL=24087.cb3e4cec.chunk.js.map

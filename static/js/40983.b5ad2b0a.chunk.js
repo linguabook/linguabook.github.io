@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[40983],{40983:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/off.json",text:"off",lang:"en"})}}}]);
+//# sourceMappingURL=40983.b5ad2b0a.chunk.js.map

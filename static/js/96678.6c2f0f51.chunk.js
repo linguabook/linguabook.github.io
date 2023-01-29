@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[96678],{96678:function(e,n,t){t.r(n);var a=t(29938),s=t(47066);n.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/sleep.json",text:"sleep",lang:"en"})}}}]);
+//# sourceMappingURL=96678.6c2f0f51.chunk.js.map

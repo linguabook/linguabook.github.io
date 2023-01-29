@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[7842],{7842:function(n,t,u){u.r(t);var e=u(29938),a=u(47066);t.default=function(){return(0,e.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/minute.json",text:"minute",lang:"en"})}}}]);
+//# sourceMappingURL=7842.c4da2e35.chunk.js.map

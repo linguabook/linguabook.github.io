@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[31925],{31925:function(e,n,t){t.r(n);var a=t(29938),s=t(47066);n.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/cheese.json",text:"cheese",lang:"en"})}}}]);
+//# sourceMappingURL=31925.4e94dd76.chunk.js.map

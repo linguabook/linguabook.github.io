@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[11868],{11868:function(n,t,u){u.r(t);var a=u(29938),e=u(47066);t.default=function(){return(0,a.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/gun.json",text:"gun",lang:"en"})}}}]);
+//# sourceMappingURL=11868.7bd2f3f9.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[26850],{26850:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/addition.json",text:"addition",lang:"en"})}}}]);
+//# sourceMappingURL=26850.a95774ba.chunk.js.map

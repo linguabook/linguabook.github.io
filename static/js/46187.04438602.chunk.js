@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[46187],{46187:function(t,n,e){e.r(n);var r=e(29938),a=e(47066);n.default=function(){return(0,r.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/porter.json",text:"porter",lang:"en"})}}}]);
+//# sourceMappingURL=46187.04438602.chunk.js.map

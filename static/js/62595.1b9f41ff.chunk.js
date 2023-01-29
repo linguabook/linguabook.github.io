@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[62595],{62595:function(a,n,t){t.r(n);var u=t(29938),e=t(47066);n.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/fall.json",text:"fall",lang:"en"})}}}]);
+//# sourceMappingURL=62595.1b9f41ff.chunk.js.map

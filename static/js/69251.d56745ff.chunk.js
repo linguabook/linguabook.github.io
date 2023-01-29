@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[69251],{69251:function(t,n,e){e.r(n);var a=e(29938),s=e(47066);n.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/chest.json",text:"chest",lang:"en"})}}}]);
+//# sourceMappingURL=69251.d56745ff.chunk.js.map

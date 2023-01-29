@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[10237],{10237:function(t,e,n){n.r(e);var a=n(29938),u=n(47066);e.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/omelet.json",text:"omelet",lang:"en"})}}}]);
+//# sourceMappingURL=10237.23573641.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[13302],{13302:function(n,t,a){a.r(t);var o=a(29938),u=a(47066);t.default=function(){return(0,o.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/door.json",text:"door",lang:"en"})}}}]);
+//# sourceMappingURL=13302.39cf6035.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[75585],{75585:function(t,a,n){n.r(a);var e=n(29938),s=n(47066);a.default=function(){return(0,e.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/basket.json",text:"basket",lang:"en"})}}}]);
+//# sourceMappingURL=75585.4d97c0a5.chunk.js.map

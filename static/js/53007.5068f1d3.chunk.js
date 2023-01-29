@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[53007],{53007:function(n,a,t){t.r(a);var u=t(29938),e=t(47066);a.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/hand.json",text:"hand",lang:"en"})}}}]);
+//# sourceMappingURL=53007.5068f1d3.chunk.js.map

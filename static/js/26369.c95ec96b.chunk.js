@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[26369],{26369:function(n,t,u){u.r(t);var a=u(29938),p=u(47066);t.default=function(){return(0,a.jsx)(p.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/pump.json",text:"pump",lang:"en"})}}}]);
+//# sourceMappingURL=26369.c95ec96b.chunk.js.map

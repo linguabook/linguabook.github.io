@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[48634],{48634:function(a,n,t){t.r(n);var e=t(29938),r=t(47066);n.default=function(){return(0,e.jsx)(r.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/carriage.json",text:"carriage",lang:"en"})}}}]);
+//# sourceMappingURL=48634.ce1f08cd.chunk.js.map

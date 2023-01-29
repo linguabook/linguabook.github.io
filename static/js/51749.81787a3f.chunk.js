@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[51749],{51749:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/mountain.json",text:"mountain",lang:"en"})}}}]);
+//# sourceMappingURL=51749.81787a3f.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[32551],{32551:function(n,t,u){u.r(t);var a=u(29938),e=u(47066);t.default=function(){return(0,a.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/nut.json",text:"nut",lang:"en"})}}}]);
+//# sourceMappingURL=32551.1ebaa32e.chunk.js.map

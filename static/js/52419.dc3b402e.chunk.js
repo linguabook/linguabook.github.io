@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[52419],{52419:function(n,t,e){e.r(t);var r=e(29938),a=e(47066);t.default=function(){return(0,r.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/river.json",text:"river",lang:"en"})}}}]);
+//# sourceMappingURL=52419.dc3b402e.chunk.js.map

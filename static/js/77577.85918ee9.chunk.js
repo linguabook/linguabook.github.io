@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[77577],{77577:function(n,t,e){e.r(t);var a=e(29938),u=e(47066);t.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/winter.json",text:"winter",lang:"en"})}}}]);
+//# sourceMappingURL=77577.85918ee9.chunk.js.map

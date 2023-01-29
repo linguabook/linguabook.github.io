@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[95448],{95448:function(a,n,t){t.r(n);var u=t(29938),e=t(47066);n.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/far.json",text:"far",lang:"en"})}}}]);
+//# sourceMappingURL=95448.f16ef63d.chunk.js.map

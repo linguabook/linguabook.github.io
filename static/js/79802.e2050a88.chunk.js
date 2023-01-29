@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[79802],{79802:function(n,t,u){u.r(t);var a=u(29938),e=u(47066);t.default=function(){return(0,a.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/cough.json",text:"cough",lang:"en"})}}}]);
+//# sourceMappingURL=79802.e2050a88.chunk.js.map

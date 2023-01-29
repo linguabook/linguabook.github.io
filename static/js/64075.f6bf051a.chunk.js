@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[64075],{64075:function(t,a,n){n.r(a);var u=n(29938),e=n(47066);a.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/rabbit.json",text:"rabbit",lang:"en"})}}}]);
+//# sourceMappingURL=64075.f6bf051a.chunk.js.map

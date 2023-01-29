@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[96202],{96202:function(n,t,u){u.r(t);var a=u(29938),e=u(47066);t.default=function(){return(0,a.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/bulb.json",text:"bulb",lang:"en"})}}}]);
+//# sourceMappingURL=96202.ecc8a876.chunk.js.map

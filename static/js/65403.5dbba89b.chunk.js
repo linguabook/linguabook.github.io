@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[65403],{65403:function(t,n,a){a.r(n);var u=a(29938),e=a(47066);n.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/pot.json",text:"pot",lang:"en"})}}}]);
+//# sourceMappingURL=65403.5dbba89b.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[44901],{44901:function(a,n,t){t.r(n);var e=t(29938),u=t(47066);n.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/face.json",text:"face",lang:"en"})}}}]);
+//# sourceMappingURL=44901.6966d4a0.chunk.js.map

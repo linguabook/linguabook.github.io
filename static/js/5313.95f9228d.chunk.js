@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[5313],{5313:function(n,t,e){e.r(t);var a=e(29938),s=e(47066);t.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/slope.json",text:"slope",lang:"en"})}}}]);
+//# sourceMappingURL=5313.95f9228d.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[49498],{49498:function(n,s,t){t.r(s);var e=t(29938),a=t(47066);s.default=function(){return(0,e.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/dress.json",text:"dress",lang:"en"})}}}]);
+//# sourceMappingURL=49498.4654301d.chunk.js.map

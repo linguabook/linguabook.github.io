@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[73259],{73259:function(t,a,n){n.r(a);var u=n(29938),e=n(47066);a.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/throat.json",text:"throat",lang:"en"})}}}]);
+//# sourceMappingURL=73259.adb0796a.chunk.js.map

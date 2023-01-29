@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[18205],{18205:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/go.json",text:"go",lang:"en"})}}}]);
+//# sourceMappingURL=18205.8ba42bd8.chunk.js.map

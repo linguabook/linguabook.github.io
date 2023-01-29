@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[33711],{33711:function(a,n,t){t.r(n);var e=t(29938),u=t(47066);n.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/cake.json",text:"cake",lang:"en"})}}}]);
+//# sourceMappingURL=33711.cb1b1e02.chunk.js.map

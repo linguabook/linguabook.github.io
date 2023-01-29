@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[31882],{31882:function(t,n,e){e.r(n);var a=e(29938),o=e(47066);n.default=function(){return(0,a.jsx)(o.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/competition.json",text:"competition",lang:"en"})}}}]);
+//# sourceMappingURL=31882.1941c1fd.chunk.js.map

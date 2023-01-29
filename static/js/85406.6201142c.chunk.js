@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[85406],{85406:function(t,n,a){a.r(n);var s=a(29938),u=a(47066);n.default=function(){return(0,s.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/mist.json",text:"mist",lang:"en"})}}}]);
+//# sourceMappingURL=85406.6201142c.chunk.js.map

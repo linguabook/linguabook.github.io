@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[62319],{62319:function(t,a,n){n.r(a);var e=n(29938),o=n(47066);a.default=function(){return(0,e.jsx)(o.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/chocolate.json",text:"chocolate",lang:"en"})}}}]);
+//# sourceMappingURL=62319.8f550964.chunk.js.map

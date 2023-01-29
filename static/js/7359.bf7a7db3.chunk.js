@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[7359],{7359:function(n,t,a){a.r(t);var s=a(29938),u=a(47066);t.default=function(){return(0,s.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/fish.json",text:"fish",lang:"en"})}}}]);
+//# sourceMappingURL=7359.bf7a7db3.chunk.js.map

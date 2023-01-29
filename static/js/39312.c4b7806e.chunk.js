@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[39312],{39312:function(a,n,t){t.r(n);var e=t(29938),u=t(47066);n.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/bread.json",text:"bread",lang:"en"})}}}]);
+//# sourceMappingURL=39312.c4b7806e.chunk.js.map

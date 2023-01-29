@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[85814],{85814:function(n,t,e){e.r(t);var a=e(29938),u=e(47066);t.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/neck.json",text:"neck",lang:"en"})}}}]);
+//# sourceMappingURL=85814.9e2c9f86.chunk.js.map

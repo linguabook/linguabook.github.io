@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[95954],{95954:function(a,n,t){t.r(n);var e=t(29938),s=t(47066);n.default=function(){return(0,e.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/spade.json",text:"spade",lang:"en"})}}}]);
+//# sourceMappingURL=95954.742b51b3.chunk.js.map

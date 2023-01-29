@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[22674],{22674:function(n,t,e){e.r(t);var a=e(29938),s=e(47066);t.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/nest.json",text:"nest",lang:"en"})}}}]);
+//# sourceMappingURL=22674.f76b504b.chunk.js.map

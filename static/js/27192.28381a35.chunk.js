@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[27192],{27192:function(n,t,e){e.r(t);var a=e(29938),s=e(47066);t.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/goes.json",text:"goes",lang:"en"})}}}]);
+//# sourceMappingURL=27192.28381a35.chunk.js.map

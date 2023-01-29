@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[35396],{35396:function(n,a,t){t.r(a);var s=t(29938),u=t(47066);a.default=function(){return(0,s.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/sand.json",text:"sand",lang:"en"})}}}]);
+//# sourceMappingURL=35396.04c72a07.chunk.js.map

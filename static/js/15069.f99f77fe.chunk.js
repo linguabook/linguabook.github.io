@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[15069],{15069:function(n,t,u){u.r(t);var a=u(29938),s=u(47066);t.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/cushion.json",text:"cushion",lang:"en"})}}}]);
+//# sourceMappingURL=15069.f99f77fe.chunk.js.map

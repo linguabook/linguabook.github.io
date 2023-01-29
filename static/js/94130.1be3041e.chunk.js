@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[94130],{94130:function(n,e,t){t.r(e);var a=t(29938),s=t(47066);e.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/science.json",text:"science",lang:"en"})}}}]);
+//# sourceMappingURL=94130.1be3041e.chunk.js.map

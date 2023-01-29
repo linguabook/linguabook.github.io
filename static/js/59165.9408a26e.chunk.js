@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[59165],{59165:function(n,a,t){t.r(a);var u=t(29938),e=t(47066);a.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/brain.json",text:"brain",lang:"en"})}}}]);
+//# sourceMappingURL=59165.9408a26e.chunk.js.map

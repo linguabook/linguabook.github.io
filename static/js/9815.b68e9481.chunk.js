@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[9815],{9815:function(t,n,u){u.r(n);var a=u(29938),e=u(47066);n.default=function(){return(0,a.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/mouth.json",text:"mouth",lang:"en"})}}}]);
+//# sourceMappingURL=9815.b68e9481.chunk.js.map

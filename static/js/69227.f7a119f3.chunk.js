@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[69227],{69227:function(a,n,t){t.r(n);var e=t(29938),u=t(47066);n.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/gave.json",text:"gave",lang:"en"})}}}]);
+//# sourceMappingURL=69227.f7a119f3.chunk.js.map

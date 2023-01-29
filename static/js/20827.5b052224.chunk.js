@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[20827],{20827:function(t,n,u){u.r(n);var a=u(29938),e=u(47066);n.default=function(){return(0,a.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/thought.json",text:"thought",lang:"en"})}}}]);
+//# sourceMappingURL=20827.5b052224.chunk.js.map

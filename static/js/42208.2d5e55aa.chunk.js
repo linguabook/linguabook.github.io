@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[42208],{42208:function(t,e,n){n.r(e);var a=n(29938),s=n(47066);e.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/street.json",text:"street",lang:"en"})}}}]);
+//# sourceMappingURL=42208.2d5e55aa.chunk.js.map

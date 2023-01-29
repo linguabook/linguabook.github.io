@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[10530],{10530:function(t,n,a){a.r(n);var s=a(29938),u=a(47066);n.default=function(){return(0,s.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/stop.json",text:"stop",lang:"en"})}}}]);
+//# sourceMappingURL=10530.f36f8c64.chunk.js.map

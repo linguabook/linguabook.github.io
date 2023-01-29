@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[65960],{65960:function(n,t,a){a.r(t);var o=a(29938),u=a(47066);t.default=function(){return(0,o.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/roof.json",text:"roof",lang:"en"})}}}]);
+//# sourceMappingURL=65960.da1d5af8.chunk.js.map

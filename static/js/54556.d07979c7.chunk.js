@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[54556],{54556:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/comb.json",text:"comb",lang:"en"})}}}]);
+//# sourceMappingURL=54556.d07979c7.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[4768],{4768:function(t,n,u){u.r(n);var a=u(29938),e=u(47066);n.default=function(){return(0,a.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/cut.json",text:"cut",lang:"en"})}}}]);
+//# sourceMappingURL=4768.bdbdd8f1.chunk.js.map

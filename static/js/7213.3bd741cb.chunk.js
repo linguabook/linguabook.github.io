@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[7213],{7213:function(e,n,s){s.r(n);var t=s(29938),a=s(47066);n.default=function(){return(0,t.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/vessel.json",text:"vessel",lang:"en"})}}}]);
+//# sourceMappingURL=7213.3bd741cb.chunk.js.map

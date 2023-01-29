@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[9788],{9788:function(n,t,a){a.r(t);var s=a(29938),u=a(47066);t.default=function(){return(0,s.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/spring.json",text:"spring",lang:"en"})}}}]);
+//# sourceMappingURL=9788.d9873fb4.chunk.js.map

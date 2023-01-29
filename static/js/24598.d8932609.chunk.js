@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[24598],{24598:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/mind.json",text:"mind",lang:"en"})}}}]);
+//# sourceMappingURL=24598.d8932609.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[93546],{93546:function(n,t,e){e.r(t);var a=e(29938),u=e(47066);t.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/meeting.json",text:"meeting",lang:"en"})}}}]);
+//# sourceMappingURL=93546.aee6709f.chunk.js.map

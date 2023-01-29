@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[22895],{22895:function(t,n,e){e.r(n);var a=e(29938),s=e(47066);n.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/west.json",text:"west",lang:"en"})}}}]);
+//# sourceMappingURL=22895.5009e7c4.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[69731],{69731:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/fly.json",text:"fly",lang:"en"})}}}]);
+//# sourceMappingURL=69731.b29dcbb9.chunk.js.map

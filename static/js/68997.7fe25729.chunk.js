@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[68997],{68997:function(a,n,t){t.r(n);var u=t(29938),e=t(47066);n.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/vodka.json",text:"vodka",lang:"en"})}}}]);
+//# sourceMappingURL=68997.7fe25729.chunk.js.map

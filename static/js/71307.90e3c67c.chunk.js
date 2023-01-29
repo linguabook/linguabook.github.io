@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[71307],{71307:function(n,t,a){a.r(t);var s=a(29938),u=a(47066);t.default=function(){return(0,s.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/whisky.json",text:"whisky",lang:"en"})}}}]);
+//# sourceMappingURL=71307.90e3c67c.chunk.js.map

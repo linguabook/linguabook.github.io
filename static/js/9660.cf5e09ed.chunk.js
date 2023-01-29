@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[9660],{9660:function(n,t,e){e.r(t);var a=e(29938),p=e(47066);t.default=function(){return(0,a.jsx)(p.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/pipe.json",text:"pipe",lang:"en"})}}}]);
+//# sourceMappingURL=9660.cf5e09ed.chunk.js.map

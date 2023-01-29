@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[10278],{10278:function(a,n,t){t.r(n);var e=t(29938),u=t(47066);n.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/ear.json",text:"ear",lang:"en"})}}}]);
+//# sourceMappingURL=10278.4f2cba61.chunk.js.map

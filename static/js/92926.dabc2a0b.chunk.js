@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[92926],{92926:function(e,n,t){t.r(n);var a=t(29938),u=t(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/were.json",text:"were",lang:"en"})}}}]);
+//# sourceMappingURL=92926.dabc2a0b.chunk.js.map

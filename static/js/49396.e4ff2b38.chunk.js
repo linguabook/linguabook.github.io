@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[49396],{49396:function(t,n,o){o.r(n);var r=o(29938),a=o(47066);n.default=function(){return(0,r.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/tomorrow.json",text:"tomorrow",lang:"en"})}}}]);
+//# sourceMappingURL=49396.e4ff2b38.chunk.js.map

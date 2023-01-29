@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[46656],{46656:function(n,t,u){u.r(t);var e=u(29938),a=u(47066);t.default=function(){return(0,e.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/punishment.json",text:"punishment",lang:"en"})}}}]);
+//# sourceMappingURL=46656.e88bf7e8.chunk.js.map

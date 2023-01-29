@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[73310],{73310:function(t,a,n){n.r(a);var e=n(29938),u=n(47066);a.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/earth.json",text:"earth",lang:"en"})}}}]);
+//# sourceMappingURL=73310.374d86e1.chunk.js.map

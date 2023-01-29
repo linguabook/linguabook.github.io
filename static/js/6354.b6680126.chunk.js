@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[6354],{6354:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/pig.json",text:"pig",lang:"en"})}}}]);
+//# sourceMappingURL=6354.b6680126.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[35747],{35747:function(t,n,u){u.r(n);var a=u(29938),s=u(47066);n.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/dust.json",text:"dust",lang:"en"})}}}]);
+//# sourceMappingURL=35747.ed2717ed.chunk.js.map

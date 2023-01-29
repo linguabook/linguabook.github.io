@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[54849],{54849:function(t,a,n){n.r(a);var s=n(29938),u=n(47066);a.default=function(){return(0,s.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/toast.json",text:"toast",lang:"en"})}}}]);
+//# sourceMappingURL=54849.6fa6a3e9.chunk.js.map

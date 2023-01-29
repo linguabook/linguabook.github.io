@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[43050],{43050:function(e,n,t){t.r(n);var a=t(29938),u=t(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/ever.json",text:"ever",lang:"en"})}}}]);
+//# sourceMappingURL=43050.d368ea3f.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[85586],{85586:function(n,t,e){e.r(t);var a=e(29938),s=e(47066);t.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/horse.json",text:"horse",lang:"en"})}}}]);
+//# sourceMappingURL=85586.4ec14ad7.chunk.js.map

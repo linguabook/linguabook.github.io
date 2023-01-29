@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[17298],{17298:function(n,t,a){a.r(t);var e=a(29938),u=a(47066);t.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/teaching.json",text:"teaching",lang:"en"})}}}]);
+//# sourceMappingURL=17298.804283df.chunk.js.map

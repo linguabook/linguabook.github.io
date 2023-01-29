@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[38212],{38212:function(n,t,e){e.r(t);var a=e(29938),s=e(47066);t.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/nose.json",text:"nose",lang:"en"})}}}]);
+//# sourceMappingURL=38212.b39ff7ea.chunk.js.map

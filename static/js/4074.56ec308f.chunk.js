@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[4074],{4074:function(a,n,t){t.r(n);var u=t(29938),e=t(47066);n.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/collar.json",text:"collar",lang:"en"})}}}]);
+//# sourceMappingURL=4074.56ec308f.chunk.js.map

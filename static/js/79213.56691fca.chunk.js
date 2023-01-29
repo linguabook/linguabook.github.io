@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[79213],{79213:function(a,n,t){t.r(n);var s=t(29938),u=t(47066);n.default=function(){return(0,s.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/shall.json",text:"shall",lang:"en"})}}}]);
+//# sourceMappingURL=79213.56691fca.chunk.js.map

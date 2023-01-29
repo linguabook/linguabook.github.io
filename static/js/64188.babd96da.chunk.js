@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[64188],{64188:function(a,n,t){t.r(n);var e=t(29938),u=t(47066);n.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/parcel.json",text:"parcel",lang:"en"})}}}]);
+//# sourceMappingURL=64188.babd96da.chunk.js.map

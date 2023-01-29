@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[63882],{63882:function(n,a,t){t.r(a);var u=t(29938),e=t(47066);a.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/nail.json",text:"nail",lang:"en"})}}}]);
+//# sourceMappingURL=63882.578b9f94.chunk.js.map

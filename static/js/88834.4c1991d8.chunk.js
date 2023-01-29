@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[88834],{88834:function(e,t,n){n.r(t);var a=n(29938),r=n(47066);t.default=function(){return(0,a.jsx)(r.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/representative.json",text:"representative",lang:"en"})}}}]);
+//# sourceMappingURL=88834.4c1991d8.chunk.js.map

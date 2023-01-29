@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[43338],{43338:function(t,n,u){u.r(n);var a=u(29938),e=u(47066);n.default=function(){return(0,a.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/through.json",text:"through",lang:"en"})}}}]);
+//# sourceMappingURL=43338.ba3c8958.chunk.js.map

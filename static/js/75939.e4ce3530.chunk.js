@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[75939],{75939:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/knot.json",text:"knot",lang:"en"})}}}]);
+//# sourceMappingURL=75939.e4ce3530.chunk.js.map

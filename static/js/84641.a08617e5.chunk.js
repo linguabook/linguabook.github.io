@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[84641],{84641:function(u,n,t){t.r(n);var e=t(29938),a=t(47066);n.default=function(){return(0,e.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/liqueur.json",text:"liqueur",lang:"en"})}}}]);
+//# sourceMappingURL=84641.a08617e5.chunk.js.map

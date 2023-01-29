@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[58306],{58306:function(n,t,a){a.r(t);var e=a(29938),s=a(47066);t.default=function(){return(0,e.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/distance.json",text:"distance",lang:"en"})}}}]);
+//# sourceMappingURL=58306.0447e5a4.chunk.js.map

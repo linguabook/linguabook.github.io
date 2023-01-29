@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[88022],{88022:function(n,t,u){u.r(t);var a=u(29938),e=u(47066);t.default=function(){return(0,a.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/cup.json",text:"cup",lang:"en"})}}}]);
+//# sourceMappingURL=88022.d84e6320.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[31820],{31820:function(e,a,n){n.r(a);var t=n(29938),u=n(47066);a.default=function(){return(0,t.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/female.json",text:"female",lang:"en"})}}}]);
+//# sourceMappingURL=31820.5d000e27.chunk.js.map

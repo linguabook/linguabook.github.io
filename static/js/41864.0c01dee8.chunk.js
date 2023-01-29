@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[41864],{41864:function(a,n,t){t.r(n);var r=t(29938),u=t(47066);n.default=function(){return(0,r.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/carry.json",text:"carry",lang:"en"})}}}]);
+//# sourceMappingURL=41864.0c01dee8.chunk.js.map

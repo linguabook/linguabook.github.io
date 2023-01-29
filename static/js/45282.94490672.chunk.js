@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[45282],{45282:function(n,a,t){t.r(a);var e=t(29938),s=t(47066);a.default=function(){return(0,e.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/sardine.json",text:"sardine",lang:"en"})}}}]);
+//# sourceMappingURL=45282.94490672.chunk.js.map

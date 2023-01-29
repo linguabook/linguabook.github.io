@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[13576],{13576:function(t,a,n){n.r(a);var u=n(29938),e=n(47066);a.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/attack.json",text:"attack",lang:"en"})}}}]);
+//# sourceMappingURL=13576.357ceef8.chunk.js.map

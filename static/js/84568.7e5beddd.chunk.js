@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[84568],{84568:function(n,t,a){a.r(t);var e=a(29938),o=a(47066);t.default=function(){return(0,e.jsx)(o.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/operation.json",text:"operation",lang:"en"})}}}]);
+//# sourceMappingURL=84568.7e5beddd.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[17662],{17662:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/don't.json",text:"don't",lang:"en"})}}}]);
+//# sourceMappingURL=17662.42d1b84b.chunk.js.map

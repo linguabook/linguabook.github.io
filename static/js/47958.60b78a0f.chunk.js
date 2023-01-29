@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[47958],{47958:function(t,n,a){a.r(n);var s=a(29938),u=a(47066);n.default=function(){return(0,s.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/skirt.json",text:"skirt",lang:"en"})}}}]);
+//# sourceMappingURL=47958.60b78a0f.chunk.js.map

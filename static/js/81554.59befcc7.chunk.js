@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[81554],{81554:function(n,t,u){u.r(t);var e=u(29938),a=u(47066);t.default=function(){return(0,e.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/curve.json",text:"curve",lang:"en"})}}}]);
+//# sourceMappingURL=81554.59befcc7.chunk.js.map

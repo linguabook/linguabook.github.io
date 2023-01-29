@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[32101],{32101:function(t,e,n){n.r(e);var a=n(29938),u=n(47066);e.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/feet.json",text:"feet",lang:"en"})}}}]);
+//# sourceMappingURL=32101.ed459a59.chunk.js.map

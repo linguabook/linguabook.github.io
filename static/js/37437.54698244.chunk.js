@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[37437],{37437:function(t,n,e){e.r(n);var a=e(29938),u=e(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/ticket.json",text:"ticket",lang:"en"})}}}]);
+//# sourceMappingURL=37437.54698244.chunk.js.map

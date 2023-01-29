@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[61022],{61022:function(t,e,n){n.r(e);var a=n(29938),u=n(47066);e.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/letter.json",text:"letter",lang:"en"})}}}]);
+//# sourceMappingURL=61022.5fb8cf54.chunk.js.map

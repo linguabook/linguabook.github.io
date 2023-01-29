@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[66661],{66661:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/iron.json",text:"iron",lang:"en"})}}}]);
+//# sourceMappingURL=66661.64abd476.chunk.js.map

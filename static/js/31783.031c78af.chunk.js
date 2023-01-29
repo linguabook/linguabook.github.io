@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[31783],{31783:function(t,e,a){a.r(e);var n=a(29938),u=a(47066);e.default=function(){return(0,n.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/weather.json",text:"weather",lang:"en"})}}}]);
+//# sourceMappingURL=31783.031c78af.chunk.js.map

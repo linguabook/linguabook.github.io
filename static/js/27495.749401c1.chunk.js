@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[27495],{27495:function(e,n,t){t.r(n);var a=t(29938),u=t(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/bee.json",text:"bee",lang:"en"})}}}]);
+//# sourceMappingURL=27495.749401c1.chunk.js.map

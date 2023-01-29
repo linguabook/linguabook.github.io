@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[25455],{25455:function(e,n,t){t.r(n);var a=t(29938),s=t(47066);n.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/seed.json",text:"seed",lang:"en"})}}}]);
+//# sourceMappingURL=25455.3eaed146.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[91098],{91098:function(t,n,e){e.r(n);var a=e(29938),u=e(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/credit.json",text:"credit",lang:"en"})}}}]);
+//# sourceMappingURL=91098.a9713c18.chunk.js.map

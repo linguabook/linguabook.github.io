@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[23837],{23837:function(t,a,n){n.r(a);var s=n(29938),u=n(47066);a.default=function(){return(0,s.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/christmas.json",text:"Christmas",lang:"en"})}}}]);
+//# sourceMappingURL=23837.56466ed4.chunk.js.map

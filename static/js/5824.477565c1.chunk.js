@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[5824],{5824:function(t,e,a){a.r(e);var n=a(29938),u=a(47066);e.default=function(){return(0,n.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/leather.json",text:"leather",lang:"en"})}}}]);
+//# sourceMappingURL=5824.477565c1.chunk.js.map

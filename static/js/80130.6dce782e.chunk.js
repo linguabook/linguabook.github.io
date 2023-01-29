@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[80130],{80130:function(a,n,t){t.r(n);var e=t(29938),p=t(47066);n.default=function(){return(0,e.jsx)(p.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/apple.json",text:"apple",lang:"en"})}}}]);
+//# sourceMappingURL=80130.6dce782e.chunk.js.map

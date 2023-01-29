@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[38506],{38506:function(n,t,e){e.r(t);var a=e(29938),u=e(47066);t.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/finger.json",text:"finger",lang:"en"})}}}]);
+//# sourceMappingURL=38506.15a4179c.chunk.js.map

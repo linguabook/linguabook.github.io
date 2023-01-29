@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[14579],{14579:function(n,s,t){t.r(s);var e=t(29938),a=t(47066);s.default=function(){return(0,e.jsx)(a.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/less.json",text:"less",lang:"en"})}}}]);
+//# sourceMappingURL=14579.a5544628.chunk.js.map

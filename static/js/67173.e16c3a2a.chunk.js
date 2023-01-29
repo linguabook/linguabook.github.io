@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[67173],{67173:function(e,a,n){n.r(a);var t=n(29938),u=n(47066);a.default=function(){return(0,t.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/peace.json",text:"peace",lang:"en"})}}}]);
+//# sourceMappingURL=67173.e16c3a2a.chunk.js.map

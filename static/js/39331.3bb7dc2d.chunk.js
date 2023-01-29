@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[39331],{39331:function(e,n,t){t.r(n);var a=t(29938),u=t(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/coffee.json",text:"coffee",lang:"en"})}}}]);
+//# sourceMappingURL=39331.3bb7dc2d.chunk.js.map

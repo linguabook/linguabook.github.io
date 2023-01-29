@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[28741],{28741:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/brick.json",text:"brick",lang:"en"})}}}]);
+//# sourceMappingURL=28741.7c98f72e.chunk.js.map

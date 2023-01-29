@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[98802],{98802:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/hill.json",text:"hill",lang:"en"})}}}]);
+//# sourceMappingURL=98802.e4ae74d0.chunk.js.map

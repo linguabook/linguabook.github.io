@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[66481],{66481:function(a,n,t){t.r(n);var u=t(29938),e=t(47066);n.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/air.json",text:"air",lang:"en"})}}}]);
+//# sourceMappingURL=66481.6067e2e7.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[35024],{35024:function(n,t,e){e.r(t);var a=e(29938),s=e(47066);t.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/silver.json",text:"silver",lang:"en"})}}}]);
+//# sourceMappingURL=35024.07a3aa64.chunk.js.map

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[76461],{76461:function(t,n,a){a.r(n);var o=a(29938),u=a(47066);n.default=function(){return(0,o.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/tooth.json",text:"tooth",lang:"en"})}}}]);
+//# sourceMappingURL=76461.7e618af6.chunk.js.map

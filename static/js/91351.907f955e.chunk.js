@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[91351],{91351:function(e,n,t){t.r(n);var a=t(29938),u=t(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/keep.json",text:"keep",lang:"en"})}}}]);
+//# sourceMappingURL=91351.907f955e.chunk.js.map

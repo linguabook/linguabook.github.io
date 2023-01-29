@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[62582],{62582:function(n,a,t){t.r(a);var e=t(29938),u=t(47066);a.default=function(){return(0,e.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/reading.json",text:"reading",lang:"en"})}}}]);
+//# sourceMappingURL=62582.1ff43586.chunk.js.map

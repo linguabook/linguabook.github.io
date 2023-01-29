@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[73815],{73815:function(n,t,a){a.r(t);var e=a(29938),s=a(47066);t.default=function(){return(0,e.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/servant.json",text:"servant",lang:"en"})}}}]);
+//# sourceMappingURL=73815.348fb056.chunk.js.map

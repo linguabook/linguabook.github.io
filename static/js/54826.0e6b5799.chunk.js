@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[54826],{54826:function(a,n,t){t.r(n);var r=t(29938),u=t(47066);n.default=function(){return(0,r.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/harbor.json",text:"harbor",lang:"en"})}}}]);
+//# sourceMappingURL=54826.0e6b5799.chunk.js.map

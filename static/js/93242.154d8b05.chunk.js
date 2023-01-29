@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[93242],{93242:function(e,n,t){t.r(n);var a=t(29938),u=t(47066);n.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/beef.json",text:"beef",lang:"en"})}}}]);
+//# sourceMappingURL=93242.154d8b05.chunk.js.map

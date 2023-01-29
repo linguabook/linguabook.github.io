@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[36146],{36146:function(t,a,n){n.r(a);var o=n(29938),u=n(47066);a.default=function(){return(0,o.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/potato.json",text:"potato",lang:"en"})}}}]);
+//# sourceMappingURL=36146.9b37d6c8.chunk.js.map

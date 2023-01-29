@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[54545],{54545:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/gold.json",text:"gold",lang:"en"})}}}]);
+//# sourceMappingURL=54545.4ebf0ae6.chunk.js.map

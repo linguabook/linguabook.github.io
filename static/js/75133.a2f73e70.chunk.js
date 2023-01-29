@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[75133],{75133:function(n,t,e){e.r(t);var a=e(29938),s=e(47066);t.default=function(){return(0,a.jsx)(s.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/sponge.json",text:"sponge",lang:"en"})}}}]);
+//# sourceMappingURL=75133.a2f73e70.chunk.js.map

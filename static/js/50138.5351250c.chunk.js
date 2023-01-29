@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[50138],{50138:function(n,e,t){t.r(e);var a=t(29938),u=t(47066);e.default=function(){return(0,a.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/been.json",text:"been",lang:"en"})}}}]);
+//# sourceMappingURL=50138.5351250c.chunk.js.map

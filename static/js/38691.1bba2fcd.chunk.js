@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[38691],{38691:function(n,a,t){t.r(a);var o=t(29938),u=t(47066);a.default=function(){return(0,o.jsx)(u.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/organization.json",text:"organization",lang:"en"})}}}]);
+//# sourceMappingURL=38691.1bba2fcd.chunk.js.map

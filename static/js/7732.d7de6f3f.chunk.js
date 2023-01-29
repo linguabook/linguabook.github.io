@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[7732],{7732:function(n,t,a){a.r(t);var u=a(29938),e=a(47066);t.default=function(){return(0,u.jsx)(e.iO,{url:"https://raw.githubusercontent.com/linguabook/data/main/words/month.json",text:"month",lang:"en"})}}}]);
+//# sourceMappingURL=7732.d7de6f3f.chunk.js.map

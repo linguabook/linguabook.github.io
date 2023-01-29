@@ -26,4 +26,8 @@ jobs:
           cache: "yarn"
 
       - name: deploy
-        run: yarn install && yarn deploy
+        run: |
+          git config --global user.email "stodyshev@gmail.com"
+          git config --global user.name "SergeyT Github Automation"
+          yarn install
+          yarn deploy
